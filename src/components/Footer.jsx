@@ -8,17 +8,17 @@ const SOCIALS = [
   {
     name: "Instagram",
     icon: <Instagram />,
-    link: "ht",
+    link: "https://www.instagram.com/linxdsc/",
   },
   {
     name: "Facebook",
     icon: <Facebook />,
-    link: "ht",
+    link: "https://www.facebook.com/dsc.linx.7",
   },
   {
     name: "Linkedin",
     icon: <Linkedin />,
-    link: "ht",
+    link: "https://www.linkedin.com/in/dsclinx/?originalSubdomain=ca",
   },
   {
     name: "Whatsapp ",
@@ -54,7 +54,7 @@ export default function Home() {
                 {SOCIALS.map((social, key) => (
                   <Link
                     key={key}
-                    href={social.link}
+                    href={social.link} target="_blank"
                     className="text-gray-400 hover:text-white-900 dark:hover:text-white"
                   >
                     {social.icon}

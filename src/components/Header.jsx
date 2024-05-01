@@ -49,7 +49,7 @@ export default function Header() {
         {links.map(item => (
           <Link href={item.link} key={item.link}>{item.title}</Link>
         ))}
-        <Button className="bg-[#004363] text-lg px-8 py-6 hidden md:flex" >+1 (416) 886-3145</Button>
+        <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 hidden md:flex" >+1 (416) 886-3145</Button>
       </div>
       {/* mobile */}
       <Menu onClick={() => setOpen(true)} className='md:hidden cursor-pointer' size={40} />
