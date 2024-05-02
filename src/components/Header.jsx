@@ -13,19 +13,19 @@ const links = [
   },
   {
     title: "About",
-    link: "/menu"
+    link: "/about"
   },
   {
     title: "Services",
-    link: "/photos"
+    link: "/services"
   },
   {
     title: "Projects",
-    link: "/story"
+    link: "/projects"
   },
   {
     title: "Contact Us",
-    link: "/news"
+    link: "/contact-us"
   },
 ]
 
