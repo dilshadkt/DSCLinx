@@ -5,7 +5,12 @@ import SwiperTest from "@/components/SwiperTest";
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import ProjectCard from "@/components/ProjectCard";
 import HomeServicesCard from "./components/HomeServicesCard";
 import HomeProjectCard from "./components/HomeProjectCard";
@@ -16,7 +21,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
+import OurClient from "@/components/OurClient";
+import Faq from "@/components/Faq";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   useEffect(() => {
@@ -181,34 +189,21 @@ export default function Home() {
                 </div>
                 <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[15px]">
                   <p className="text-[18px] font-normal leading-[150%]">
-                    There is no job too big or too small for us. We are a
-                    professional yet affordable design and renovation company.
-                    Trusted to deliver quality work, on time &, on budget. Get
-                    your professional new look for your establishment started on
-                    today.There is no job too big or too small for us. We are a
-                    professional yet affordable design and renovation company.
-                    Trusted to deliver quality work, on time &, on budget. Get
-                    your professional new look for your establishment started on
-                    today.There is no job too big or too small for us. We are a
-                    professional yet affordable design and renovation company.
-                    Trusted to deliver quality work, on time &, on budget. Get
-                    your professional new look for your establishment started on
-                    today.There is no job too big or too small for us. We are a
-                    professional yet affordable design and renovation company.
-                    Trusted to deliver quality work, on time &, on budget. Get
-                    your professional new look for your establishment started on
-                    today.There is no job too big or too small for us. We are a
-                    professional yet affordable design and
+                    {
+                      "There is no job too big or too small for us. We are a professional yet affordable design and renovation company.Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget.Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company."
+                    }
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
-            <img
-              src="/about-h.png"
-              alt=""
-              className="w-full h-full max-w-full object-cover"
+            <Image
+              src="/abouthome.png"
+              width={700}
+              height={300}
+              alt="about"
+              className=" h-full max-w-full object-cover"
             />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">
@@ -217,10 +212,12 @@ export default function Home() {
                     <h2 className="tracking-[-3.95px] text-[70px] leading-[86px] text-white font-semibold max-lg:text-[64px] max-lg:leading-[70px] max-md:text-[64px] max-md:leading-[70px] max-sm:text-[30px] max-sm:leading-[30px] max-sm:tracking-[normal]">
                       4.9
                     </h2>
-                    <img
-                      src="https://assets-global.website-files.com/652634ecbd538012cac6bff1/6527818e2dea9c0952b294e8_Star.png"
+                    <Image
+                      width={34}
+                      height={34}
+                      src="/icons/star.png"
                       loading="lazy"
-                      alt=""
+                      alt="star"
                       className="customer-rating-star"
                     />
                   </div>
@@ -228,13 +225,13 @@ export default function Home() {
                     Customer Rating
                   </div>
                 </div>
-                <img
+                {/* <Image width={100} height={100}
                   src="https://assets-global.website-files.com/652634ecbd538012cac6bff1/652784272dea9c0952b5b9cc_Ratinh%20Shape.png"
                   loading="lazy"
                   data-w-id="40b08e1e-b274-ff13-7faf-68968a352d40"
                   alt=""
                   className="absolute -top-[8px] bottom-auto left-auto -right-[24px] max-md:max-w-[57px] max-md:-right-[2px]"
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -282,18 +279,17 @@ export default function Home() {
       {/* Our Team Approach Start*/}
 
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-        <div class="text-center">
-          <div class="h-full overflow-hidden">
-            <h2 class="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+        <div className="text-center">
+          <div className="h-full overflow-hidden">
+            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
               Our Team Approach Projects Professionally
             </h2>
           </div>
-          <div class="h-full overflow-hidden">
-            <p class="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
-              Choose DSCLINX, where professional precision converges with design
-              passion. Dive into a transformative experience, ensuring your
-              space mirrors your vision.  Discover the breadth and depth of our
-              offerings solutions.
+          <div className="h-full overflow-hidden">
+            <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+              {
+                "Choose DSCLINX, where professional precision converges with design passion. Dive into a transformative experience, ensuring your space mirrors your vision.  Discover the breadth and depth of our offerings solutions."
+              }
             </p>
           </div>
         </div>
@@ -304,7 +300,9 @@ export default function Home() {
               <div className="p-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
                   <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
-                    <img
+                    <Image
+                      width={100}
+                      height={100}
                       src="/icons/quality-excellence.png"
                       alt=""
                       className="w-11"
@@ -324,7 +322,9 @@ export default function Home() {
               <div className="pl-[30px] pr-[50px] py-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
                   <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
-                    <img
+                    <Image
+                      width={100}
+                      height={100}
                       src="/icons/expert-consultation.png"
                       alt=""
                       className="w-11"
@@ -344,7 +344,9 @@ export default function Home() {
               <div className="pl-[30px] pr-[50px] py-[30px]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
                   <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
-                    <img
+                    <Image
+                      width={100}
+                      height={100}
                       src="/icons/certified-guarantee.png"
                       alt=""
                       className="w-11"
@@ -363,7 +365,9 @@ export default function Home() {
             </div>
 
             <div className="w-full max-w-full max-md:overflow-hidden">
-              <img
+              <Image
+                width={710}
+                height={672}
                 src="/team-approach.png"
                 alt=""
                 className="w-full h-full max-w-full object-cover"
@@ -379,14 +383,14 @@ export default function Home() {
 
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="container max-w-[792px]">
-          <div class="text-center flex justify-center items-center flex-col gap-4 ">
-            <div class="h-full overflow-hidden">
-              <h2 class="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+          <div className="text-center flex justify-center items-center flex-col gap-4 ">
+            <div className="h-full overflow-hidden">
+              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
                 Unlock Our Offerings In Just Three Straight Forward Steps
               </h2>
             </div>
-            <div class="h-full overflow-hidden">
-              <p class="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+            <div className="h-full overflow-hidden">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
                 Begin a transformation journey with DSCLINX effortlessly. Unlock
                 our premium offerings through three straightforward steps. Dive
                 in, and experience a hassle-free approach to achievement.
@@ -410,7 +414,7 @@ export default function Home() {
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
                   request your service
                 </h4>
-                <p class="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
                   Taking the first step towards a transformative experience has
                   never been easier.
                 </p>
@@ -424,7 +428,7 @@ export default function Home() {
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
                   Schedule Your Service
                 </h4>
-                <p class="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
                   Ready for a transformation? Schedule your service with DSCLINX
                   today.
                 </p>
@@ -438,14 +442,16 @@ export default function Home() {
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
                   Pay And Enjoy New Paint
                 </h4>
-                <p class="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
                   Seamless transactions, striking transformations. Make your
                   payment.
                 </p>
               </div>
             </div>
-            <div class="w-full max-w-[800px] ml-auto mr-auto absolute top-[45px] bottom-auto left-[0%] right-[0%] max-lg:z-0 max-lg:max-w-[534px] max-lg:top-[29px] max-md:hidden">
-              <img
+            <div className="w-full max-w-[800px] ml-auto mr-auto absolute top-[45px] bottom-auto left-[0%] right-[0%] max-lg:z-0 max-lg:max-w-[534px] max-lg:top-[29px] max-md:hidden">
+              <Image
+                width={800}
+                height={131}
                 src="https://assets-global.website-files.com/652634ecbd538012cac6bff1/652d3dfca68c55a2ee29cac1_xdf.png"
                 loading="lazy"
                 alt=""
@@ -462,17 +468,17 @@ export default function Home() {
 
       <section className="bg-[#004363]">
         <div className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-          <div class="text-center text-white mt-10">
-            <div class="h-full overflow-hidden">
-              <h2 class="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+          <div className="text-center text-white mt-10">
+            <div className="h-full overflow-hidden">
+              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
                 Explore Our Range Of Offering Services
               </h2>
             </div>
-            <div class="h-full overflow-hidden">
-              <p class="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
-                Discover the breadth and depth of our offerings. From bespoke
-                solutions to standard services, we're here to cater to your
-                need. Experience the brilliance of Digital Foiling.
+            <div className="h-full overflow-hidden">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+                {
+                  "Discover the breadth and depth of our offerings. From bespoke solutions to standard services, we're here to cater to your need. Experience the brilliance of Digital Foiling."
+                }
               </p>
             </div>
           </div>
@@ -491,24 +497,73 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Start*/}
-
       {/* Services End*/}
 
+      {/* Our Client Start*/}
+
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-            <h3 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px]">Companies we worked with</h3>
+        <h3 className="tracking-[-.42px] mb-[36px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px] max-sm:mb-[30px]">
+          Companies we worked with
+        </h3>
+        <OurClient />
 
-
-      <Card className="w-[270px] p-6 rounded border-2 border-[#515151]">
+        {/* <Card className="w-[270px] p-6 rounded border-2 border-[#515151]">
           <Link href="" className="flex justify-center items-center p-10">
-            <img src="/client/circlek.png" alt="" className="w-24" />
+            <Image src="/client/circlek.png" alt="" className="w-24" />
           </Link>
           <p>Circlek</p>
-      </Card>
-
+      </Card> */}
       </section>
 
-      {/* Services Start*/}
+      {/* Our Client End*/}
+
+      {/* Testimonials Start*/}
+
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <div className="text-center">
+          <div className="h-full overflow-hidden">
+            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
+              Feedback From Our Client's Experiences
+            </h2>
+          </div>
+          <div className="h-full overflow-hidden">
+            <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[330px] max-sm:text-[16px]">
+              Dive into authentic reflections from those we've proudly served.
+              Their testimonials, echoing our commitment and expertise.
+              Unlocking our suite of services is designed for utmost ease. With
+              a streamlined.
+            </p>
+          </div>
+        </div>
+        <div className="mt-10">
+          {/* <div className="bg-[#E0EFF6] p-5">
+            <p className="tracking-[-0.56px] leading-[164.6%] text-lg">
+              “DSCLINX is proud to offer a complete range of construction
+              services made possible by our professional team. Our dynamic
+              corporate structure emphasizes collaboration between stakeholders,
+              architects, designers, engineers and trades – creating an approach
+              where all concerns are identified and construction solutions are
+              provided before they ever become an issue on-site”
+            </p>
+            <div className="mt-6">
+              <h4 className="text-xl font-medium tracking-[-1.56px]">
+                ALEY KHALIL
+              </h4>
+              <h6 className="text-lg tracking-[-1.56px]">CEO, OMASH</h6>
+            </div>
+          </div> */}
+          <Testimonials />
+        </div>
+      </section>
+
+      {/* Testimonials End*/}
+
+      {/* Faq Start*/}
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <Faq />
+      </section>
+
+      {/* Faq End*/}
     </>
   );
 }

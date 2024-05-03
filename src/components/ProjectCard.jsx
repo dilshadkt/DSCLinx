@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
+import Image from "next/image";
 
 export default function ProjectCard({ link, image, name }) {
   return (
@@ -8,7 +9,7 @@ export default function ProjectCard({ link, image, name }) {
         href={link ? link : ""}
         className="rounded-[10px] overflow-hidden relative cursor-pointer	"
       >
-        <img
+        <Image width={656} height={523}
           alt=""
           loading="lazy"
           src={image}

@@ -37,8 +37,8 @@ export default function Home() {
               <div className="mb-5">
                 <Image
                   src={"/logo-2.png"}
-                  width={115}
-                  height={97}
+                  width={128}
+                  height={33}
                   className="w-23"
                   alt="Logo"
                 />

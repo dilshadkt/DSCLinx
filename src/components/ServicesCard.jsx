@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ServicesCard({ name, desc, image}) {
   return (
@@ -22,7 +23,7 @@ export default function ServicesCard({ name, desc, image}) {
             <FaArrowRightLong />
           </Link> */}
           <div className="flex justify-center items-center bg-[#E0EFF6] w-[65px] h-[65px]">
-            <img src={image} alt="" className="w-11" />
+            <Image width={100} height={100} src={image} alt="" className="w-11" />
           </div>
         </div>
         <CardHeader className="gap-2 max-sm:p-2">

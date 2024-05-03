@@ -457,8 +457,8 @@ a:hover {
   content: "";
   position: absolute;
   z-index: -1;
-  top: -35px;
-  right: -16px;
+  top: -33px;
+  /* right: -16px; */
   background: #E0EFF6;
   color: #000;
   height: 32px;
@@ -466,7 +466,7 @@ a:hover {
   border-radius: 32px;
   transform: scale(1);
   transform-origin: 50% 50%;
-  transition: transform 0.25s ease-out;
+  transition: transform 3.25s ease-out;
 }
 .card1:hover:before {
   transform: scale(100);
