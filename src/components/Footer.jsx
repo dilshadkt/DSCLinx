@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <footer className=" bg-[#171D29] text-white">
-        <div className="mx-auto w-full max-w-screen-xl">
+        <div className="mx-auto w-full max-w-screen-xl pt-5">
           <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 sm:grid-cols-2">
             <div>
               <div className="mb-5">
@@ -113,11 +113,11 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="px-4 py-6 border-t-2 dark:bg-gray-700 md:flex md:items-center md:justify-between sm:justify-center">
-            <span className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+          <div className="px-4 py-6 border-t-2 dark:bg-gray-700 flex justify-between items-center max-md:flex-col">
+            <span className="">
             Copyright ©2024 by DSCLINX 
             </span>
-            <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <div className="">
               <Link target="_blank" href="https://www.moonleyinteractive.com/">
                 {" "}
                 Powered by Moonleyinteractive.com{" "}

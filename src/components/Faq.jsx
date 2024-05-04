@@ -31,7 +31,7 @@ const FAQ = [
 export default function Faq() {
   return (
     <>
-      <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
+      <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold  max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
         Frequently Asked Questions
       </h2>
       <Accordion type="single" collapsible className="w-full mt-10">

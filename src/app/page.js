@@ -1,30 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import SwiperTest from "@/components/SwiperTest";
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import ProjectCard from "@/components/ProjectCard";
 import HomeServicesCard from "./components/HomeServicesCard";
 import HomeProjectCard from "./components/HomeProjectCard";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import OurClient from "@/components/OurClient";
 import Faq from "@/components/Faq";
 import Testimonials from "@/components/Testimonials";
+import Upcoming from "@/components/Upcoming";
 
 export default function Home() {
   useEffect(() => {
@@ -122,7 +108,7 @@ export default function Home() {
                     </div>
                     <div className="clearfix" />
                     <div data-swiper-parallax={500} className="slide-btns">
-                      <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
+                      <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
                         <span>Contact us</span>
                       </Button>
                     </div>
@@ -150,7 +136,7 @@ export default function Home() {
                     </div>
                     <div className="clearfix" />
                     <div data-swiper-parallax={500} className="slide-btns">
-                      <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 hidden md:flex cont">
+                      <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 hidden md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
                         <span>Contact us</span>
                       </Button>
                     </div>
@@ -183,7 +169,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="h-full overflow-hidden">
-                  <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px] ">
+                  <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]">
                     We are a design and renovation company
                   </h2>
                 </div>
@@ -246,7 +232,7 @@ export default function Home() {
         <div className="relative z-10">
           <div className="text-center">
             <div className="h-full overflow-hidden">
-              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
                 Discover Our Latest Projects Showcase
               </h2>
             </div>
@@ -281,7 +267,7 @@ export default function Home() {
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="text-center">
           <div className="h-full overflow-hidden">
-            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
               Our Team Approach Projects Professionally
             </h2>
           </div>
@@ -385,7 +371,7 @@ export default function Home() {
         <div className="container max-w-[792px]">
           <div className="text-center flex justify-center items-center flex-col gap-4 ">
             <div className="h-full overflow-hidden">
-              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
                 Unlock Our Offerings In Just Three Straight Forward Steps
               </h2>
             </div>
@@ -470,7 +456,7 @@ export default function Home() {
         <div className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
           <div className="text-center text-white mt-10">
             <div className="h-full overflow-hidden">
-              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]">
+              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
                 Explore Our Range Of Offering Services
               </h2>
             </div>
@@ -559,11 +545,18 @@ export default function Home() {
       {/* Testimonials End*/}
 
       {/* Faq Start*/}
+
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <Faq />
       </section>
 
       {/* Faq End*/}
+
+      {/* Upcoming Start*/}
+
+      <Upcoming/>
+
+      {/* Upcoming End*/}
     </>
   );
 }

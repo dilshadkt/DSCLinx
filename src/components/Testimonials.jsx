@@ -5,6 +5,33 @@ import "swiper/css/navigation";
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
+const TEST = [
+  {
+    des: "DSCLINX is proud to offer a complete range of construction services made possible by our professional team. Our dynamic corporate structure emphasizes collaboration between stakeholders, architects, designers, engineers and trades – creating an approach where all concerns are identified and construction solutions areprovided before they ever become an issue on-site",
+    name: "ALEY KHALIL",
+    pos: "CEO, OMASH",
+  },
+  {
+    des: "DSCLINX is proud to offer a complete range of construction services made possible by our professional team. Our dynamic corporate structure emphasizes collaboration between stakeholders, architects, designers, engineers and trades – creating an approach where all concerns are identified and construction solutions areprovided before they ever become an issue on-site",
+    name: "ALEY KHALIL",
+    pos: "CEO, OMASH",
+  },
+  {
+    des: "DSCLINX is proud to offer a complete range of construction services made possible by our professional team. Our dynamic corporate structure emphasizes collaboration between stakeholders, architects, designers, engineers and trades – creating an approach where all concerns are identified and construction solutions areprovided before they ever become an issue on-site",
+    name: "ALEY KHALIL",
+    pos: "CEO, OMASH",
+  },
+  {
+    des: "DSCLINX is proud to offer a complete range of construction services made possible by our professional team. Our dynamic corporate structure emphasizes collaboration between stakeholders, architects, designers, engineers and trades – creating an approach where all concerns are identified and construction solutions areprovided before they ever become an issue on-site",
+    name: "ALEY KHALIL",
+    pos: "CEO, OMASH",
+  },
+  {
+    des: "DSCLINX is proud to offer a complete range of construction services made possible by our professional team. Our dynamic corporate structure emphasizes collaboration between stakeholders, architects, designers, engineers and trades – creating an approach where all concerns are identified and construction solutions areprovided before they ever become an issue on-site",
+    name: "ALEY KHALIL",
+    pos: "CEO, OMASH",
+  },
+];
 
 export default function Testimonials() {
   return (
@@ -23,7 +50,7 @@ export default function Testimonials() {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 40,
           },
           1024: {
@@ -34,25 +61,24 @@ export default function Testimonials() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="bg-[#E0EFF6] p-10">
+
+      {TEST.map((test, key) => (
+        <SwiperSlide key={key}>
+          <div className="bg-[#E0EFF6] p-10 text-left">
             <p className="tracking-[-0.56px] leading-[164.6%] text-lg">
-              “DSCLINX is proud to offer a complete range of construction
-              services made possible by our professional team. Our dynamic
-              corporate structure emphasizes collaboration between stakeholders,
-              architects, designers, engineers and trades – creating an approach
-              where all concerns are identified and construction solutions are
-              provided before they ever become an issue on-site”
+            {test.des}
             </p>
             <div className="mt-6">
-              <h4 className="text-xl font-medium tracking-[-1.56px]">
-                ALEY KHALIL
+              <h4 className="text-xl font-medium tracking-[-1.56px] uppercase">
+              {test.name}
               </h4>
-              <h6 className="text-lg tracking-[-1.56px]">CEO, OMASH</h6>
+              <h6 className="text-lg tracking-[-1.56px] uppercase">
+              {test.pos}
+              </h6>
             </div>
           </div>
         </SwiperSlide>
-
+      ))}
       </Swiper>
     </>
   );
