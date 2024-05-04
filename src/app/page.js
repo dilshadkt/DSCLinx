@@ -10,7 +10,7 @@ import HomeProjectCard from "./components/HomeProjectCard";
 import OurClient from "@/components/OurClient";
 import Faq from "@/components/Faq";
 import Testimonials from "@/components/Testimonials";
-import Upcoming from "@/components/Upcoming";
+import BottomBanner from "@/components/BottomBanner";
 
 export default function Home() {
   useEffect(() => {
@@ -554,7 +554,7 @@ export default function Home() {
 
       {/* Upcoming Start*/}
 
-      <Upcoming/>
+      <BottomBanner/>
 
       {/* Upcoming End*/}
     </>
