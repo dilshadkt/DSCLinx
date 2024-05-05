@@ -509,15 +509,16 @@ export default function Home() {
         <div className="text-center">
           <div className="h-full overflow-hidden">
             <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
-              Feedback From Our Client's Experiences
+             {
+              "Feedback From Our Client's Experiences"
+             }
             </h2>
           </div>
           <div className="h-full overflow-hidden">
             <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[330px] max-sm:text-[16px]">
-              Dive into authentic reflections from those we've proudly served.
-              Their testimonials, echoing our commitment and expertise.
-              Unlocking our suite of services is designed for utmost ease. With
-              a streamlined.
+             {
+             "Dive into authentic reflections from those we've proudly served. Their testimonials, echoing our commitment and expertise. Unlocking our suite of services is designed for utmost ease. With a streamlined."
+             }
             </p>
           </div>
         </div>
