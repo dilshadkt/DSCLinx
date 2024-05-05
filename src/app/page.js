@@ -492,13 +492,6 @@ export default function Home() {
           Companies we worked with
         </h3>
         <OurClient />
-
-        {/* <Card className="w-[270px] p-6 rounded border-2 border-[#515151]">
-          <Link href="" className="flex justify-center items-center p-10">
-            <Image src="/client/circlek.png" alt="" className="w-24" />
-          </Link>
-          <p>Circlek</p>
-      </Card> */}
       </section>
 
       {/* Our Client End*/}
@@ -523,22 +516,6 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-10">
-          {/* <div className="bg-[#E0EFF6] p-5">
-            <p className="tracking-[-0.56px] leading-[164.6%] text-lg">
-              “DSCLINX is proud to offer a complete range of construction
-              services made possible by our professional team. Our dynamic
-              corporate structure emphasizes collaboration between stakeholders,
-              architects, designers, engineers and trades – creating an approach
-              where all concerns are identified and construction solutions are
-              provided before they ever become an issue on-site”
-            </p>
-            <div className="mt-6">
-              <h4 className="text-xl font-medium tracking-[-1.56px]">
-                ALEY KHALIL
-              </h4>
-              <h6 className="text-lg tracking-[-1.56px]">CEO, OMASH</h6>
-            </div>
-          </div> */}
           <Testimonials />
         </div>
       </section>

@@ -1,4 +1,7 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 
 const Contact = () => {
   return (
@@ -8,14 +11,19 @@ const Contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 block text-base font-semibold text-primary">
-                Get in touch
-                </span>
-                <h2 className="mb-6 text-[32px] font-semibold text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                Get a fast response, call us now</h2>
+                <div class="gap-x-[15px] gap-y-[5px] items-center flex overflow-hidden">
+                  <div class="w-[20px] h-px bg-[#000] max-lg:hidden"></div>
+                  <div class="sub-title text-[#004363] uppercase text-[18px] font-semibold leading-[150%] mb-4">
+                    Get in touch
+                  </div>
+                </div>
+                <h2 className="mb-6 text-[32px] font-semibold text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px] max-sm:text-[27px]">
+                  Get a fast response, call us now
+                </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                Feel free to reach out to us for any inquiries, concerns, or assistance you might need. Our committed team 
-                is ready to help and offer the support you require.
+                  Feel free to reach out to us for any inquiries, concerns, or
+                  assistance you might need. Our committed team is ready to help
+                  and offer the support you require.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -37,7 +45,7 @@ const Contact = () => {
                       Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    168 Oakdale Rd unit 6, North York, ON M3N 1V9, Canada
+                      168 Oakdale Rd unit 6, North York, ON M3N 1V9, Canada
                     </p>
                   </div>
                 </div>
@@ -77,7 +85,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    +1 (416) 886-3145
+                      +1 (416) 886-3145
                     </p>
                   </div>
                 </div>
@@ -102,50 +110,72 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    dsclinx@gmail.com
+                      dsclinx@gmail.com
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+            <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="relative bg-[#004363] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
                 <form>
-                    <h2 className="flex justify-center text-white text-4xl font-semibold pb-9">Contact Us</h2>
+                  <h2 className="flex justify-center text-white text-4xl font-semibold pb-9 max-sm:text-[27px]">
+                    Contact Us
+                  </h2>
                   <ContactInputBox
                     type="text"
                     name="name"
                     placeholder="Full Name"
                   />
+
+                <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
+                  <ContactInputBox
+                    type="text"
+                    name="Company Name"
+                    placeholder="Company Name"
+                  />
                   <ContactInputBox
                     type="text"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
+                  <ContactInputBox
+                    type="text"
+                    name="Phone"
+                    placeholder="Phone"
                   />
                   <ContactInputBox
                     type="text"
-                    name="phone"
-                    placeholder="Your Phone"
+                    name="Project Type"
+                    placeholder="Project Type"
                   />
+                </div>
+
                   <ContactTextArea
                     row="6"
                     placeholder="Your Message"
                     name="details"
                     defaultValue=""
                   />
-                  <div className="flex w-[150px]">
-                    <button
-                      type="submit"
-                      className="w-full border-primary bg-white p-3 text-black transition hover:bg-opacity-90"
+                  <Link href="" className="flex">
+                    <Button
+                      variant="secondary"
+                      className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white"
                     >
-                      Submit
-                    </button>
-                  </div>
+                      <span>Submit</span>
+                    </Button>
+                  </Link>
                 </form>
                 <div>
                 </div>
               </div>
             </div>
+          </div>
+          <div>
+              
           </div>
         </div>
       </section>
@@ -163,7 +193,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full bg-transparent resize-none border border-stroke px-[14px] py-3 text-base text-body-color outline-none"
           defaultValue={defaultValue}
         />
       </div>
@@ -179,7 +209,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full bg-transparent border border-stroke px-[14px] py-3 text-base text-body-color outline-none "
         />
       </div>
     </>
