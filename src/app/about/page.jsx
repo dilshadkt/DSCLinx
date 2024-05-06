@@ -1,24 +1,24 @@
 import React from "react";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import BottomBanner from "@/components/BottomBanner";
 import Banner from "@/components/Banner";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
 
 export default function page() {
   return (
     <>
       {/* Banner section Start*/}
 
-      <Banner />
+      <Banner
+        head={"About"}
+        desc={
+          "DSCLINX proud to offer a complete range of construction services made possible by our professional team."
+        }
+      />
 
       {/* Banner section End*/}
 
       {/* About Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[40px] max-md:py-[40px] max-sm:py-[40px]">
         <div className="w-full flex max-lg:flex-col">
           <div className="w-full max-w-[700px] pr-0 max-lg:max-w-full max-lg:flex-row max-lg:grid-cols-[1fr] max-lg:pt-0 max-lg:flex">
@@ -118,11 +118,8 @@ export default function page() {
           </div>
         </div>
       </section>
-
       {/* About End*/}
-
       {/* Our work Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[40px] max-md:py-[40px] max-sm:py-[40px]">
         <div className="flex justify-between items-center max-lg:flex-col max-lg:text-center">
           <div className="w-full max-w-[556px] max-lg:max-w-[665px]">
@@ -192,16 +189,14 @@ export default function page() {
           </div>
         </div>
       </section>
-
       {/* Our work End*/}
-
       {/* Experience Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[40px] max-md:py-[40px] max-sm:py-[40px]">
         <div className="w-full max-w-full flex overflow-hidden text-white max-lg:flex-col">
           <div
             className="w-full max-w-[480px] bg-[50%] bg-cover p-[80px] relative max-lg:max-w-full max-sm:p-[40px]"
-            style={{ backgroundImage: 'url("/experience-img.png")' }}>
+            style={{ backgroundImage: 'url("/experience-img.png")' }}
+          >
             <div className="overflow-hidden">
               <div className="gap-x-[15px] gap-y-[15px] justify-center items-end mb-[14px] flex overflow-hidden">
                 <h2 className="capitalize text-[110px] font-bold leading-[100%] max-md: max-sm:text-[41px]">
@@ -241,79 +236,74 @@ export default function page() {
             </div>
 
             <div className="pt-9 overflow-hidden flex items-center max-sm:pt-4">
-              <div className="flex items-center">
-                  
-              </div>
+              <div className="flex items-center"></div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Experience End*/}
-
       {/* Projects Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[40px] max-md:py-[40px] max-sm:py-[40px]">
-      <div className="flex justify-between items-center max-xl:flex-col-reverse max-xl:gap-10">
+        <div className="flex justify-between items-center max-xl:flex-col-reverse max-xl:gap-10">
           <div className="max-w-[588px] max-xl:w-full">
             <div className="w-full max-w-[588px] relative max-xl:w-full">
               <div>
-                <Image
-              src={"/ourmission.png"}
-              width={518}
-              height={300}
-                />
+                <Image src={"/ourmission.png"} width={518} height={300} />
               </div>
               <div className="absolute top-auto bottom-[0%] left-auto -right-[119px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
                 <Image
-                src={"/ourmission-sub.png"}
-                width={256}
-                height={260}
-                style={{width:'100%'}}
-                  />
+                  src={"/ourmission-sub.png"}
+                  width={256}
+                  height={260}
+                  style={{ width: "100%" }}
+                />
               </div>
             </div>
           </div>
 
           <div>
-          <Tabs defaultValue="account" className="w-[600px] max-xl:w-full">
-            <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="mission">Our mission</TabsTrigger>
-              <TabsTrigger value="vision">Our vision</TabsTrigger>
-              <TabsTrigger value="goal">Our goal</TabsTrigger>
-            </TabsList>
-            <TabsContent value="mission" className="mt-10">
-              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">Our Team Tackles Projects With Utmost Professionalism</h2>
-              <p>
-                {
-                  "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
-                }
-              </p>
-            </TabsContent>
-            <TabsContent value="vision" className="mt-10">
-            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">Our Team Tackles Projects With Utmost Professionalism</h2>
-              <p>
-                {
-                  "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
-                }
-              </p>
-            </TabsContent>
-            <TabsContent value="goal" className="mt-10">
-            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">Our Team Tackles Projects With Utmost Professionalism</h2>
-              <p>
-                {
-                  "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
-                }
-              </p>
-            </TabsContent>
-          </Tabs>
+            <Tabs defaultValue="mission" className="w-[600px] max-xl:w-full">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="mission">Our mission</TabsTrigger>
+                <TabsTrigger value="vision">Our vision</TabsTrigger>
+                <TabsTrigger value="goal">Our goal</TabsTrigger>
+              </TabsList>
+              <TabsContent value="mission" className="mt-10">
+                <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
+                  Our Team Tackles Projects With Utmost Professionalism
+                </h2>
+                <p>
+                  {
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                  }
+                </p>
+              </TabsContent>
+              <TabsContent value="vision" className="mt-10">
+                <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
+                  Our Team Tackles Projects With Utmost Professionalism
+                </h2>
+                <p>
+                  {
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                  }
+                </p>
+              </TabsContent>
+              <TabsContent value="goal" className="mt-10">
+                <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
+                  Our Team Tackles Projects With Utmost Professionalism
+                </h2>
+                <p>
+                  {
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                  }
+                </p>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
-
       {/* Projects End*/}
-
-
+      <BottomBanner />
     </>
   );
 }

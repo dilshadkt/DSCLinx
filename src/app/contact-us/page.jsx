@@ -1,12 +1,22 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-
+import Banner from "@/components/Banner";
 const Contact = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
+      {/* Banner section Start*/}
+
+      <Banner
+        head={"Contact Us"}
+        desc={
+          "Reach out to our friendly team today and let us know how we can assist you. We're here to answer your questions, provide quotes, and schedule services to meet your needs."
+        }
+      />
+
+      {/* Banner section End*/}
+
+      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[80px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -128,31 +138,31 @@ const Contact = () => {
                     placeholder="Full Name"
                   />
 
-                <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
-                  <ContactInputBox
-                    type="text"
-                    name="Company Name"
-                    placeholder="Company Name"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="email"
-                    placeholder="Email"
-                  />
-                </div>
+                  <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
+                    <ContactInputBox
+                      type="text"
+                      name="Company Name"
+                      placeholder="Company Name"
+                    />
+                    <ContactInputBox
+                      type="text"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
 
-                <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
-                  <ContactInputBox
-                    type="text"
-                    name="Phone"
-                    placeholder="Phone"
-                  />
-                  <ContactInputBox
-                    type="text"
-                    name="Project Type"
-                    placeholder="Project Type"
-                  />
-                </div>
+                  <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
+                    <ContactInputBox
+                      type="text"
+                      name="Phone"
+                      placeholder="Phone"
+                    />
+                    <ContactInputBox
+                      type="text"
+                      name="Project Type"
+                      placeholder="Project Type"
+                    />
+                  </div>
 
                   <ContactTextArea
                     row="6"
@@ -169,14 +179,11 @@ const Contact = () => {
                     </Button>
                   </Link>
                 </form>
-                <div>
-                </div>
+                <div></div>
               </div>
             </div>
           </div>
-          <div>
-              
-          </div>
+          <div></div>
         </div>
       </section>
     </>

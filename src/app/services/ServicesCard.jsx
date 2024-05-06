@@ -32,7 +32,7 @@ const SERVICES = [
     image: "/icons/bathroom-reno.png",
   },
 ];
-export default function HomeServicesCard() {
+export default function ServicesCard() {
   return (
     <>
       {SERVICES.map((service, key) => (
@@ -41,7 +41,7 @@ export default function HomeServicesCard() {
           name={service.name}
           desc={service.desc}
           image={service.image}
-          color={"text-white"}
+          color={"text-black"}
         />
       ))}
     </>

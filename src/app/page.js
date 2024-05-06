@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import ProjectCard from "@/components/ProjectCard";
 import HomeServicesCard from "./components/HomeServicesCard";
 import HomeProjectCard from "./components/HomeProjectCard";
 import OurClient from "@/components/OurClient";
@@ -189,8 +188,7 @@ export default function Home() {
               width={700}
               height={300}
               alt="about"
-              className=" h-full max-w-full object-cover"
-            />
+              className=" h-full max-w-full object-cover"/>
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">
                 <div className="-mb-px pt-[30px] pr-[34px] pb-[32px] pl-[31px] relative max-lg:pt-[30px] max-md:px-[30px] py-[20px] bg-[#004363] max-sm:px-[24px] max-sm:py-[18px]">
@@ -502,16 +500,14 @@ export default function Home() {
         <div className="text-center">
           <div className="h-full overflow-hidden">
             <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
-             {
-              "Feedback From Our Client's Experiences"
-             }
+              {"Feedback From Our Client's Experiences"}
             </h2>
           </div>
           <div className="h-full overflow-hidden">
             <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[330px] max-sm:text-[16px]">
-             {
-             "Dive into authentic reflections from those we've proudly served. Their testimonials, echoing our commitment and expertise. Unlocking our suite of services is designed for utmost ease. With a streamlined."
-             }
+              {
+                "Dive into authentic reflections from those we've proudly served. Their testimonials, echoing our commitment and expertise. Unlocking our suite of services is designed for utmost ease. With a streamlined."
+              }
             </p>
           </div>
         </div>
@@ -532,7 +528,7 @@ export default function Home() {
 
       {/* Upcoming Start*/}
 
-      <BottomBanner/>
+      <BottomBanner />
 
       {/* Upcoming End*/}
     </>
