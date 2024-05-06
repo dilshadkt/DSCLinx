@@ -12,7 +12,7 @@ export default function BottomBanner() {
         Get Started on your construction project today!
         </h3>
 
-        <Link href="">
+        <Link href="/contact-us">
         <Button className="bg-white rounded-none text-[#004363] text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
               <span>Contact us</span>
             </Button>

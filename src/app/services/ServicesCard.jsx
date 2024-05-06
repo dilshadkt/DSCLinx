@@ -31,6 +31,36 @@ const SERVICES = [
     desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
     image: "/icons/bathroom-reno.png",
   },
+  {
+    name: "Home Renovation",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/home-renovation.png",
+  },
+  {
+    name: "Retail Remodeling",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/retail-remodeling.png",
+  },
+  {
+    name: "Plumbing Services",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/plumbing-services.png",
+  },
+  {
+    name: "Business for Sale",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/business-for-sale.png",
+  },
+  {
+    name: "Supplies",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/supplies.png",
+  },
+  {
+    name: "Your Request?",
+    desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
+    image: "/icons/your-request.png",
+  },
 ];
 export default function ServicesCard() {
   return (

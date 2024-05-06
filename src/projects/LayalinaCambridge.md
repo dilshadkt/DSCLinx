@@ -1,8 +1,8 @@
 ---
-image: "/projects/Layalina–Cambridge/01.png"
-title: "LayalinaCambridge"
+image: "/projects/Layalina–Cambridge.png"
+title: "Layalina – Cambridge"
 link: "/LayalinaCambridge"
-date: "2024-04-10"
+date: "2024-03-10"
 ---
 
 # Layalina Cambridge
