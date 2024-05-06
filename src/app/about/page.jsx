@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BottomBanner from "@/components/BottomBanner";
 import Banner from "@/components/Banner";
+import Faq from "@/components/Faq";
 
 export default function page() {
   return (
@@ -303,7 +304,21 @@ export default function page() {
         </div>
       </section>
       {/* Projects End*/}
+
+      {/* Faq Start*/}
+
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <Faq />
+      </section>
+
+      {/* Faq End*/}
+
+      {/* Upcoming Start*/}
+
       <BottomBanner />
+
+      {/* Upcoming End*/}
+
     </>
   );
 }

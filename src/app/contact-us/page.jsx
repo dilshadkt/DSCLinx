@@ -184,6 +184,9 @@ const Contact = () => {
             </div>
           </div>
           <div></div>
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.3661637072705!2d-79.5265222!3d43.74449250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33a5e18a2695%3A0x699e32a22c408c3!2sDSClinx%20Inc.!5e0!3m2!1sen!2sin!4v1714990494247!5m2!1sen!2sin" width={"100%"} height={"450px"} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="mt-20"></iframe>
+          
         </div>
       </section>
     </>
@@ -200,7 +203,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full bg-transparent resize-none border border-stroke px-[14px] py-3 text-base text-body-color outline-none"
+          className="w-full bg-transparent resize-none border border-stroke px-[14px] py-3 text-base text-white outline-none"
           defaultValue={defaultValue}
         />
       </div>
@@ -216,7 +219,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full bg-transparent border border-stroke px-[14px] py-3 text-base text-body-color outline-none "
+          className="w-full bg-transparent border border-stroke px-[14px] py-3 text-base text-white outline-none "
         />
       </div>
     </>
