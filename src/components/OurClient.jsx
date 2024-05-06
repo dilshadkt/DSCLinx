@@ -12,36 +12,64 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const CLIENTS = [
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/esso.png",
+    name: "Esso",
+  },
+  {
+    image: "/client/Pizza Hut.png",
+    name: "Pizza Hut",
+  },
+  {
+    image: "/client/Subway.png",
+    name: "Subway",
   },
   {
     image: "/client/circlek.png",
     name: "Circlek",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/ButterChickenRoti.png",
+    name: "Butter Chicken Roti",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/Hastymarket.png",
+    name: "Hastymarket",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/Gulf.png",
+    name: "Gulf",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/Dickeys.png",
+    name: "Dickeys",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/Daisy-Mart  .png",
+    name: "Daisy Mart",
   },
   {
-    image: "/client/circlek.png",
-    name: "Circlek",
+    image: "/client/tacorito.png",
+    name: "Tacorito",
+  },
+  {
+    image: "/client/Colaba Junction.png",
+    name: "Colaba Junction",
+  },
+  {
+    image: "/client/Hurry Curry.png",
+    name: "Hurry Curry",
+  },
+  {
+    image: "/client/BeaverTails.png",
+    name: "BeaverTails",
+  },
+  {
+    image: "/client/Patro Canada.png",
+    name: "Patro Canada",
+  },
+  {
+    image: "/client/Tokyo Smoke.png",
+    name: "Tokyo Smoke ",
   },
 ];
 
@@ -83,7 +111,7 @@ export default function OurClient() {
                 height={130}
                 src={client.image}
                 alt=""
-               style={{height: '100%', width: '100%'}} 
+               style={{height: '111px', width: '100%', objectFit: 'contain'}} 
               />
               </div>
               <p className="text-left">{client.name}</p>
