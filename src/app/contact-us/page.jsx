@@ -22,9 +22,9 @@ const Contact = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <div class="gap-x-[15px] gap-y-[5px] items-center flex overflow-hidden">
-                  <div class="w-[20px] h-px bg-[#000] max-lg:hidden"></div>
-                  <div class="sub-title text-[#004363] uppercase text-[18px] font-semibold leading-[150%] mb-4">
+                <div className="gap-x-[15px] gap-y-[5px] items-center flex overflow-hidden">
+                  <div className="w-[20px] h-px bg-[#000] max-lg:hidden"></div>
+                  <div className="sub-title text-[#004363] uppercase text-[18px] font-semibold leading-[150%] mb-4">
                     Get in touch
                   </div>
                 </div>
