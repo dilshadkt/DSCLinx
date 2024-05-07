@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const links = [
   {
@@ -31,11 +32,13 @@ const links = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname()
 
   return (
     <div className="border-b-2 border-solid border-[#c7c7c7]">
       <div className="relative container py-2 gap-8 flex items-center justify-between ">
         <div className="relative">
+          <Link href="/">
           <Image
             src={"/logo.png"}
             width={128}
@@ -43,15 +46,16 @@ export default function Header() {
             className="w-23"
             alt="Logo"
           />
+          </Link>
         </div>
         <div className="items-center justify-between text-text xl:basis-3/5 md:basis-4/5 text-lg hidden md:flex">
           {links.map((item) => (
-            <Link href={item.link} key={item.link}>
+            <Link href={item.link} key={item.link} className={`${pathname === item.link && "text-[#004363] font-semibold"} hover:text-[#004363]`}>
               {item.title}
             </Link>
           ))}
-          <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 hidden md:flex">
-            +1 (416) 886-3145
+          <Button className="bg-[#004363] rounded-none	 text-lg px-6 py-6 hidden md:flex gap-4">
+          <Phone /> +1 (416) 886-3145
           </Button>
         </div>
         {/* mobile */}

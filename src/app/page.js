@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import HomeServicesCard from "./components/HomeServicesCard";
@@ -10,147 +7,15 @@ import OurClient from "@/components/OurClient";
 import Faq from "@/components/Faq";
 import Testimonials from "@/components/Testimonials";
 import BottomBanner from "@/components/BottomBanner";
+import HeroSwipper from "@/components/HeroSwipper";
 
-export default function Home() {
-  useEffect(() => {
-    console.log("Initializing Swiper");
-    const interleaveOffset = 0.5;
-    const swiperOptions = {
-      loop: true,
-      speed: 1000,
-      parallax: true,
-      autoplay: {
-        delay: 6500,
-        disableOnInteraction: false,
-      },
-      watchSlidesProgress: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      on: {
-        progress: function () {
-          const swiper = this;
-          for (let i = 0; i < swiper.slides.length; i++) {
-            const slideProgress = swiper.slides[i].progress;
-            const innerOffset = swiper.width * interleaveOffset;
-            const innerTranslate = slideProgress * innerOffset;
-            swiper.slides[i].querySelector(".slide-inner").style.transform =
-              "translate3d(" + innerTranslate + "px, 0, 0)";
-          }
-        },
-        touchStart: function () {
-          const swiper = this;
-          for (let i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].style.transition = "";
-          }
-        },
-        setTransition: function (speed) {
-          const swiper = this;
-          for (let i = 0; i < swiper.slides.length; i++) {
-            swiper.slides[i].style.transition = speed + "ms";
-            swiper.slides[i].querySelector(".slide-inner").style.transition =
-              speed + "ms";
-          }
-        },
-      },
-    };
-
-    const swiper = new Swiper(".swiper-container", swiperOptions);
-    console.log("Swiper initialized");
-
-    // DATA BACKGROUND IMAGE
-    const sliderBgSetting = document.querySelectorAll(".slide-bg-image");
-    sliderBgSetting.forEach(function (slider) {
-      if (slider.getAttribute("data-background")) {
-        slider.style.backgroundImage =
-          "url(" + slider.getAttribute("data-background") + ")";
-      }
-    });
-
-    return () => {
-      console.log("Destroying Swiper");
-      // Clean up Swiper instance
-      swiper.destroy();
-    };
-  }, []); // Empty dependency array ensures this effect runs only once
-
+export default function home() {
   return (
     <>
-      {/* <SwiperTest /> */}
 
-      <>
-        {/* start of hero */}
-        <section className="hero-slider hero-style">
-          <div className="swiper-container">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div
-                  className="slide-inner slide-bg-image"
-                  data-background="/banners/banner001.png"
-                >
-                  <div className="container">
-                    <div data-swiper-parallax={300} className="slide-title">
-                      <h2>Elegant Wall Painting Solutions For Your Home</h2>
-                    </div>
-                    <div data-swiper-parallax={400} className="slide-text">
-                      <p>
-                        Elevate your living spaces with unparalleled wall
-                        painting solutions. Experience artistry, durability, and
-                        charm in every brushstroke, tailored perfectly for your
-                        home.
-                      </p>
-                    </div>
-                    <div className="clearfix" />
-                    <div data-swiper-parallax={500} className="slide-btns">
-                      <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
-                        <span>Contact us</span>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                {/* end slide-inner */}
-              </div>
-              {/* end swiper-slide */}
-              <div className="swiper-slide">
-                <div
-                  className="slide-inner slide-bg-image"
-                  data-background="/banners/banner001.png"
-                >
-                  <div className="container">
-                    <div data-swiper-parallax={300} className="slide-title">
-                      <h2>Elegant Wall Painting Solutions For Your Home</h2>
-                    </div>
-                    <div data-swiper-parallax={400} className="slide-text">
-                      <p>
-                        Elevate your living spaces with unparalleled wall
-                        painting solutions. Experience artistry, durability, and
-                        charm in every brushstroke, tailored perfectly for your
-                        home.
-                      </p>
-                    </div>
-                    <div className="clearfix" />
-                    <div data-swiper-parallax={500} className="slide-btns">
-                      <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 hidden md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
-                        <span>Contact us</span>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-                {/* end slide-inner */}
-              </div>
-              {/* end swiper-slide */}
-            </div>
-            {/* end swiper-wrapper */}
-            {/* swipper controls */}
-          </div>
-        </section>
-        {/* end of hero slider */}
-      </>
+      {/* start of hero */}
+      <HeroSwipper />
+      {/* end of hero slider */}
 
     {/* Counter section Start*/}
 
@@ -217,7 +82,7 @@ export default function Home() {
               width={700}
               height={300}
               alt="about"
-              className=" h-full max-w-full object-cover"/>
+              className=" h-full max-w-full object-cover" />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">
                 <div className="-mb-px pt-[30px] pr-[34px] pb-[32px] pl-[31px] relative max-lg:pt-[30px] max-md:px-[30px] py-[20px] bg-[#004363] max-sm:px-[24px] max-sm:py-[18px]">
@@ -436,9 +301,11 @@ export default function Home() {
                 in, and experience a hassle-free approach to achievement.
               </p>
             </div>
-            <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
-              <span>Contact us</span>
-            </Button>
+            <Link href="contact-us">
+              <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
+                <span>Contact us</span>
+              </Button>
+            </Link>
           </div>
         </div>
 
@@ -526,7 +393,7 @@ export default function Home() {
           <div className="mt-8 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
             <HomeServicesCard />
           </div>
-          <Link href="" className="flex justify-center mt-20">
+          <Link href="/services" className="flex justify-center mt-20">
             <Button
               variant="secondary"
               className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white"

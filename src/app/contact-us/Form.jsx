@@ -3,9 +3,19 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
+import { SERVICES } from "../services/ServicesCard";
+
 
 export default function Form() {
     const [result, setResult] = useState("");
+    const [project, setProject] = useState("")
 
     const onSubmit = async (event) => {
         event.preventDefault();
@@ -15,13 +25,13 @@ export default function Form() {
 
         const hCaptcha = form.querySelector(
             "textarea[name=h-captcha-response]"
-          ).value;
-    
-          if (!hCaptcha) {
+        ).value;
+
+        if (!hCaptcha) {
             e.preventDefault();
             alert("Please fill out captcha field");
             return;
-          }
+        }
 
         formData.append("access_key", "e6b999bc-a83d-4df7-9c61-73edbd1dc706");
 
@@ -73,11 +83,25 @@ export default function Form() {
                             name="Phone"
                             placeholder="Phone"
                         />
-                        <ContactInputBox
+                        <div className="mb-6">
+                            <Select onValueChange={(val)=> setProject(val)} >
+                                <SelectTrigger className="bg-transparent !ring-offset-0 !ring-0 rounded-none h-auto resize-none border border-stroke px-[14px] py-3 text-base text-white outline-none">
+                                    <SelectValue placeholder="Project Type" />
+                                </SelectTrigger>
+                                <SelectContent>
+                                    {SERVICES.map((item, i) => (
+                                        <SelectItem key={i} value={item.name}>{item.name}</SelectItem>
+
+                                    ))}
+                                </SelectContent>
+                            </Select>
+                        </div>
+
+                        {/* <ContactInputBox
                             type="text"
                             name="Project Type"
                             placeholder="Project Type"
-                        />
+                        /> */}
                     </div>
 
                     <ContactTextArea
@@ -88,6 +112,7 @@ export default function Form() {
                     />
                     <div class="h-captcha" data-captcha="true"></div>
                     <input type="checkbox" name="botcheck" className="hidden" ></input>
+                    <input type="text" name="projectType" value={project} className="hidden" ></input>
                     <Button
                         type="submit"
                         variant="secondary"
