@@ -4,22 +4,22 @@ const PROJECTS = [
   {
     name: "Pizza Hut – Richmond Hill",
     image: "/projects/PizzaHut–Rich.png",
-    link: "/pizzahut–richmondhill",
+    link: "/PizzaHutRichmondHill",
   },
   {
     name: "Layalina – Cambridge",
     image: "/projects/Layalina–Cambridge.png",
-    link: "/layalina–cambridge",
+    link: "/LayalinaCambridge",
   },
   {
     name: "Bridal Shop – 111 Berkeley St.",
     image: "/projects/BridalShop–Berkeley.png",
-    link: "/bridalshop",
+    link: "/BridalShopBerkeley",
   },
   {
     name: "Centerpoint Hurry Curry",
     image: "/projects/CenterpointHurryCurry.png",
-    link: "/centerpoint-hurrycurry",
+    link: "/CenterpointHurryCurry",
   },
 ];
 

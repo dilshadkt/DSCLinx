@@ -6,7 +6,7 @@ export default function ProjectCard({ link, image, name }) {
   return (
     <>
       <Link
-        href={link ? link : ""}
+        href={link ? `/projects${link}` : ""}
         className="rounded-[10px] overflow-hidden relative cursor-pointer	"
       >
         <Image width={656} height={523}
