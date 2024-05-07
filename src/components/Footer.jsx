@@ -69,22 +69,22 @@ export default function Home() {
               </h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <Link href="#">
+                  <Link href="/about">
                     About
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#">
+                  <Link href="/services">
                     Services
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#">
+                  <Link href="/projects">
                     Projects
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="#">
+                  <Link href="/contact-us">
                     Contact Us
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="">
               <Link target="_blank" href="https://www.moonleyinteractive.com/">
                 {" "}
-                Powered by Moonleyinteractive.com{" "}
+                Powered by Moonleyinteractive{" "}
               </Link>
             </div>
           </div>
