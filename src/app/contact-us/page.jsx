@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Banner from "@/components/Banner";
+import Form from "./Form";
 const Contact = () => {
   return (
     <>
@@ -126,62 +127,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="relative bg-[#004363] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
-                  <h2 className="flex justify-center text-white text-4xl font-semibold pb-9 max-sm:text-[27px]">
-                    Contact Us
-                  </h2>
-                  <ContactInputBox
-                    type="text"
-                    name="name"
-                    placeholder="Full Name"
-                  />
-
-                  <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
-                    <ContactInputBox
-                      type="text"
-                      name="Company Name"
-                      placeholder="Company Name"
-                    />
-                    <ContactInputBox
-                      type="text"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-x-10 max-md:grid-cols-1">
-                    <ContactInputBox
-                      type="text"
-                      name="Phone"
-                      placeholder="Phone"
-                    />
-                    <ContactInputBox
-                      type="text"
-                      name="Project Type"
-                      placeholder="Project Type"
-                    />
-                  </div>
-
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
-                  />
-                  <Link href="" className="flex">
-                    <Button
-                      variant="secondary"
-                      className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white"
-                    >
-                      <span>Submit</span>
-                    </Button>
-                  </Link>
-                </form>
-                <div></div>
-              </div>
-            </div>
+            <Form />
           </div>
           <div></div>
           
@@ -194,34 +140,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full bg-transparent resize-none border border-stroke px-[14px] py-3 text-base text-white outline-none"
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
-
-const ContactInputBox = ({ type, placeholder, name }) => {
-  return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full bg-transparent border border-stroke px-[14px] py-3 text-base text-white outline-none "
-        />
-      </div>
-    </>
-  );
-};
