@@ -54,9 +54,11 @@ export default function Header() {
               {item.title}
             </Link>
           ))}
+          <Link href="tel:+1 (416)886-3145">
           <Button className="bg-[#004363] rounded-none	 text-lg px-6 py-6 hidden md:flex gap-4">
           <Phone /> +1 (416) 886-3145
           </Button>
+          </Link>
         </div>
         {/* mobile */}
         <Menu
@@ -79,7 +81,7 @@ export default function Header() {
                 className="md:hidden text-secondary cursor-pointer fixed top-2 right-4 z-[2]"
                 size={40}
               />
-              <div className="flex mt-16 flex-col items-center justify-center gap-8 text-white text-3xl hover:underline">
+              <div className="flex mt-16 flex-col items-center justify-center gap-8 text-white text-3xl">
                 {links.map((item) => (
                   <Link href={item.link} key={item.link}>
                     {item.title}

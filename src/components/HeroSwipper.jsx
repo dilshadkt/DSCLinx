@@ -75,7 +75,7 @@ export default function HeroSwipper() {
           <div className="swiper-slide">
             <div
               className="slide-inner slide-bg-image"
-              data-background="/banners/banner001.png"
+              data-background="/banners/banner001.jpg"
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
@@ -90,7 +90,7 @@ export default function HeroSwipper() {
                 </div>
                 <div className="clearfix" />
                 <div data-swiper-parallax={500} className="slide-btns">
-                  <Button className="bg-[#004363] rounded-none	 text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
+                  <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
                     <span>Contact us</span>
                   </Button>
                 </div>
@@ -117,7 +117,7 @@ export default function HeroSwipper() {
                 </div>
                 <div className="clearfix" />
                 <div data-swiper-parallax={500} className="slide-btns">
-                  <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 hidden md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white">
+                <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
                     <span>Contact us</span>
                   </Button>
                 </div>
