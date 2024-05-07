@@ -17,7 +17,7 @@ export default function page() {
       />
       <section class="container py-[50px] overflow-hidden max-lg:py-[40px] max-md:py-[30px] max-sm:py-[20px]">
       <div className=" mb-[52px] max-lg:mb-[40px] max-md:mb-[40px]">
-        <div className="gap-x-[24px] gap-y-[24px] grid-rows-[auto_auto] grid-cols-[1fr_1fr] auto-cols-[1fr] grid max-md:grid-cols-[1fr]">
+        <div className="flex flex-col gap-4">
           <ProjectsCard totalCards={getProjects()} />
         </div>
       </div>

@@ -10,7 +10,7 @@ import {Card} from "@/components/ui/card";
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
-const CLIENTS = [
+export const CLIENTS = [
   {
     image: "/client/esso.png",
     name: "Esso",
@@ -24,7 +24,7 @@ const CLIENTS = [
     name: "Subway",
   },
   {
-    image: "/client/circlek.png",
+    image: "/client/Circlek.png",
     name: "Circlek",
   },
   {
@@ -44,7 +44,7 @@ const CLIENTS = [
     name: "Dickeys",
   },
   {
-    image: "/client/Daisy-Mart  .png",
+    image: "/client/Daisy-Mart.png",
     name: "Daisy Mart",
   },
   {
@@ -110,8 +110,9 @@ export default function OurClient() {
                 width={130}
                 height={130}
                 src={client.image}
+                className="!h-[111px] w-full !object-contain"
                 alt=""
-               style={{height: '111px', width: '100%', objectFit: 'contain'}} 
+              //  style={{height: '111px', width: '100%', objectFit: 'contain'}} 
               />
               </div>
               <p className="text-left">{client.name}</p>

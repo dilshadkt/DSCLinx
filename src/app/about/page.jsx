@@ -1,9 +1,21 @@
+"use client"
+import AutoScroll from "embla-carousel-auto-scroll";
 import React from "react";
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import BottomBanner from "@/components/BottomBanner";
 import Banner from "@/components/Banner";
 import Faq from "@/components/Faq";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { CLIENTS } from "@/components/OurClient";
+
 
 export default function page() {
   return (
@@ -138,13 +150,13 @@ export default function page() {
           </div>
         </div>
 
-        <div className="gap-x-[20px] gap-y-[20px] grid-rows-[auto_auto] grid-cols-[1fr_minmax(520px,_auto)_1fr] auto-cols-[1fr] mt-[64px] grid max-lg:grid-cols-[1fr_1fr] max-lg:mt-[50px] max-md:mt-[40px] max-sm:grid-cols-[1fr] max-sm:mt-[20px]">
+        <div className="gap-x-[20px] gap-y-[20px] grid-rows-[350px_350px] grid-cols-[1fr_minmax(520px,_auto)_1fr] auto-cols-[1fr] mt-[64px] grid max-lg:grid-cols-[1fr_1fr] max-lg:mt-[50px] max-md:mt-[40px] max-sm:grid-cols-[1fr] max-sm:mt-[20px]">
           <div className="border-[1px] border-[#004363] overflow-hidden">
             <Image
               src={"/ourwork/ourw1.png"}
               width={386}
               height={323}
-              className="w-[100%] h-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt="ourwork"
             />
           </div>
@@ -154,7 +166,7 @@ export default function page() {
               src={"/ourwork/ourw3.png"}
               width={640}
               height={534}
-              className="w-[100%] h-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt="ourwork"
             />
           </div>
@@ -164,7 +176,7 @@ export default function page() {
               src={"/ourwork/ourw4.png"}
               width={386}
               height={272}
-              className="w-[100%] h-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt="ourwork"
             />
           </div>
@@ -174,7 +186,7 @@ export default function page() {
               src={"/ourwork/ourw2.png"}
               width={384}
               height={320}
-              className="w-[100%] h-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt="ourwork"
             />
           </div>
@@ -184,7 +196,7 @@ export default function page() {
               src={"/ourwork/ourw5.png"}
               width={384}
               height={320}
-              className="w-[100%] h-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt="ourwork"
             />
           </div>
@@ -224,7 +236,7 @@ export default function page() {
             </div>
           </div>
           <div className="w-full bg-[#E0EFF6] p-[68px] text-black max-lg:p-[50px] max-sm:p-[30px]">
-            <div className="border-2 border-b-black pb-10 max-sm:pb-4">
+            <div className="border-b-2 border-b-black pb-10 max-sm:pb-4">
               <div className="gap-x-[15px] gap-y-[15px] items-center mb-[12px] flex overflow-hidden">
                 <h4 className="text-[29px] font-semibold tracking-[-0.56px] leading-[133.6%] max-sm:text-[18px]">
                   Our Trusted Partners
@@ -237,7 +249,34 @@ export default function page() {
             </div>
 
             <div className="pt-9 overflow-hidden flex items-center max-sm:pt-4">
-              <div className="flex items-center"></div>
+              <div className="flex w-full">
+                <Carousel
+                opts={{
+                  loop: true
+                }}
+                 plugins={[
+                 AutoScroll({
+                  stopOnInteraction: false
+                 })
+                ]}
+                className="w-full">
+                  <CarouselContent>
+                    {CLIENTS.map((item, i)=>(
+                    <CarouselItem key={i} className="basis-1/5">
+                      <Image
+                        width={130}
+                        height={130}
+                        src={item.image}
+                        className="!h-[111px] w-full !object-contain"
+                        alt=""
+                      //  style={{height: '111px', width: '100%', objectFit: 'contain'}} 
+                      />
+                    </CarouselItem>
+                     ))}
+                  </CarouselContent>
+                </Carousel>
+
+              </div>
             </div>
           </div>
         </div>
