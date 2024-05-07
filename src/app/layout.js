@@ -22,8 +22,15 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" />
-        <Script src="https://web3forms.com/client/script.js" async defer></Script>
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+          async
+        ></Script>
+        <Script
+          src="https://web3forms.com/client/script.js"
+          async
+          defer
+        ></Script>
       </body>
     </html>
   );
