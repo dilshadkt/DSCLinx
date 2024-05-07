@@ -1,6 +1,6 @@
 import ServiceCard from "@/components/ServiceCard";
 
-const SERVICES = [
+export const SERVICES = [
   {
     name: "Architecture Drawing",
     desc: "Unlocking our suite of services is designed for utmost ease. With a streamlined process that emphasizes user-friendly",
