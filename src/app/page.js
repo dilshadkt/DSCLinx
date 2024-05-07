@@ -8,6 +8,7 @@ import Faq from "@/components/Faq";
 import Testimonials from "@/components/Testimonials";
 import BottomBanner from "@/components/BottomBanner";
 import HeroSwipper from "@/components/HeroSwipper";
+import Counter from "@/components/Counter";
 
 export default function home() {
   return (
@@ -17,66 +18,55 @@ export default function home() {
       <HeroSwipper />
       {/* end of hero slider */}
 
-    {/* Counter section Start*/}
+      {/* Counter section Start*/}
 
-    <div className="gap-x-[61px] gap-y-[61px] items-start flex max-lg:gap-x-[0px] max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px] max-lg:container">
+      <div className="gap-x-[61px] gap-y-[61px] items-start flex max-lg:gap-x-[0px] max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px] max-lg:container">
         <div className="w-full max-w-[684px] justify-between items-center py-[44px] pl-[90px] max-lg:pl-0 flex max-lg:max-w-full max-lg:text-white max-lg:gap-[20px] max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:mb-[40px] max-lg:py-0 max-lg:flex max-lg:relative max-md:gap-[15px] max-sm:gap-[10px]">
-          <div>
+          {/* <div>
             <div className="text-[48px] font-bold h-[62px] justify-start items-center flex overflow-hidden max-md:h-[46px] max-sm:h-[48px]">
               <h2 className="max-lg:text-[40px] max-md:text-[36px] max-sm:text-[30px]">20</h2>
               <p>+</p>
             </div>
             <h4>Years of experience</h4>
-          </div>
+          </div> */}
+          <Counter text="Years of experience" number={20}  />
 
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
 
-          <div>
-            <div className="text-[48px] font-bold h-[62px] justify-start items-center flex overflow-hidden max-md:h-[46px] max-sm:h-[48px]">
-              <h2 className="max-lg:text-[40px] max-md:text-[36px] max-sm:text-[30px]">640</h2>
-              <p>+</p>
-            </div>
-            <h4>Successful Projects</h4>
-          </div>
+          <Counter text="Successful Projects" number={640} step={10} />
 
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
 
-          <div>
-            <div className="text-[48px] font-bold h-[62px] justify-start items-center flex overflow-hidden max-md:h-[46px] max-sm:h-[48px]">
-              <h2 className="max-lg:text-[40px] max-md:text-[36px] max-sm:text-[30px]">256</h2>
-              <p>+</p>
-            </div>
-            <h4>Happy Clients</h4>
-          </div>
+          <Counter text="Happy Clients" number={256} step={5} />
 
         </div>
         <div className="w-full z-10">
-            <div className="p-[70px] max-lg:p-[45px] relative max-lg:static bottom-[120px] bg-[#004363] text-white">
-              <div>
-                <div className="h-full overflow-hidden">
-                    <div className="tracking-[.3px] capitalize mt-0 mb-[16px] text-[34px] font-semibold leading-[120%] max-w-[554px] max-md:text-[34px] max-sm:text-[20px]">
-                    {" ”In The Heart Of The Town, DSCLINX Stands Unparalleled In Excellence.” "}
-                    </div>
-                </div>
-              </div>
-              <div className="justify-between items-center flex overflow-hidden">
-                <div className="w-[295px] h-[2px] bg-[rgba(255,_255,_255,_.5)] rounded-[5px] ml-[17px] max-md:w-[213px] max-sm:w-[100px]"></div>
-                <div className="text-right">
-                  <h4 className="mb-[3px] text-[18px] font-medium leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">ALEY KHALIL</h4>
-                  <h6>CEO, OMASH</h6>
+          <div className="p-[70px] max-lg:p-[45px] relative max-lg:static bottom-[120px] bg-[#004363] text-white">
+            <div>
+              <div className="h-full overflow-hidden">
+                <div className="tracking-[.3px] capitalize mt-0 mb-[16px] text-[34px] font-semibold leading-[120%] max-w-[554px] max-md:text-[34px] max-sm:text-[20px]">
+                  {" ”In The Heart Of The Town, DSCLINX Stands Unparalleled In Excellence.” "}
                 </div>
               </div>
             </div>
+            <div className="justify-between items-center flex overflow-hidden">
+              <div className="w-[295px] h-[2px] bg-[rgba(255,_255,_255,_.5)] rounded-[5px] ml-[17px] max-md:w-[213px] max-sm:w-[100px]"></div>
+              <div className="text-right">
+                <h4 className="mb-[3px] text-[18px] font-medium leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">ALEY KHALIL</h4>
+                <h6>CEO, OMASH</h6>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    {/* Counter section End*/}
+      {/* Counter section End*/}
 
       {/* About Us Start*/}
 
       <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="w-full flex max-lg:flex-col gap-10 max-sm:gap-1">
-        <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
+          <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
             <Image
               src="/abouthome.png"
               width={700}
