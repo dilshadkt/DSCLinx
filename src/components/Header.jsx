@@ -38,7 +38,7 @@ export default function Header() {
     <div className="border-b-2 border-solid border-[#c7c7c7]">
       <div className="relative container py-2 gap-8 flex items-center justify-between ">
         <div className="relative">
-          <Link href="/">
+          <Link href="/" onClick={() => setOpen(false)}>
           <Image
             src={"/logo.png"}
             width={128}
@@ -50,11 +50,11 @@ export default function Header() {
         </div>
         <div className="items-center justify-between text-text xl:basis-3/5 md:basis-4/5 text-lg hidden md:flex">
           {links.map((item) => (
-            <Link href={item.link} key={item.link} className={`${pathname === item.link && "text-[#004363] font-semibold"} hover:text-[#004363]`}>
+            <Link onClick={() => setOpen(false)} href={item.link} key={item.link} className={`${pathname === item.link && "text-[#004363] font-semibold"} hover:text-[#004363]`}>
               {item.title}
             </Link>
           ))}
-          <Link href="tel:+1 (416)886-3145">
+          <Link onClick={() => setOpen(false)} href="tel:+1 (416)886-3145">
           <Button className="bg-[#004363] rounded-none	 text-lg px-6 py-6 hidden md:flex gap-4">
           <Phone /> +1 (416) 886-3145
           </Button>
@@ -67,7 +67,7 @@ export default function Header() {
           size={40}
         />
         {open && (
-          <div className="fixed z-10 inset-0 bg-[#004363] animate-reveal">
+          <div className="fixed z-20 inset-0 bg-[#004363] animate-reveal">
             <div className="relative w-full h-full flex items-center justify-center">
               <Image
                 src={"/logo-2.png"}
@@ -83,7 +83,7 @@ export default function Header() {
               />
               <div className="flex mt-16 flex-col items-center justify-center gap-8 text-white text-3xl">
                 {links.map((item) => (
-                  <Link href={item.link} key={item.link}>
+                  <Link onClick={() => setOpen(false)} href={item.link} key={item.link}>
                     {item.title}
                   </Link>
                 ))}
