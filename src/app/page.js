@@ -67,14 +67,14 @@ export default function home() {
       {/* About Us Start*/}
 
       <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-        <div className="w-full flex max-lg:flex-col gap-10 max-sm:gap-1">
+        <div className="w-full flex max-lg:flex-col-reverse gap-10 max-sm:gap-5">
           <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
             <Image
               src="/abouthome.png"
               width={700}
               height={300}
               alt="about"
-              className=" h-full max-w-full object-cover"
+              className=" h-full w-full object-cover"
             />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">

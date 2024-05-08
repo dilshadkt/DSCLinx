@@ -103,7 +103,7 @@ export default function page() {
               width={700}
               height={300}
               alt="about"
-              className=" h-full max-w-full object-cover"
+              className=" h-full w-full object-cover"
             />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">

@@ -54,7 +54,8 @@ export default function Home() {
                 {SOCIALS.map((social, key) => (
                   <Link
                     key={key}
-                    href={social.link} target="_blank"
+                    href={social.link}
+                    target="_blank"
                     className="text-gray-400 hover:text-white-900 dark:hover:text-white"
                   >
                     {social.icon}
@@ -69,24 +70,16 @@ export default function Home() {
               </h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <Link href="/about">
-                    About
-                  </Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/services">
-                    Services
-                  </Link>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/projects">
-                    Projects
-                  </Link>
+                  <Link href="/projects">Projects</Link>
                 </li>
                 <li className="mb-4">
-                  <Link href="/contact-us">
-                    Contact Us
-                  </Link>
+                  <Link href="/contact-us">Contact Us</Link>
                 </li>
               </ul>
             </div>
@@ -96,7 +89,10 @@ export default function Home() {
               </h2>
               <ul className="text-white">
                 <li className="mb-4">
-                  <Link target="_blank" href="https://maps.app.goo.gl/TATuCdijyyUCVcF17">
+                  <Link
+                    target="_blank"
+                    href="https://maps.app.goo.gl/TATuCdijyyUCVcF17"
+                  >
                     168 Oakdale Rd unit 6, North York, ON M3N 1V9, Canada
                   </Link>
                 </li>
@@ -114,13 +110,11 @@ export default function Home() {
             </div>
           </div>
           <div className="px-4 py-6 border-t-2 dark:bg-gray-700 flex justify-between items-center max-md:flex-col">
-            <span className="">
-            Copyright ©2024 by DSCLINX 
-            </span>
+            <span className="">Copyright ©2024 by DSCLINX</span>
             <div className="">
               <Link target="_blank" href="https://www.moonleyinteractive.com/">
                 {" "}
-                Powered by Moonleyinteractive{" "}
+                Powered by MoonleyInteractive{" "}
               </Link>
             </div>
           </div>
