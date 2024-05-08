@@ -1,5 +1,5 @@
 ---
-image: "/projects/Leymoon – Cambridge.png"
+image: "/projects/LeymoonCambridge.png"
 title: "Leymoon – Cambridge"
 link: "/LeymoonCambridge"
 date: "2024-01-11"

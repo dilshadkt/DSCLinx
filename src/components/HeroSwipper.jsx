@@ -79,13 +79,13 @@ export default function HeroSwipper() {
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
-                  <h2>Elegant Wall Painting Solutions For Your Home</h2>
+                  <h2>Elegant Wall Solutions For Your Home</h2>
                 </div>
                 <div data-swiper-parallax={400} className="slide-text">
                   <p>
-                    Elevate your living spaces with unparalleled wall painting
-                    solutions. Experience artistry, durability, and charm in
-                    every brushstroke, tailored perfectly for your home.
+                    Elevate your living spaces with unparalleled wall solutions.
+                    Experience artistry, durability, and charm in every
+                    brushstroke, tailored perfectly for your home.
                   </p>
                 </div>
                 <div className="clearfix" />
@@ -106,18 +106,18 @@ export default function HeroSwipper() {
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
-                  <h2>Elegant Wall Painting Solutions For Your Home</h2>
+                  <h2>Elegant Wall Solutions For Your Home</h2>
                 </div>
                 <div data-swiper-parallax={400} className="slide-text">
                   <p>
-                    Elevate your living spaces with unparalleled wall painting
-                    solutions. Experience artistry, durability, and charm in
-                    every brushstroke, tailored perfectly for your home.
+                    Elevate your living spaces with unparalleled wall solutions.
+                    Experience artistry, durability, and charm in every
+                    brushstroke, tailored perfectly for your home.
                   </p>
                 </div>
                 <div className="clearfix" />
                 <div data-swiper-parallax={500} className="slide-btns">
-                <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
+                  <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
                     <span>Contact us</span>
                   </Button>
                 </div>

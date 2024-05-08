@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import AutoScroll from "embla-carousel-auto-scroll";
 import React from "react";
 import Image from "next/image";
@@ -13,9 +13,8 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
+} from "@/components/ui/carousel";
 import { CLIENTS } from "@/components/OurClient";
-
 
 export default function page() {
   return (
@@ -251,31 +250,31 @@ export default function page() {
             <div className="pt-9 overflow-hidden flex items-center max-sm:pt-4">
               <div className="flex w-full">
                 <Carousel
-                opts={{
-                  loop: true
-                }}
-                 plugins={[
-                 AutoScroll({
-                  stopOnInteraction: false
-                 })
-                ]}
-                className="w-full">
+                  opts={{
+                    loop: true,
+                  }}
+                  plugins={[
+                    AutoScroll({
+                      stopOnInteraction: false,
+                    }),
+                  ]}
+                  className="w-full"
+                >
                   <CarouselContent>
-                    {CLIENTS.map((item, i)=>(
-                    <CarouselItem key={i} className="basis-1/5">
-                      <Image
-                        width={130}
-                        height={130}
-                        src={item.image}
-                        className="!h-[111px] w-full !object-contain"
-                        alt=""
-                      //  style={{height: '111px', width: '100%', objectFit: 'contain'}} 
-                      />
-                    </CarouselItem>
-                     ))}
+                    {CLIENTS.map((item, i) => (
+                      <CarouselItem key={i} className="basis-1/5">
+                        <Image
+                          width={130}
+                          height={130}
+                          src={item.image}
+                          className="!h-[111px] w-full !object-contain"
+                          alt=""
+                          //  style={{height: '111px', width: '100%', objectFit: 'contain'}}
+                        />
+                      </CarouselItem>
+                    ))}
                   </CarouselContent>
                 </Carousel>
-
               </div>
             </div>
           </div>
@@ -314,7 +313,7 @@ export default function page() {
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
                   }
                 </p>
               </TabsContent>
@@ -324,7 +323,7 @@ export default function page() {
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
                   }
                 </p>
               </TabsContent>
@@ -334,7 +333,7 @@ export default function page() {
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal paint with insights from industry experts. family, united by the shared love Check back our"
+                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
                   }
                 </p>
               </TabsContent>
@@ -357,7 +356,6 @@ export default function page() {
       <BottomBanner />
 
       {/* Upcoming End*/}
-
     </>
   );
 }

@@ -13,7 +13,6 @@ import Counter from "@/components/Counter";
 export default function home() {
   return (
     <>
-
       {/* start of hero */}
       <HeroSwipper />
       {/* end of hero slider */}
@@ -29,7 +28,7 @@ export default function home() {
             </div>
             <h4>Years of experience</h4>
           </div> */}
-          <Counter text="Years of experience" number={20}  />
+          <Counter text="Years of experience" number={20} />
 
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
 
@@ -38,21 +37,24 @@ export default function home() {
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
 
           <Counter text="Happy Clients" number={256} step={5} />
-
         </div>
         <div className="w-full z-10">
           <div className="p-[70px] max-lg:p-[45px] relative max-lg:static bottom-[120px] bg-[#004363] text-white">
             <div>
               <div className="h-full overflow-hidden">
                 <div className="tracking-[.3px] capitalize mt-0 mb-[16px] text-[34px] font-semibold leading-[120%] max-w-[554px] max-md:text-[34px] max-sm:text-[20px]">
-                  {" ”In The Heart Of The Town, DSCLINX Stands Unparalleled In Excellence.” "}
+                  {
+                    " ”In The Heart Of The Town, DSCLINX Stands Unparalleled In Excellence.” "
+                  }
                 </div>
               </div>
             </div>
             <div className="justify-between items-center flex overflow-hidden">
               <div className="w-[295px] h-[2px] bg-[rgba(255,_255,_255,_.5)] rounded-[5px] ml-[17px] max-md:w-[213px] max-sm:w-[100px]"></div>
               <div className="text-right">
-                <h4 className="mb-[3px] text-[18px] font-medium leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">ALEY KHALIL</h4>
+                <h4 className="mb-[3px] text-[18px] font-medium leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">
+                  ALEY KHALIL
+                </h4>
                 <h6>CEO, OMASH</h6>
               </div>
             </div>
@@ -72,7 +74,8 @@ export default function home() {
               width={700}
               height={300}
               alt="about"
-              className=" h-full max-w-full object-cover" />
+              className=" h-full max-w-full object-cover"
+            />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">
                 <div className="-mb-px pt-[30px] pr-[34px] pb-[32px] pl-[31px] relative max-lg:pt-[30px] max-md:px-[30px] py-[20px] bg-[#004363] max-sm:px-[24px] max-sm:py-[18px]">
@@ -122,7 +125,6 @@ export default function home() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -201,9 +203,8 @@ export default function home() {
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Painting Excellence with
-                  Zaiwall. Our commitment is not just to color, but to a
-                  standard.
+                  Dive into the realm of Quality Excellence with Zaiwall. Our
+                  commitment is not just to color, but to a standard.
                 </p>
               </div>
 
@@ -223,9 +224,8 @@ export default function home() {
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Painting Excellence with
-                  Zaiwall. Our commitment is not just to color, but to a
-                  standard.
+                  Dive into the realm of Quality Excellence with Zaiwall. Our
+                  commitment is not just to color, but to a standard.
                 </p>
               </div>
 
@@ -245,9 +245,8 @@ export default function home() {
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Painting Excellence with
-                  Zaiwall. Our commitment is not just to color, but to a
-                  standard.
+                  Dive into the realm of Quality Excellence with Zaiwall. Our
+                  commitment is not just to color, but to a standard.
                 </p>
               </div>
             </div>
@@ -330,7 +329,7 @@ export default function home() {
                   </h4>
                 </div>
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
-                  Pay And Enjoy New Paint
+                  Pay And Enjoy
                 </h4>
                 <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
                   Seamless transactions, striking transformations. Make your

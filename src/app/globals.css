@@ -466,21 +466,14 @@ a:hover {
   border-radius: 32px;
   transform: scale(1);
   transform-origin: 50% 50%;
-  transition: transform 3.25s ease-out;
+  transition: transform .8s ease-out;
 }
 .card1:hover:before {
-  transform: scale(100);
+  transform: scale(60);
 }
-.card1:hover p {
-  transition: all 0.3s ease-out;
-  color: #000;
-}
-.card1:hover h3 {
-  transition: all 0.3s ease-out;
-  color: #000;
-}
-
+.card1:hover p,
+.card1:hover h3,
 .card1:hover .view-m {
-  transition: all 0.3s ease-out;
   color: #000;
+  transition: color 0.3s ease-out;
 }

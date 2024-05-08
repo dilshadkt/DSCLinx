@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -6,7 +6,7 @@ import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import {Card} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
@@ -107,14 +107,14 @@ export default function OurClient() {
           <SwiperSlide key={key}>
             <Card className="p-6 rounded border-2 border-[#515151]">
               <div className="flex justify-center items-center p-10">
-              <Image
-                width={130}
-                height={130}
-                src={client.image}
-                className="!h-[111px] w-full !object-contain"
-                alt=""
-              //  style={{height: '111px', width: '100%', objectFit: 'contain'}} 
-              />
+                <Image
+                  width={130}
+                  height={130}
+                  src={client.image}
+                  className="!h-[111px] w-full !object-contain"
+                  alt=""
+                  //  style={{height: '111px', width: '100%', objectFit: 'contain'}}
+                />
               </div>
               <p className="text-left">{client.name}</p>
             </Card>
