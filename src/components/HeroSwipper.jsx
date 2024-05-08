@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function HeroSwipper() {
   useEffect(() => {
@@ -90,9 +91,11 @@ export default function HeroSwipper() {
                 </div>
                 <div className="clearfix" />
                 <div data-swiper-parallax={500} className="slide-btns">
-                  <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
-                    <span>Contact us</span>
-                  </Button>
+                  <Link href="/contact-us">
+                    <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
+                      <span>Contact us</span>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -117,9 +120,11 @@ export default function HeroSwipper() {
                 </div>
                 <div className="clearfix" />
                 <div data-swiper-parallax={500} className="slide-btns">
-                  <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
-                    <span>Contact us</span>
-                  </Button>
+                  <Link href="/contact-us">
+                    <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
+                      <span>Contact us</span>
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

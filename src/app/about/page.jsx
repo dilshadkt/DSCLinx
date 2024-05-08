@@ -212,7 +212,7 @@ export default function page() {
             <div className="overflow-hidden">
               <div className="gap-x-[15px] gap-y-[15px] justify-center items-end mb-[14px] flex overflow-hidden">
                 <h2 className="capitalize text-[110px] font-bold leading-[100%] max-md: max-sm:text-[41px]">
-                  25
+                  20
                 </h2>
                 <div>
                   <h5 className="mb-[20px] text-[38px] font-semibold leading-[68.421%] max-sm:text-[20px] max-sm:mb-[5px]">
@@ -230,7 +230,7 @@ export default function page() {
             </div>
             <div className="w-full max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px]">
               <h2 className="text-center text-black font-semibold text-[22px] tracking-[-0.56px] leading-[133.6%] max-lg:text-[20px] max-sm:text-[16px]">
-                Since 2008
+                Since 2004
               </h2>
             </div>
           </div>
@@ -289,7 +289,7 @@ export default function page() {
               <div>
                 <Image src={"/ourmission.png"} width={518} height={300} />
               </div>
-              <div className="absolute top-auto bottom-[0%] left-auto -right-[119px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
+              <div className="absolute top-auto bottom-[0%] left-auto -right-[50px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
                 <Image
                   src={"/ourmission-sub.png"}
                   width={256}
@@ -302,10 +302,25 @@ export default function page() {
 
           <div>
             <Tabs defaultValue="mission" className="w-[600px] max-xl:w-full">
-              <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="mission">Our mission</TabsTrigger>
-                <TabsTrigger value="vision">Our vision</TabsTrigger>
-                <TabsTrigger value="goal">Our goal</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-3 bg-[#E0EFF6]">
+                <TabsTrigger
+                  className="data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  value="mission"
+                >
+                  Our mission
+                </TabsTrigger>
+                <TabsTrigger
+                  className="data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  value="vision"
+                >
+                  Our vision
+                </TabsTrigger>
+                <TabsTrigger
+                  className="data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  value="goal"
+                >
+                  Our goal
+                </TabsTrigger>
               </TabsList>
               <TabsContent value="mission" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">

@@ -283,7 +283,7 @@ export default function home() {
                 in, and experience a hassle-free approach to achievement.
               </p>
             </div>
-            <Link href="contact-us">
+            <Link href="/contact-us">
               <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
                 <span>Contact us</span>
               </Button>
