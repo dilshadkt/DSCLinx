@@ -1,5 +1,5 @@
 ---
-image: "/projects/Hurry Curry – Calgary.png"
+image: "/projects/HurryCurryCalgary.png"
 title: "Hurry Curry – Calgary"
 link: "/HurryCurryCalgary"
 date: "2024-01-11"

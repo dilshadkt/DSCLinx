@@ -13,7 +13,7 @@ const PROJECTS = [
   },
   {
     name: "Bridal Shop – 111 Berkeley St.",
-    image: "/projects/BridalShop–Berkeley.png",
+    image: "/projects/BridalShopBerkeley.png",
     link: "/BridalShopBerkeley",
   },
   {

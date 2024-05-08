@@ -1,5 +1,5 @@
 ---
-image: "/projects/Tokyo Smoke – Stratford.png"
+image: "/projects/TokyoSmokeStratford.png"
 title: "Tokyo Smoke – Stratford"
 link: "/TokyoSmokeStratford"
 date: "2024-01-11"

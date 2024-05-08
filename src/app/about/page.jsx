@@ -36,7 +36,7 @@ export default function page() {
         <div className="w-full flex max-lg:flex-col">
           <div className="w-full max-w-[700px] pr-0 max-lg:max-w-full max-lg:flex-row max-lg:grid-cols-[1fr] max-lg:pt-0 max-lg:flex">
             <div className="max-lg:w-full max-md:w-full">
-              <div className="pb-[42px] relative max-lg:mb-[40px] max-lg:pb-0 max-lg:pl-0 max-md:mb-[30px]">
+              <div className="pb-[42px] relative max-lg:mb-[40px] max-lg:pb-0 max-lg:pl-0 max-md:mt-[30px]">
                 <div className="mb-[15px]">
                   <div className="gap-x-[15px] gap-y-[5px] items-center flex overflow-hidden max-lg:justify-center">
                     <div className="w-[20px] h-px bg-[#000] max-lg:hidden"></div>

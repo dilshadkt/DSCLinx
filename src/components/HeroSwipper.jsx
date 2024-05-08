@@ -102,7 +102,7 @@ export default function HeroSwipper() {
           <div className="swiper-slide">
             <div
               className="slide-inner slide-bg-image"
-              data-background="/banners/banner001.png"
+              data-background="/banners/banner002.png"
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">

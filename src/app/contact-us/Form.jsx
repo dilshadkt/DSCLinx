@@ -110,7 +110,7 @@ export default function Form() {
                         name="details"
                         defaultValue=""
                     />
-                    <div class="h-captcha" data-captcha="true"></div>
+                    <div className="h-captcha" data-captcha="true"></div>
                     <input type="checkbox" name="botcheck" className="hidden" ></input>
                     <input type="text" name="projectType" value={project} className="hidden" ></input>
                     <Button

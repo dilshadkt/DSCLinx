@@ -1,5 +1,5 @@
 ---
-image: "/projects/Champion Doner Kebab – Missisauga.png"
+image: "/projects/ChampionDonerKebabMissisauga.png"
 title: "Champion Doner Kebab – Missisauga"
 link: "/ChampionDonerKebab"
 date: "2024-01-11"

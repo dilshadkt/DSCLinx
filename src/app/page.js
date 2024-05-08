@@ -93,13 +93,6 @@ export default function home() {
                     Customer Rating
                   </div>
                 </div>
-                {/* <Image width={100} height={100}
-                  src="https://assets-global.website-files.com/652634ecbd538012cac6bff1/652784272dea9c0952b5b9cc_Ratinh%20Shape.png"
-                  loading="lazy"
-                  data-w-id="40b08e1e-b274-ff13-7faf-68968a352d40"
-                  alt=""
-                  className="absolute -top-[8px] bottom-auto left-auto -right-[24px] max-md:max-w-[57px] max-md:-right-[2px]"
-                /> */}
               </div>
             </div>
           </div>
