@@ -228,7 +228,7 @@ export default function page() {
                 heave down clap you get the system is up and running.
               </p>
             </div>
-            <div className="w-full max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px]">
+            <div className="w-full max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute sm:top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px] max-sm:left-[-92px] top-[19px]">
               <h2 className="text-center text-black font-semibold text-[22px] tracking-[-0.56px] leading-[133.6%] max-lg:text-[20px] max-sm:text-[16px]">
                 Since 2004
               </h2>
