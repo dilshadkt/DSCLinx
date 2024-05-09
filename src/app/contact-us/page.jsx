@@ -28,7 +28,7 @@ const Contact = () => {
                     Get in touch
                   </div>
                 </div>
-                <h2 className="mb-6 text-[32px] font-semibold text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px] max-sm:text-[27px]">
+                <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]">
                   Get a fast response, call us now
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
@@ -37,39 +37,42 @@ const Contact = () => {
                   and offer the support you require.
                 </p>
 
-                <Link target="_blank" href="https://maps.app.goo.gl/TATuCdijyyUCVcF17">
-                <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M30.6 11.8002L17.7 3.5002C16.65 2.8502 15.3 2.8502 14.3 3.5002L1.39998 11.8002C0.899983 12.1502 0.749983 12.8502 1.04998 13.3502C1.39998 13.8502 2.09998 14.0002 2.59998 13.7002L3.44998 13.1502V25.8002C3.44998 27.5502 4.84998 28.9502 6.59998 28.9502H25.4C27.15 28.9502 28.55 27.5502 28.55 25.8002V13.1502L29.4 13.7002C29.6 13.8002 29.8 13.9002 30 13.9002C30.35 13.9002 30.75 13.7002 30.95 13.4002C31.3 12.8502 31.15 12.1502 30.6 11.8002ZM13.35 26.7502V18.5002C13.35 18.0002 13.75 17.6002 14.25 17.6002H17.75C18.25 17.6002 18.65 18.0002 18.65 18.5002V26.7502H13.35ZM26.3 25.8002C26.3 26.3002 25.9 26.7002 25.4 26.7002H20.9V18.5002C20.9 16.8002 19.5 15.4002 17.8 15.4002H14.3C12.6 15.4002 11.2 16.8002 11.2 18.5002V26.7502H6.69998C6.19998 26.7502 5.79998 26.3502 5.79998 25.8502V11.7002L15.5 5.4002C15.8 5.2002 16.2 5.2002 16.5 5.4002L26.3 11.7002V25.8002Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                <Link
+                  target="_blank"
+                  href="https://maps.app.goo.gl/TATuCdijyyUCVcF17"
+                >
+                  <div className="mb-8 flex w-full max-w-[370px]">
+                    <div className="mr-6 flex max-w-[55px] h-[55px] w-full items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[60px] sm:max-w-[60px]">
+                      <svg
+                        width="26"
+                        height="26"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M30.6 11.8002L17.7 3.5002C16.65 2.8502 15.3 2.8502 14.3 3.5002L1.39998 11.8002C0.899983 12.1502 0.749983 12.8502 1.04998 13.3502C1.39998 13.8502 2.09998 14.0002 2.59998 13.7002L3.44998 13.1502V25.8002C3.44998 27.5502 4.84998 28.9502 6.59998 28.9502H25.4C27.15 28.9502 28.55 27.5502 28.55 25.8002V13.1502L29.4 13.7002C29.6 13.8002 29.8 13.9002 30 13.9002C30.35 13.9002 30.75 13.7002 30.95 13.4002C31.3 12.8502 31.15 12.1502 30.6 11.8002ZM13.35 26.7502V18.5002C13.35 18.0002 13.75 17.6002 14.25 17.6002H17.75C18.25 17.6002 18.65 18.0002 18.65 18.5002V26.7502H13.35ZM26.3 25.8002C26.3 26.3002 25.9 26.7002 25.4 26.7002H20.9V18.5002C20.9 16.8002 19.5 15.4002 17.8 15.4002H14.3C12.6 15.4002 11.2 16.8002 11.2 18.5002V26.7502H6.69998C6.19998 26.7502 5.79998 26.3502 5.79998 25.8502V11.7002L15.5 5.4002C15.8 5.2002 16.2 5.2002 16.5 5.4002L26.3 11.7002V25.8002Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </div>
+                    <div className="w-full">
+                      <h4 className="mb-1 text-xl font-semibold text-dark dark:text-white">
+                        Location
+                      </h4>
+                      <p className="text-base text-body-color dark:text-dark-6">
+                        168 Oakdale Rd unit 6, North York, ON M3N 1V9, Canada
+                      </p>
+                    </div>
                   </div>
-                  <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                      Location
-                    </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
-                      168 Oakdale Rd unit 6, North York, ON M3N 1V9, Canada
-                    </p>
-                  </div>
-                </div>
                 </Link>
 
                 <Link target="_blank" href="tel:+1 (416)886-3145">
                   <div className="mb-8 flex w-full max-w-[370px]">
-                    <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                    <div className="mr-6 flex w-full max-w-[55px] h-[55px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[60px] sm:max-w-[60px]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="23"
+                        height="23"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +99,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div className="w-full">
-                      <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                      <h4 className="mb-1 text-xl font-semibold text-dark dark:text-white">
                         Phone Number
                       </h4>
                       <p className="text-base text-body-color dark:text-dark-6">
@@ -105,12 +108,13 @@ const Contact = () => {
                     </div>
                   </div>
                 </Link>
+
                 <Link target="_blank" href="mailto:info@dsclinx.com">
                   <div className="mb-8 flex w-full max-w-[370px]">
-                    <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                    <div className="mr-6 flex w-full max-w-[55px] h-[55px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[60px] sm:max-w-[60px]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="26"
+                        height="26"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +126,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <div className="w-full">
-                      <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                      <h4 className="mb-1 text-xl font-semibold text-dark dark:text-white">
                         Email Address
                       </h4>
                       <p className="text-base text-body-color dark:text-dark-6">
@@ -137,8 +141,15 @@ const Contact = () => {
           </div>
           <div></div>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.3661637072705!2d-79.5265222!3d43.74449250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33a5e18a2695%3A0x699e32a22c408c3!2sDSClinx%20Inc.!5e0!3m2!1sen!2sin!4v1714990494247!5m2!1sen!2sin" width={"100%"} height={"450px"}  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mt-20"></iframe>
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.3661637072705!2d-79.5265222!3d43.74449250000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b33a5e18a2695%3A0x699e32a22c408c3!2sDSClinx%20Inc.!5e0!3m2!1sen!2sin!4v1714990494247!5m2!1sen!2sin"
+            width={"100%"}
+            height={"450px"}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="mt-20"
+          ></iframe>
         </div>
       </section>
     </>

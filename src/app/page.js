@@ -115,7 +115,7 @@ export default function home() {
                     We are a design and renovation company
                   </h2>
                 </div>
-                <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[15px]">
+                <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[16px]">
                   <p className="text-[18px] font-normal leading-[150%]">
                     {
                       "There is no job too big or too small for us. We are a professional yet affordable design and renovation company.Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget.Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company."
@@ -141,7 +141,7 @@ export default function home() {
               </h2>
             </div>
             <div className="h-full overflow-hidden">
-              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
                 Unlocking our suite of services is designed for utmost ease.
                 With a streamlined process that emphasizes user-friendly
                 interaction. Unlocking our suite of services is designed.
@@ -176,7 +176,7 @@ export default function home() {
             </h2>
           </div>
           <div className="h-full overflow-hidden">
-            <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+            <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
               {
                 "Choose DSCLINX, where professional precision converges with design passion. Dive into a transformative experience, ensuring your space mirrors your vision.  Discover the breadth and depth of our offerings solutions."
               }
@@ -198,7 +198,7 @@ export default function home() {
                       className="w-11"
                     />
                   </div>
-                  <h4 className="text-[26px] font-semibold leading-[130%]">
+                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
                     Quality Excellence
                   </h4>
                 </div>
@@ -219,7 +219,7 @@ export default function home() {
                       className="w-11"
                     />
                   </div>
-                  <h4 className="text-[26px] font-semibold leading-[130%]">
+                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
                     Expert Consultation Assurance
                   </h4>
                 </div>
@@ -240,7 +240,7 @@ export default function home() {
                       className="w-11"
                     />
                   </div>
-                  <h4 className="text-[26px] font-semibold leading-[130%]">
+                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
                     Certified Guarantee
                   </h4>
                 </div>
@@ -277,7 +277,7 @@ export default function home() {
               </h2>
             </div>
             <div className="h-full overflow-hidden">
-              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
                 Begin a transformation journey with DSCLINX effortlessly. Unlock
                 our premium offerings through three straightforward steps. Dive
                 in, and experience a hassle-free approach to achievement.
@@ -295,43 +295,43 @@ export default function home() {
           <div className="relative">
             <div className="gap-x-[66px] grid-rows-[auto] grid-cols-[1fr_minmax(360px,_auto)_1fr] auto-cols-[1fr] grid max-lg:gap-x-[0px] max-lg:grid-cols-[1fr_1fr_1fr] max-md:gap-x-[30px] max-md:gap-y-[30px] max-md:grid-cols-[1fr] max-sm:gap-x-[24px] max-sm:gap-y-[24px]">
               <div className="text-center">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[50px] max-sm:h-[50px] max-sm:mb-[10px]">
-                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[20px]">
+              <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     01
                   </h4>
                 </div>
-                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
+                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
                   request your service
                 </h4>
-                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
                   Taking the first step towards a transformative experience has
                   never been easier.
                 </p>
               </div>
               <div className="max-w-[360px] ml-auto mr-auto pt-[128px] text-center max-lg:max-w-[273px] max-lg:pt-[85px] max-md:w-full max-md:max-w-full max-md:p-[30px]">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[50px] max-sm:h-[50px] max-sm:mb-[10px]">
-                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[20px]">
+              <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     02
                   </h4>
                 </div>
-                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
+                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
                   Schedule Your Service
                 </h4>
-                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
                   Ready for a transformation? Schedule your service with DSCLINX
                   today.
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[50px] max-sm:h-[50px] max-sm:mb-[10px]">
-                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[20px]">
+                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                  <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     03
                   </h4>
                 </div>
-                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[20px]">
+                <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
                   Pay And Enjoy
                 </h4>
-                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[15px] max-sm:leading-[130%]">
+                <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
                   Seamless transactions, striking transformations. Make your
                   payment.
                 </p>
@@ -364,7 +364,7 @@ export default function home() {
               </h2>
             </div>
             <div className="h-full overflow-hidden">
-              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[15px]">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16x]">
                 {
                   "Discover the breadth and depth of our offerings. From bespoke solutions to standard services, we're here to cater to your need. Experience the brilliance of Digital Foiling."
                 }
