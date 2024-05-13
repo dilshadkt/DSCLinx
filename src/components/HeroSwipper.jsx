@@ -80,13 +80,17 @@ export default function HeroSwipper() {
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
-                  <h2>Elegant Wall Solutions For Your Home</h2>
+                  <h2>
+                    {"Art creates,"} <br />
+                    {"Arch connects,"} <br />
+                    {"Design Unites."}
+                  </h2>
                 </div>
                 <div data-swiper-parallax={400} className="slide-text">
                   <p>
-                    Elevate your living spaces with unparalleled wall solutions.
-                    Experience artistry, durability, and charm in every
-                    brushstroke, tailored perfectly for your home.
+                    {
+                      "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience"
+                    }
                   </p>
                 </div>
                 <div className="clearfix" />
@@ -109,13 +113,17 @@ export default function HeroSwipper() {
             >
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
-                  <h2>Elegant Wall Solutions For Your Home</h2>
+                  <h2>
+                    {"Art creates,"} <br />
+                    {"Arch connects,"} <br />
+                    {"Design Unites."}
+                  </h2>
                 </div>
                 <div data-swiper-parallax={400} className="slide-text">
                   <p>
-                    Elevate your living spaces with unparalleled wall solutions.
-                    Experience artistry, durability, and charm in every
-                    brushstroke, tailored perfectly for your home.
+                    {
+                      "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience"
+                    }
                   </p>
                 </div>
                 <div className="clearfix" />

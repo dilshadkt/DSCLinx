@@ -112,13 +112,15 @@ export default function home() {
                 </div>
                 <div className="h-full overflow-hidden">
                   <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]">
-                    We are a design and renovation company
+                    {"We Picturesque,"} <br />
+                    {"We Design,"} <br />
+                    {"We Renovate."}
                   </h2>
                 </div>
                 <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[16px]">
                   <p className="text-[18px] font-normal leading-[150%]">
                     {
-                      "There is no job too big or too small for us. We are a professional yet affordable design and renovation company.Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget.Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company.There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today.There is no job too big or too small for us. We are a professional yet affordable design and renovation company."
+                      "In Transforming your conceptualization into the art of design with high quality. We provide you with the whole idea of your space, working on Texture, Settings, Equipment and Arrangements. Also, Revisit and Renovate your expanse with a blend of Modern arch and Traditional design in a blend of space in time. Space speaks louder than any other medium, It is a medium to transfer your concept. The Idea of Spatial Experience is all about Elements that make the space alive. We give you the promising elements of Art."
                     }
                   </p>
                 </div>
@@ -137,14 +139,14 @@ export default function home() {
           <div className="text-center">
             <div className="h-full overflow-hidden">
               <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
-                Discover Our Latest Projects Showcase
+                Find out our latest project works
               </h2>
             </div>
             <div className="h-full overflow-hidden">
               <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
-                Unlocking our suite of services is designed for utmost ease.
-                With a streamlined process that emphasizes user-friendly
-                interaction. Unlocking our suite of services is designed.
+                {
+                  "We create spaces that authentically convey your perspectives and stories. Spaces that draw customers in by standing out from the everyday ordinary emphasize user-friendliness."
+                }
               </p>
             </div>
           </div>
@@ -172,20 +174,20 @@ export default function home() {
         <div className="text-center">
           <div className="h-full overflow-hidden">
             <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
-              Our Team Approach Projects Professionally
+              We Build with a Professional touch.
             </h2>
           </div>
           <div className="h-full overflow-hidden">
             <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
               {
-                "Choose DSCLINX, where professional precision converges with design passion. Dive into a transformative experience, ensuring your space mirrors your vision.  Discover the breadth and depth of our offerings solutions."
+                "On choosing Dsclinx, We help you to Glide your space into a bright area. Discover the elegance with us."
               }
             </p>
           </div>
         </div>
 
         <div className="mt-[20px]">
-          <div className="flex justify-between gap-5 mt-10 max-lg:flex-col">
+          <div className="grid grid-cols-2 justify-between gap-5 mt-10 max-lg:grid-cols-1">
             <div className="bg-[#E0EFF6]">
               <div className="p-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
@@ -194,17 +196,18 @@ export default function home() {
                       width={100}
                       height={100}
                       src="/icons/quality-excellence.png"
-                      alt=""
+                      alt="quality-excellence"
                       className="w-11"
                     />
                   </div>
                   <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
-                    Quality Excellence
+                    Creating the Best Quality
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Excellence with Zaiwall. Our
-                  commitment is not just to color, but to a standard.
+                  {
+                    "Dsclinx promises you the best quality. We Guide, Research and Design your space"
+                  }
                 </p>
               </div>
 
@@ -215,7 +218,7 @@ export default function home() {
                       width={100}
                       height={100}
                       src="/icons/expert-consultation.png"
-                      alt=""
+                      alt="expert-consultation"
                       className="w-11"
                     />
                   </div>
@@ -224,8 +227,9 @@ export default function home() {
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Excellence with Zaiwall. Our
-                  commitment is not just to color, but to a standard.
+                  {
+                    "We design, develop and deliver solutions in this high-value segment of the Design Industry"
+                  }
                 </p>
               </div>
 
@@ -236,7 +240,7 @@ export default function home() {
                       width={100}
                       height={100}
                       src="/icons/certified-guarantee.png"
-                      alt=""
+                      alt="certified-guarantee"
                       className="w-11"
                     />
                   </div>
@@ -245,8 +249,7 @@ export default function home() {
                   </h4>
                 </div>
                 <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  Dive into the realm of Quality Excellence with Zaiwall. Our
-                  commitment is not just to color, but to a standard.
+                  {"We guarantee with trust, accuracy and integrity."}
                 </p>
               </div>
             </div>
@@ -256,7 +259,7 @@ export default function home() {
                 width={710}
                 height={672}
                 src="/team-approach.png"
-                alt=""
+                alt="team-approach"
                 className="w-full h-full max-w-full object-cover"
               />
             </div>
@@ -278,9 +281,7 @@ export default function home() {
             </div>
             <div className="h-full overflow-hidden">
               <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
-                Begin a transformation journey with DSCLINX effortlessly. Unlock
-                our premium offerings through three straightforward steps. Dive
-                in, and experience a hassle-free approach to achievement.
+                {"Evolve your space into the next Space"}
               </p>
             </div>
             <Link href="/contact-us">
@@ -295,21 +296,22 @@ export default function home() {
           <div className="relative">
             <div className="gap-x-[66px] grid-rows-[auto] grid-cols-[1fr_minmax(360px,_auto)_1fr] auto-cols-[1fr] grid max-lg:gap-x-[0px] max-lg:grid-cols-[1fr_1fr_1fr] max-md:gap-x-[30px] max-md:gap-y-[30px] max-md:grid-cols-[1fr] max-sm:gap-x-[24px] max-sm:gap-y-[24px]">
               <div className="text-center">
-              <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
                   <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     01
                   </h4>
                 </div>
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
-                  request your service
+                  Request Your Service
                 </h4>
                 <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
-                  Taking the first step towards a transformative experience has
-                  never been easier.
+                  {
+                    "The first step to evolving your space with the best interior is a click to contact us."
+                  }
                 </p>
               </div>
               <div className="max-w-[360px] ml-auto mr-auto pt-[128px] text-center max-lg:max-w-[273px] max-lg:pt-[85px] max-md:w-full max-md:max-w-full max-md:p-[30px]">
-              <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
                   <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     02
                   </h4>
@@ -318,8 +320,9 @@ export default function home() {
                   Schedule Your Service
                 </h4>
                 <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
-                  Ready for a transformation? Schedule your service with DSCLINX
-                  today.
+                  {
+                    "Don't wait, make time. Let's together transform your space."
+                  }
                 </p>
               </div>
               <div className="text-center">
@@ -329,11 +332,10 @@ export default function home() {
                   </h4>
                 </div>
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
-                  Pay And Enjoy
+                  Wrap up with promising satisfaction
                 </h4>
                 <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
-                  Seamless transactions, striking transformations. Make your
-                  payment.
+                  {"Enjoy your space and let’s wrap up with shared happiness."}
                 </p>
               </div>
             </div>
@@ -360,14 +362,12 @@ export default function home() {
           <div className="text-center text-white mt-10">
             <div className="h-full overflow-hidden">
               <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
-                Explore Our Range Of Offering Services
+                Services We Provide
               </h2>
             </div>
             <div className="h-full overflow-hidden">
               <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16x]">
-                {
-                  "Discover the breadth and depth of our offerings. From bespoke solutions to standard services, we're here to cater to your need. Experience the brilliance of Digital Foiling."
-                }
+                {"Dsclinx will create a high-quality space with perfection."}
               </p>
             </div>
           </div>

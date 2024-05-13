@@ -10,9 +10,7 @@ const Contact = () => {
 
       <Banner
         head={"Contact Us"}
-        desc={
-          "Reach out to our friendly team today and let us know how we can assist you. We're here to answer your questions, provide quotes, and schedule services to meet your needs."
-        }
+        desc={"Ask us anything,we're here to help you and your space."}
       />
 
       {/* Banner section End*/}

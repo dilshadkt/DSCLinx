@@ -46,13 +46,15 @@ export default function page() {
                 </div>
                 <div className="h-full overflow-hidden">
                   <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]">
-                    We are a design and renovation company
+                    {"We Picturesque,"} <br />
+                    {"We Design,"} <br />
+                    {"We Renovate."}
                   </h2>
                 </div>
                 <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[16px]">
                   <p className="text-[18px] font-normal leading-[150%]">
                     {
-                      "There is no job too big or too small for us. We are a professional yet affordable design and renovation company. Trusted to deliver quality work, on time &, on budget. Get your professional new look for your establishment started on today."
+                      "In Transforming your conceptualization into the art of design with high quality. We provide you with the whole idea of your space, working on Texture, Settings, Equipment and Arrangements. Also, Revisit and Renovate your expanse with a blend of Modern arch and Traditional design in a blend of space in time."
                     }
                   </p>
                 </div>
@@ -71,8 +73,8 @@ export default function page() {
                         Architecture Drawing
                       </h5>
                       <p className="mt-2">
-                        There is no job too big or too small for us. We are a
-                        professional yet affordable d{" "}
+                        We provide you with Architectural Drawings that are the
+                        foundation for the construction and remodeling project.
                       </p>
                     </div>
                     <div className="w-px bg-[rgba(13,_38,_35,_.3)]"></div>
@@ -88,8 +90,9 @@ export default function page() {
                         Commercial Reno
                       </h5>
                       <p className="mt-2">
-                        There is no job too big or too small for us. We are a
-                        professional yet affordable d{" "}
+                        We provide you with a way to transform your space into a
+                        breathable and attractive space. We evolve, improve and
+                        modify with modernization.
                       </p>
                     </div>
                   </div>
@@ -243,7 +246,9 @@ export default function page() {
                 <div className="w-[80px] h-px rounded-[5px] bg-black"></div>
               </div>
               <div className="items-center flex overflow-hidden">
-                <p className="max-sm:text-[16px]">world wide 50K+ companies collaborate with us!</p>
+                <p className="max-sm:text-[16px]">
+                  world wide 50K+ companies collaborate with us!
+                </p>
               </div>
             </div>
 
@@ -262,7 +267,10 @@ export default function page() {
                 >
                   <CarouselContent>
                     {CLIENTS.map((item, i) => (
-                      <CarouselItem key={i} className="basis-1/5 max-sm:basis-1/4">
+                      <CarouselItem
+                        key={i}
+                        className="basis-1/5 max-sm:basis-1/4"
+                      >
                         <Image
                           width={130}
                           height={130}
