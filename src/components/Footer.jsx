@@ -23,7 +23,7 @@ const SOCIALS = [
   {
     name: "Whatsapp ",
     icon: <FaWhatsapp className="w-6 h-6" />,
-    link: "ht",
+    link: "https://wa.me/+14168863145",
   },
 ];
 
@@ -45,9 +45,9 @@ export default function Home() {
               </div>
 
               <p className="mb-4 tracking-tight	leading-7">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum. Duis cursus, mi quis
-                viverra ornare, eros dolor.
+                {
+                  " Join the journey, We are here to bring up the world's finest Architectural Renovation, Repositioning and Establishment Projects."
+                }
               </p>
 
               <div className="flex mt-4 md:mt-0 space-x-5 rtl:space-x-reverse">

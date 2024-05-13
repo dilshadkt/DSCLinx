@@ -24,7 +24,7 @@ export default function page() {
       <Banner
         head={"About"}
         desc={
-          "DSCLINX proud to offer a complete range of construction services made possible by our professional team."
+          "Dsclinx is here to deliver you the best degree of creating and Architecture. We will make out your dream space with our dedicated experts team."
         }
       />
 
@@ -139,14 +139,14 @@ export default function page() {
         <div className="flex justify-between items-center max-lg:flex-col max-lg:text-center">
           <div className="w-full max-w-[556px] max-lg:max-w-[665px]">
             <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-              Discover Our Story The Heart And Craft Behind Our Work
+              Discover your story, Deliver your dream space.
             </h2>
           </div>
 
           <div className="w-full max-w-[521px] max-lg:max-w-[651px]">
             <p>
               {
-                "Unlocking our suite of services is designed for utmost ease. With streamlined process that emphasizes user-friendly interaction  family, united by the shared love for the game Join us on this incredible journey."
+                "We are here to unlock the art of space with adorable texture, alignment and arrangement. Let's join together in this extraordinary journey."
               }
             </p>
           </div>
@@ -227,8 +227,10 @@ export default function page() {
                 </div>
               </div>
               <p className="mt-5 max-lg:text-center">
-                Bilge rat main shet bilge water nipper fluke to go on account
-                heave down clap you get the system is up and running.
+                Over the last decade, our focus and interest have been on the
+                experience of architectural space and the idea of spatial
+                experience which resulted in the experimental concept of
+                elements that make the space more sense.
               </p>
             </div>
             <div className="w-full max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute sm:top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px] max-sm:left-[-92px] top-[19px]">
@@ -247,7 +249,7 @@ export default function page() {
               </div>
               <div className="items-center flex overflow-hidden">
                 <p className="max-sm:text-[16px]">
-                  world wide 50K+ companies collaborate with us!
+                  World wide 50K+ companies collaborate with us!
                 </p>
               </div>
             </div>
@@ -332,31 +334,31 @@ export default function page() {
               </TabsList>
               <TabsContent value="mission" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  Our Team Tackles Projects With Utmost Professionalism
+                  To bring out the best.
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
+                    "On this journey as a leading firm, we focus on unlocking world-class design solutions with dedication, professionalism and excellence."
                   }
                 </p>
               </TabsContent>
               <TabsContent value="vision" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  Our Team Tackles Projects With Utmost Professionalism
+                  With the best quality and a better choice.
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
+                    "As a growing field of industry, we concentrate on providing high-quality services and well-updated creative expansion to the architecture field with integrity and honesty."
                   }
                 </p>
               </TabsContent>
               <TabsContent value="goal" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  Our Team Tackles Projects With Utmost Professionalism
+                  To deliver as you desire.
                 </h2>
                 <p>
                   {
-                    "Courses for new lessons on your favorite technologies Unlock the secrets to selecting the ideal  with insights from industry experts. family, united by the shared love Check back our"
+                    "To serve your project with a promising design that comes from attentive discussions and thoughtful solutions, by focusing on your interests and ideas."
                   }
                 </p>
               </TabsContent>

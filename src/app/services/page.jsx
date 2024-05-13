@@ -11,7 +11,7 @@ export default function page() {
       <Banner
         head={"Services"}
         desc={
-          "DSCLINX  proud to offer a complete range of construction services made possible by our professional team."
+          "We've hand-touched a lot of projects and made everyone adore their space. Check out wide range of services"
         }
       />
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">

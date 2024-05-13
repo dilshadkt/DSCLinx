@@ -12,15 +12,15 @@ export default function page() {
       <Banner
         head={"Our Projects"}
         desc={
-          "We’ve done hundreds of restaurants across the GTA. Check some of the highlights below!"
+          "We create spaces that authentically convey your perspectives and stories. Spaces that draw customers in by standing out from the everyday ordinary emphasize user-friendliness"
         }
       />
       <section className="container py-[50px] overflow-hidden max-lg:py-[40px] max-md:py-[30px] max-sm:py-[20px]">
-      <div className=" mb-[52px] max-lg:mb-[40px] max-md:mb-[40px]">
-        <div className="flex flex-col gap-4">
-          <ProjectsCard totalCards={getProjects()} />
+        <div className=" mb-[52px] max-lg:mb-[40px] max-md:mb-[40px]">
+          <div className="flex flex-col gap-4">
+            <ProjectsCard totalCards={getProjects()} />
+          </div>
         </div>
-      </div>
       </section>
       {/* Banner section End*/}
     </>

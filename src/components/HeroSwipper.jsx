@@ -114,15 +114,15 @@ export default function HeroSwipper() {
               <div className="container">
                 <div data-swiper-parallax={300} className="slide-title">
                   <h2>
-                    {"Art creates,"} <br />
-                    {"Arch connects,"} <br />
-                    {"Design Unites."}
+                    {
+                      "Celebrate the incredible architecture and transform your home into the best."
+                    }
                   </h2>
                 </div>
                 <div data-swiper-parallax={400} className="slide-text">
                   <p>
                     {
-                      "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience"
+                      "Enrich your area with artistic exploration and soft experience along with durable home equipment. Feel the freshness of home."
                     }
                   </p>
                 </div>
