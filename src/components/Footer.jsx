@@ -102,8 +102,8 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link target="_blank" href="mailto:info@dsclinx.com">
-                    info@dsclinx.com
+                  <Link target="_blank" href="mailto:dsclinx@gmail.com">
+                    dsclinx@gmail.com
                   </Link>
                 </li>
               </ul>
