@@ -227,8 +227,8 @@ export default function page() {
                 </div>
               </div>
               <p className="mt-5 max-lg:text-center">
-                Over the last decade, our focus and interest have been on the
-                experience of architectural space and the idea of spatial
+                Over the last two decade, our focus and interest have been on
+                the experience of architectural space and the idea of spatial
                 experience which resulted in the experimental concept of
                 elements that make the space more sense.
               </p>
