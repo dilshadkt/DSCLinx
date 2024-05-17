@@ -26,8 +26,10 @@ jobs:
         with:
           version: ">= 363.0.0"
 
-      - name: Sync latest changes to GCP VM
+      - name: Sync latest changes to GCP VM and Build
         run: |
           echo "${{ secrets.SSH_KEY }}" > ssh_key
           chmod 600 ./ssh_key
+          ssh -i ./ssh_key -o StrictHostKeyChecking=no shefeeq@35.192.179.177 "sudo su - -c 'cd /var/www/dsclinx.ca/ && find -not -name "build.sh" -delete'"
           sudo rsync -chav -O --no-o --no-g --no-perms --exclude='.git' --exclude='.github' --exclude='gha-creds-*' --exclude='ssh_key' -e 'ssh -i ./ssh_key -o StrictHostKeyChecking=no' $GITHUB_WORKSPACE/ shefeeq@35.192.179.177:/var/www/dsclinx.ca/
+          ssh -i ./ssh_key -o StrictHostKeyChecking=no shefeeq@35.192.179.177 "sudo su - -c 'cd /var/www/dsclinx.ca/ && ./build.sh'"
