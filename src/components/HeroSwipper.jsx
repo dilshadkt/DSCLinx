@@ -4,6 +4,91 @@ import { useEffect } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
+const CAROUSEL_IMAGE = [
+  {
+    img: "/banners/b1.jpg",
+    title: ["Art creates,", "Arch connects,", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b2.jpg",
+    title: [
+      "Celebrate the incredible architecture and transform your home into the best.",
+    ],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b3.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b4.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b5.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b6.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b7.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b8.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b9.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b10.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b11.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b12.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b13.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b14.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b15.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+  {
+    img: "/banners/b16.jpg",
+    title: ["Art creates", "Arch connects", "Design Unites."],
+    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  },
+];
+
 export default function HeroSwipper() {
   useEffect(() => {
     const interleaveOffset = 0.5;
@@ -73,71 +158,41 @@ export default function HeroSwipper() {
     <section className="hero-slider hero-style">
       <div className="swiper-container">
         <div className="swiper-wrapper">
-          <div className="swiper-slide">
-            <div
-              className="slide-inner slide-bg-image"
-              data-background="/banners/banner001.jpg"
-            >
-              <div className="container">
-                <div data-swiper-parallax={300} className="slide-title">
-                  <h2>
-                    {"Art creates,"} <br />
-                    {"Arch connects,"} <br />
-                    {"Design Unites."}
-                  </h2>
-                </div>
-                <div data-swiper-parallax={400} className="slide-text">
-                  <p>
-                    {
-                      "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience"
-                    }
-                  </p>
-                </div>
-                <div className="clearfix" />
-                <div data-swiper-parallax={500} className="slide-btns">
-                  <Link href="/contact-us">
-                    <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
-                      <span>Contact us</span>
-                    </Button>
-                  </Link>
+          {CAROUSEL_IMAGE.map((item, key) => (
+            <div className="swiper-slide" key={key}>
+              <div
+                className="slide-inner slide-bg-image"
+                data-background={item.img}
+              >
+                <div className="container">
+                  <div data-swiper-parallax={300} className="slide-title">
+                    <h2>
+                      {item.title.map((title, key) => (
+                        <>
+                          {title} <br />
+                        </>
+                      ))}
+                    </h2>
+                  </div>
+                  <div data-swiper-parallax={400} className="slide-text">
+                    <p>{item.desc}</p>
+                  </div>
+                  <div className="clearfix" />
+                  <div data-swiper-parallax={500} className="slide-btns">
+                    <Link href="/contact-us">
+                      <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
+                        <span>Contact us</span>
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
+              {/* end slide-inner */}
             </div>
-            {/* end slide-inner */}
-          </div>
+          ))}
+
           {/* end swiper-slide */}
-          <div className="swiper-slide">
-            <div
-              className="slide-inner slide-bg-image"
-              data-background="/banners/banner002.png"
-            >
-              <div className="container">
-                <div data-swiper-parallax={300} className="slide-title">
-                  <h2>
-                    {
-                      "Celebrate the incredible architecture and transform your home into the best."
-                    }
-                  </h2>
-                </div>
-                <div data-swiper-parallax={400} className="slide-text">
-                  <p>
-                    {
-                      "Enrich your area with artistic exploration and soft experience along with durable home equipment. Feel the freshness of home."
-                    }
-                  </p>
-                </div>
-                <div className="clearfix" />
-                <div data-swiper-parallax={500} className="slide-btns">
-                  <Link href="/contact-us">
-                    <Button className="bg-[#fff] text-[#004363] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white">
-                      <span>Contact us</span>
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            {/* end slide-inner */}
-          </div>
+
           {/* end swiper-slide */}
         </div>
         {/* end swiper-wrapper */}
