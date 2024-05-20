@@ -478,3 +478,13 @@ a:hover {
   transition: color 0.3s ease-out;
 }
 
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: visible !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+bottom: -45px !important;
+}
