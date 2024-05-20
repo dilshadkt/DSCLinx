@@ -36,9 +36,11 @@ export function getProject(slug) {
   const fileContents = fs.readFileSync(fullPath, "utf-8");
   const matterResult = matter(fileContents);
   const imagesDirectory = path.join(process.cwd(), `public/projects/${slug}`);
-  let images = []
+  let images = [];
   if (fs.existsSync(imagesDirectory)) {
-    images = fs.readdirSync(imagesDirectory).map(item=> `/projects/${slug}/${item}`)
+    images = fs
+      .readdirSync(imagesDirectory)
+      .map((item) => `/projects/${slug}/${item}`);
   }
   return {
     id,
@@ -48,6 +50,6 @@ export function getProject(slug) {
     description: matterResult.data.description,
     link: matterResult.data.link,
     date: matterResult.data.date,
-    images: images
+    images: images,
   };
 }

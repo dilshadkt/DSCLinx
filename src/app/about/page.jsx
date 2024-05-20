@@ -278,7 +278,7 @@ export default function page() {
                           height={130}
                           src={item.image}
                           className="!h-[111px] w-full !object-contain"
-                          alt=""
+                          alt={item.name}
                           //  style={{height: '111px', width: '100%', objectFit: 'contain'}}
                         />
                       </CarouselItem>
@@ -297,7 +297,12 @@ export default function page() {
           <div className="max-w-[588px] max-xl:w-full">
             <div className="w-full max-w-[588px] relative max-xl:w-full">
               <div>
-                <Image src={"/ourmission.png"} width={518} height={300} />
+                <Image
+                  src={"/ourmission.png"}
+                  width={518}
+                  height={300}
+                  alt="ourmission"
+                />
               </div>
               <div className="absolute top-auto bottom-[0%] left-auto -right-[50px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
                 <Image
@@ -305,6 +310,7 @@ export default function page() {
                   width={256}
                   height={260}
                   style={{ width: "100%" }}
+                  alt="ourmission"
                 />
               </div>
             </div>

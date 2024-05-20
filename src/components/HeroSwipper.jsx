@@ -8,84 +8,84 @@ const CAROUSEL_IMAGE = [
   {
     img: "/banners/b1.jpg",
     title: ["Art creates,", "Arch connects,", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b2.jpg",
     title: [
       "Celebrate the incredible architecture and transform your home into the best.",
     ],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b3.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b4.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b5.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b6.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b7.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b8.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b9.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b10.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b11.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b12.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b13.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b14.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b15.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
   {
     img: "/banners/b16.jpg",
     title: ["Art creates", "Arch connects", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+    desc: "Enrich your space with tranquility. We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
 ];
 
@@ -168,9 +168,9 @@ export default function HeroSwipper() {
                   <div data-swiper-parallax={300} className="slide-title">
                     <h2>
                       {item.title.map((title, key) => (
-                        <>
+                        <div key={key}>
                           {title} <br />
-                        </>
+                        </div>
                       ))}
                     </h2>
                   </div>
