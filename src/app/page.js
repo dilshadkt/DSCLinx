@@ -317,7 +317,7 @@ export default function home() {
                   </h4>
                 </div>
                 <h4 className="text-black capitalize mt-0 mb-[16px] text-[28px] font-semibold leading-[130%] max-lg:mb-[8px] max-lg:text-[22px] max-md:mb-[5px] max-sm:text-[22px]">
-                  Schedule Your Service
+                  Schedule the Service
                 </h4>
                 <p className="text-[18px] font-normal leading-[150%] text-[rgba(32,_32,_32,_.8)] max-lg:text-[16px] max-md:max-w-[366px] max-md:ml-auto max-md:mr-auto max-sm:text-[16px] max-sm:leading-[130%]">
                   {
