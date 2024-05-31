@@ -38,7 +38,7 @@ export const SERVICES = [
   {
     name: "Commercial Accessible Construction",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "/icons/food-equipment.png",
+    image: "/icons/commercial-accessible-construction.png",
     link: "/services/commercial-accessible-construction",
   },
   {
