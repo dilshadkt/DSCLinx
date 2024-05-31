@@ -28,19 +28,19 @@ export const NAV_LINKS = [
     title: "Services",
     link: "/services",
     sub: [
-      { title: "Hood Installation", link: "services/hood-installation" },
-      { title: "Architecture Drawing", link: "services/architecture-drawing" },
-      { title: "Commercial Reno", link: "services/commercial-reno" },
-      { title: "Retail Remodeling", link: "services/retail-remodeling" },
-      { title: "Electrical Services", link: "services/electrical-services" },
-      { title: "Plumbing Services", link: "services/plumbing-services" },
+      { title: "Hood Installation", link: "hood-installation" },
+      { title: "Architecture Drawing", link: "architecture-drawing" },
+      { title: "Commercial Reno", link: "commercial-reno" },
+      { title: "Retail Remodeling", link: "retail-remodeling" },
+      { title: "Electrical Services", link: "electrical-services" },
+      { title: "Plumbing Services", link: "plumbing-services" },
       {
         title: "Commercial Accessible Construction",
-        link: "services/commercial-accessible-construction",
+        link: "commercial-accessible-construction",
       },
-      { title: "Home Renovation", link: "services/home-renovation" },
-      { title: "Supplies", link: "servicessupplies" },
-      { title: "Your Request?", link: "services/your-request" },
+      { title: "Home Renovation", link: "home-renovation" },
+      { title: "Supplies", link: "supplies" },
+      { title: "Your Request?", link: "your-request" },
     ],
   },
   {
@@ -79,7 +79,11 @@ export default function DesktopNavbar() {
                       <ListItem
                         key={key}
                         title={item.title}
-                        href={item.link}
+                        href={
+                          pathname.includes("services/")
+                            ? `${item.link}`
+                            : `services/${item.link}`
+                        }
                       ></ListItem>
                     ))}
                   </ul>
