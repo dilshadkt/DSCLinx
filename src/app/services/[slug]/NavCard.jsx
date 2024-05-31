@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
-const services = [
+const SERVICES_LINKS = [
   { name: "Hood Installation", url: "/services/hood-installation" },
   { name: "Architecture Drawing", url: "/services/architecture-drawing" },
   { name: "Commercial Reno", url: "/services/commercial-reno" },
@@ -19,7 +19,7 @@ const services = [
   { name: "Your Request?", url: "/services/your-request" },
 ];
 
-export default function NavCard() {
+export default function NavCard({ active }) {
   return (
     <>
       <Card className="p-10 border-[1px] border-[solid] border-[#c1c1c1] rounded-none">
@@ -28,9 +28,17 @@ export default function NavCard() {
           <hr className="border-[1.5px] border-[solid] border-[#000] !mt-[18px] w-[65px]" />
         </CardHeader>
         <div className="pt-6">
-          {services.map((service, index) => (
-            <div key={index} className="pt-3">
-              <Link href={service.url}>{service.name}</Link>
+          {SERVICES_LINKS.map((service, index) => (
+            <div className="pt-3" key={index}>
+              <Link
+                href={service.url}
+                className={`${
+                  active === service.url.split("/").pop() &&
+                  "text-[#004363] font-semibold"
+                }`}
+              >
+                {service.name}
+              </Link>
               <hr className="border-[1px] border-[solid] border-[#c1c1c1] mt-[17px] mb-[17px]" />
             </div>
           ))}
@@ -41,11 +49,12 @@ export default function NavCard() {
         <Card className="p-8 mt-10 border-[1px] border-[solid] border-[#c1c1c1] rounded-none">
           <div className="grid grid-cols-[20%_80%] gap-[20px]">
             <div>
-              <Image src="/icons/call.png" 
-              alt="icon" 
-              className="w-16 h-auto"
-              width={1600}
-              height={871}
+              <Image
+                src="/icons/call.png"
+                alt="icon"
+                className="w-16 h-auto"
+                width={1600}
+                height={871}
               />
             </div>
             <div>

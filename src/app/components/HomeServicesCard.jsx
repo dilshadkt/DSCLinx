@@ -11,6 +11,7 @@ export default function HomeServicesCard() {
           desc={service.desc}
           image={service.image}
           color={"text-white"}
+          link={service.link}
         />
       ))}
     </>
