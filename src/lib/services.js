@@ -12,13 +12,6 @@ export function getServices(slug) {
 
   return {
     id,
-    title: matterResult.data.title,
-    description: matterResult.data.description,
-    image_one: matterResult.data.image_one,
-    image_two: matterResult.data.image_two,
-    section_head: matterResult.data.section_head,
-    section_one: matterResult.data.section_one,
-    section_two: matterResult.data.section_two,
-    section_three: matterResult.data.section_three,
+    ...matterResult.data,
   };
 }

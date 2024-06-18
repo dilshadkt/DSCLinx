@@ -22,20 +22,23 @@ export default function page({ params }) {
               width={1600}
               height={871}
             />
-
-            <p className="pt-7">{service.section_one}</p>
-            <p>{service.section_two}</p>
-
-            <h6 className="font-bold text-xl my-3 ">{service.section_head}</h6>
+            <h3 className="font-bold text-xl pt-8">{service.section_head}</h3>
+            <ol className="py-4">
+              {service.section_content.map((item, index) => (
+                <li className="px-4 pt-2 pb-2" key={index}>
+                  <strong>{item.name}</strong>
+                  {item.description}
+                </li>
+              ))}
+            </ol>
             <Image
-              src={service.image_one}
+              src={service.image_two}
               alt="services"
               className="w-auto h-700"
               width={1600}
               height={871}
             />
-
-            <p className="py-7">{service.section_three}</p>
+            <p className="py-7">{service.section_footer}</p>
           </div>
         </div>
       </div>

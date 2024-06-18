@@ -13,29 +13,13 @@ import Counter from "@/components/Counter";
 export default function home() {
   return (
     <>
-      {/* start of hero */}
       <HeroSwipper />
-      {/* end of hero slider */}
-
-      {/* Counter section Start*/}
-
       <div className="gap-x-[61px] gap-y-[61px] items-start flex max-lg:gap-x-[0px] max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px] max-lg:container">
         <div className="w-full max-w-[684px] justify-between items-center py-[44px] pl-[90px] max-lg:pl-0 flex max-lg:max-w-full max-lg:text-white max-lg:gap-[20px] max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:mb-[40px] max-lg:py-0 max-lg:flex max-lg:relative max-md:gap-[15px] max-sm:gap-[10px]">
-          {/* <div>
-            <div className="text-[48px] font-bold h-[62px] justify-start items-center flex overflow-hidden max-md:h-[46px] max-sm:h-[48px]">
-              <h2 className="max-lg:text-[40px] max-md:text-[36px] max-sm:text-[30px]">20</h2>
-              <p>+</p>
-            </div>
-            <h4>Years of experience</h4>
-          </div> */}
           <Counter text="Years of experience" number={20} />
-
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
-
           <Counter text="Successful Projects" number={640} step={10} />
-
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
-
           <Counter text="Happy Clients" number={256} step={5} />
         </div>
         <div className="w-full z-10">
@@ -61,11 +45,6 @@ export default function home() {
           </div>
         </div>
       </div>
-
-      {/* Counter section End*/}
-
-      {/* About Us Start*/}
-
       <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="w-full flex max-lg:flex-col-reverse gap-10 max-sm:gap-5">
           <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
@@ -129,11 +108,6 @@ export default function home() {
           </div>
         </div>
       </section>
-
-      {/* About Us End*/}
-
-      {/* Projects Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="relative z-10">
           <div className="text-center">
@@ -165,11 +139,6 @@ export default function home() {
           </div>
         </div>
       </section>
-
-      {/* Projects End*/}
-
-      {/* Our Team Approach Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="text-center">
           <div className="h-full overflow-hidden">
@@ -185,7 +154,6 @@ export default function home() {
             </p>
           </div>
         </div>
-
         <div className="mt-[20px]">
           <div className="grid grid-cols-2 justify-between gap-5 mt-10 max-lg:grid-cols-1">
             <div className="bg-[#E0EFF6]">
@@ -210,7 +178,6 @@ export default function home() {
                   }
                 </p>
               </div>
-
               <div className="pl-[30px] pr-[50px] py-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
                   <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
@@ -232,7 +199,6 @@ export default function home() {
                   }
                 </p>
               </div>
-
               <div className="pl-[30px] pr-[50px] py-[30px]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
                   <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
@@ -253,7 +219,6 @@ export default function home() {
                 </p>
               </div>
             </div>
-
             <div className="w-full max-w-full max-md:overflow-hidden">
               <Image
                 width={710}
@@ -266,11 +231,6 @@ export default function home() {
           </div>
         </div>
       </section>
-
-      {/* Our Team Approach End*/}
-
-      {/* Our Flow start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="container max-w-[792px]">
           <div className="text-center flex justify-center items-center flex-col gap-4 ">
@@ -291,7 +251,6 @@ export default function home() {
             </Link>
           </div>
         </div>
-
         <div className="mt-[52px] relative">
           <div className="relative">
             <div className="gap-x-[66px] grid-rows-[auto] grid-cols-[1fr_minmax(360px,_auto)_1fr] auto-cols-[1fr] grid max-lg:gap-x-[0px] max-lg:grid-cols-[1fr_1fr_1fr] max-md:gap-x-[30px] max-md:gap-y-[30px] max-md:grid-cols-[1fr] max-sm:gap-x-[24px] max-sm:gap-y-[24px]">
@@ -352,11 +311,6 @@ export default function home() {
           </div>
         </div>
       </section>
-
-      {/* Our Flow End*/}
-
-      {/* Services End*/}
-
       <section className="bg-[#004363]">
         <div className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
           <div className="text-center text-white mt-10">
@@ -371,7 +325,6 @@ export default function home() {
               </p>
             </div>
           </div>
-
           <div className="mt-8 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
             <HomeServicesCard />
           </div>
@@ -385,22 +338,12 @@ export default function home() {
           </Link>
         </div>
       </section>
-
-      {/* Services End*/}
-
-      {/* Our Client Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <h3 className="tracking-[-.42px] mb-[36px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px] max-sm:mb-[30px]">
           Companies we worked with
         </h3>
         <OurClient />
       </section>
-
-      {/* Our Client End*/}
-
-      {/* Testimonials Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="text-center">
           <div className="h-full overflow-hidden">
@@ -420,22 +363,10 @@ export default function home() {
           <Testimonials />
         </div>
       </section>
-
-      {/* Testimonials End*/}
-
-      {/* Faq Start*/}
-
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <Faq />
       </section>
-
-      {/* Faq End*/}
-
-      {/* Upcoming Start*/}
-
       <BottomBanner />
-
-      {/* Upcoming End*/}
     </>
   );
 }

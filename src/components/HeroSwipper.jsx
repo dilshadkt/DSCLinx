@@ -153,10 +153,9 @@ export default function HeroSwipper() {
     });
 
     return () => {
-      // Clean up Swiper instance
       swiper.destroy();
     };
-  }, []); // Empty dependency array ensures this effect runs only once
+  }, []);
 
   return (
     <section className="hero-slider hero-style">
@@ -191,16 +190,9 @@ export default function HeroSwipper() {
                   </div>
                 </div>
               </div>
-              {/* end slide-inner */}
             </div>
           ))}
-
-          {/* end swiper-slide */}
-
-          {/* end swiper-slide */}
         </div>
-        {/* end swiper-wrapper */}
-        {/* swipper controls */}
       </div>
     </section>
   );
