@@ -13,7 +13,7 @@ jobs:
       id-token: "write"
 
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: actions/checkout@v4
 
       - name: Authenticate with GCP
         uses: google-github-actions/auth@v2
@@ -27,9 +27,16 @@ jobs:
           version: ">= 363.0.0"
 
       - name: Sync latest changes to GCP VM and Build
+        env:
+          REMOTE_USER: shefeeq
+          REMOTE_HOST: 35.192.179.177
+          REMOTE_PATH: /var/www/dsclinx.ca/
         run: |
           echo "${{ secrets.SSH_KEY }}" > ssh_key
           chmod 600 ./ssh_key
-          ssh -i ./ssh_key -o StrictHostKeyChecking=no shefeeq@35.192.179.177 "sudo su - -c 'cd /var/www/dsclinx.ca/ && find -not -name "build.sh" -delete'"
-          sudo rsync -chav -O --no-o --no-g --no-perms --exclude='.git' --exclude='.github' --exclude='gha-creds-*' --exclude='ssh_key' -e 'ssh -i ./ssh_key -o StrictHostKeyChecking=no' $GITHUB_WORKSPACE/ shefeeq@35.192.179.177:/var/www/dsclinx.ca/
-          ssh -i ./ssh_key -o StrictHostKeyChecking=no shefeeq@35.192.179.177 "sudo su - -c 'cd /var/www/dsclinx.ca/ && ./build.sh'"
+          echo "Cleaning remote directory..."
+          ssh -i ./ssh_key -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "sudo su - -c 'cd $REMOTE_PATH && find -not -name \"build.sh\" -delete'" || { echo 'Remote cleanup failed'; exit 1; }
+          echo "Syncing files to remote server..."
+          sudo rsync -chav -O --no-o --no-g --no-perms --exclude='.git' --exclude='.github' --exclude='gha-creds-*' --exclude='ssh_key' -e 'ssh -i ./ssh_key -o StrictHostKeyChecking=no' $GITHUB_WORKSPACE/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH || { echo 'Rsync failed'; exit 1; }
+          echo "Running build script on remote server..."
+          ssh -i ./ssh_key -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST "sudo su - -c 'cd $REMOTE_PATH && ./build.sh'" || { echo 'Remote build script failed'; exit 1; }
