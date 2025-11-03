@@ -76,51 +76,21 @@ export const CLIENTS = [
 
 export default function OurClient() {
   return (
-    <>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        autoplay={{
-          delay: 5500,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 30,
-          },
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Autoplay, Pagination]}
-      >
-        {CLIENTS.map((client, key) => (
-          <SwiperSlide key={key}>
-            <Card className="p-6 rounded border-2 border-[#515151]">
-              <div className="flex justify-center items-center p-10">
-                <Image
-                  width={130}
-                  height={130}
-                  src={client.image}
-                  className="!h-[111px] w-full !object-contain"
-                  alt=""
-                  //  style={{height: '111px', width: '100%', objectFit: 'contain'}}
-                />
-              </div>
-              <p className="text-left">{client.name}</p>
-            </Card>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-6 max-w-6xl mx-auto">
+      {CLIENTS.map((client, key) => (
+        <div
+          key={key}
+          className="flex items-center justify-center p-8 border-2 border-gray-200 rounded-lg hover:border-[#004363] transition-colors bg-white"
+        >
+          <Image
+            width={130}
+            height={130}
+            src={client.image}
+            className="w-full h-24 object-contain grayscale hover:grayscale-0 transition-all"
+            alt={client.name}
+          />
+        </div>
+      ))}
+    </div>
   );
 }

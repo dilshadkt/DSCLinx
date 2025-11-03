@@ -52,7 +52,7 @@ export default function Form() {
 
   return (
     <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-      <div className="relative bg-[#004363] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+      <div className="relative bg-black p-8 shadow-lg dark:bg-dark-2 sm:p-12">
         <form id="form" onSubmit={onSubmit}>
           <h2 className="flex justify-center text-white text-4xl font-semibold pb-9 max-sm:text-[27px]">
             Contact Us

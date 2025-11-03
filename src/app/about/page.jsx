@@ -45,21 +45,36 @@ export default function page() {
                   </div>
                 </div>
                 <div className="h-full overflow-hidden">
-                  <h2 className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-semibold leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]">
-                    {"We Picturesque,"} <br />
+                  <h2
+                    className="mb-[10px] ml-auto mr-auto text-[42px] tracking-[-1.8px] font-bold
+                   leading-[115%] max-lg:max-w-[465px] max-lg:text-center max-lg:mb-[10px] 
+                   max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[390px] max-md:mb-[8px] max-md:text-[36px]  max-sm:text-[27px]"
+                  >
+                    {"We Conceptualize,"} <br />
                     {"We Design,"} <br />
-                    {"We Renovate."}
+                    {"We Build."}
                   </h2>
                 </div>
                 <div className="h-full overflow-hidden max-lg:max-w-[664px] max-lg:text-center max-lg:ml-auto max-lg:mr-auto max-lg:text-[17px] max-sm:max-w-[390px] max-sm:text-[16px]">
-                  <p className="text-[18px] font-normal leading-[150%]">
-                    {
-                      "In Transforming your conceptualization into the art of design with high quality. We provide you with the whole idea of your space, working on Texture, Settings, Equipment and Arrangements. Also, Revisit and Renovate your expanse with a blend of Modern arch and Traditional design in a blend of space in time."
-                    }
+                  <p className="text-[18px] mt-6 w-full  md:w-[90%] font-normal leading-8">
+                    At DSC Linx, we bring your commercial spaces to life. From
+                    restaurants and offices to retail and accessible
+                    environments, we combine design, construction, and project
+                    management to create spaces that inspire and perform. Our
+                    dedicated team works with you from concept to completion,
+                    ensuring every detail — from layout and equipment to
+                    textures and finishes — reflects your vision.
+                  </p>
+                  <p className="text-[18px] mt-6 w-full  md:w-[90%] font-normal leading-8">
+                    We turn your ideas into reality, blending modern and
+                    traditional design principles to create functional,
+                    beautiful spaces. Whether it’s transforming an existing
+                    space or building from the ground up, we manage every step
+                    so you don’t have to worry about a thing.
                   </p>
                 </div>
 
-                <div className="px-[50px] py-[55px] bg-[#E0EFF6] mt-7 max-sm:px-[30px] max-sm:py-[30px] ">
+                {/* <div className="px-[50px] py-[55px] bg-[#E0EFF6] mt-7 max-sm:px-[30px] max-sm:py-[30px] ">
                   <div className="gap-x-[40px] justify-between flex relative max-sm:flex-col max-sm:gap-5">
                     <div className="w-full max-w-[260px]">
                       <Image
@@ -96,21 +111,26 @@ export default function page() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
             <Image
               src="/abouthome.png"
-              width={700}
+              width={370}
+              quality={100}
               height={300}
               alt="about"
               className=" h-full w-full object-cover"
             />
             <div className="absolute top-auto bottom-[0%] left-auto">
               <div className="inline-block relative">
-                <div className="-mb-px pt-[30px] pr-[34px] pb-[32px] pl-[31px] relative max-lg:pt-[30px] max-md:px-[30px] py-[20px] bg-[#004363] max-sm:px-[24px] max-sm:py-[18px]">
+                <div
+                  className="-mb-px pt-[30px] pr-[34px] pb-[32px] pl-[31px] 
+                  relative max-lg:pt-[30px] max-md:px-[30px] py-[20px] bg-black
+                 max-sm:px-[24px] max-sm:py-[18px]"
+                >
                   <div className="gap-x-[10px] gap-y-[10px] flex-row items-center flex">
                     <h2 className="tracking-[-3.95px] text-[70px] leading-[86px] text-white font-semibold max-lg:text-[64px] max-lg:leading-[70px] max-md:text-[64px] max-md:leading-[70px] max-sm:text-[30px] max-sm:leading-[30px] max-sm:tracking-[normal]">
                       4.9
@@ -153,52 +173,52 @@ export default function page() {
         </div>
 
         <div className="gap-x-[20px] gap-y-[20px] grid-rows-[350px_350px] grid-cols-[1fr_minmax(520px,_auto)_1fr] auto-cols-[1fr] mt-[64px] grid max-lg:grid-cols-[1fr_1fr] max-lg:mt-[50px] max-md:mt-[40px] max-sm:grid-cols-[1fr] max-sm:mt-[20px]">
-          <div className="border-[1px] border-[#004363] overflow-hidden">
+          <div className="border-[1px] border-[#004363] bg-black overflow-hidden relative group">
             <Image
               src={"/ourwork/ourw1.png"}
               width={386}
               height={323}
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-60"
               alt="ourwork"
             />
           </div>
 
-          <div className="border-[1px] border-[#004363] overflow-hidden [grid-area:span_2_/_span_1_/_span_2_/_span_1]">
+          <div className="border-[1px] border-[#004363] bg-black overflow-hidden [grid-area:span_2_/_span_1_/_span_2_/_span_1] relative group">
             <Image
               src={"/ourwork/ourw3.png"}
               width={640}
               height={534}
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-60"
               alt="ourwork"
             />
           </div>
 
-          <div className="border-[1px] border-[#004363] overflow-hidden">
+          <div className="border-[1px] border-[#004363] bg-black overflow-hidden relative group">
             <Image
               src={"/ourwork/ourw4.png"}
               width={386}
               height={272}
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-60"
               alt="ourwork"
             />
           </div>
 
-          <div className="border-[1px] border-[#004363] overflow-hidden">
+          <div className="border-[1px] border-[#004363] bg-black overflow-hidden relative group">
             <Image
               src={"/ourwork/ourw2.png"}
               width={384}
               height={320}
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-60"
               alt="ourwork"
             />
           </div>
 
-          <div className="border-[1px] border-[#004363] overflow-hidden">
+          <div className="border-[1px] border-[#004363] bg-black overflow-hidden relative group">
             <Image
               src={"/ourwork/ourw5.png"}
               width={384}
               height={320}
-              className="w-[100%] h-[100%] object-cover"
+              className="w-[100%] h-[100%] object-cover transition-opacity duration-300 group-hover:opacity-100 opacity-60"
               alt="ourwork"
             />
           </div>
@@ -209,10 +229,10 @@ export default function page() {
       <section className="container py-[70px] overflow-hidden max-lg:py-[40px] max-md:py-[40px] max-sm:py-[40px]">
         <div className="w-full max-w-full flex overflow-hidden text-white max-lg:flex-col">
           <div
-            className="w-full max-w-[480px] bg-[50%] bg-cover p-[80px] relative max-lg:max-w-full max-sm:p-[40px]"
-            style={{ backgroundImage: 'url("/experience-img.png")' }}
+            className="w-full max-w-[480px] bg-[50%] bg-cover p-[80px] 
+          bg-black relative max-lg:max-w-full rounded-lg overflow-hidden max-sm:p-[40px]"
           >
-            <div className="overflow-hidden">
+            <div className="overflow-hidden relative z-20">
               <div className="gap-x-[15px] gap-y-[15px] justify-center items-end mb-[14px] flex overflow-hidden">
                 <h2 className="capitalize text-[110px] font-bold leading-[100%] max-md: max-sm:text-[41px]">
                   20
@@ -227,19 +247,26 @@ export default function page() {
                 </div>
               </div>
               <p className="mt-5 max-lg:text-center">
-                Over the last two decade, our focus and interest have been on
-                the experience of architectural space and the idea of spatial
-                experience which resulted in the experimental concept of
-                elements that make the space more sense.
+                DSC Linx has helped countless businesses bring their visions to
+                life. We’ve partnered with top brands and local businesses
+                alike, delivering high-quality, reliable, and innovative
+                commercial projects.
               </p>
             </div>
-            <div className="w-full max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute sm:top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px] max-sm:left-[-92px] top-[19px]">
+            <div className="w-full  z-20 max-w-[260.298px] bg-[#f6f7f8] px-[43px] py-[18px] absolute sm:top-[35px] bottom-auto -left-[70px] right-auto -rotate-45 max-sm:py-[10px] max-sm:left-[-92px] top-[19px]">
               <h2 className="text-center text-black font-semibold text-[22px] tracking-[-0.56px] leading-[133.6%] max-lg:text-[20px] max-sm:text-[16px]">
                 Since 2004
               </h2>
             </div>
+            <Image
+              src={"/footer.jpg"}
+              alt="experience"
+              width={260}
+              height={260}
+              className="absolute w-full h-full bottom-0 left-0 object-cover opacity-30"
+            />
           </div>
-          <div className="w-full bg-[#E0EFF6] p-[68px] text-black max-lg:p-[50px] max-sm:p-[30px]">
+          <div className="w-full bg-gray-100 p-[68px] text-black max-lg:p-[50px] max-sm:p-[30px]">
             <div className="border-b-2 border-b-black pb-10 max-sm:pb-4">
               <div className="gap-x-[15px] gap-y-[15px] items-center mb-[12px] flex overflow-hidden">
                 <h4 className="text-[29px] font-semibold tracking-[-0.56px] leading-[133.6%] max-sm:text-[22px] max-sm:leading-[120.6%]">
@@ -296,7 +323,7 @@ export default function page() {
         <div className="flex justify-between items-center max-xl:flex-col-reverse max-xl:gap-10">
           <div className="max-w-[588px] max-xl:w-full">
             <div className="w-full max-w-[588px] relative max-xl:w-full">
-              <div>
+              <div className="border-[5px] border-black">
                 <Image
                   src={"/ourmission.png"}
                   width={518}
@@ -304,7 +331,7 @@ export default function page() {
                   alt="ourmission"
                 />
               </div>
-              <div className="absolute top-auto bottom-[0%] left-auto -right-[50px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
+              <div className="absolute top-auto border-[5px] border-black -bottom-[5%] left-auto -right-[50px] overflow-hidden max-lg:-right-[74px] max-md:-right-[17px] max-sm:-right-[12px] !max-sm:max-w-[110px]">
                 <Image
                   src={"/ourmission-sub.png"}
                   width={256}
@@ -318,21 +345,21 @@ export default function page() {
 
           <div>
             <Tabs defaultValue="mission" className="w-[600px] max-xl:w-full">
-              <TabsList className="grid w-full grid-cols-3 bg-[#E0EFF6] h-14">
+              <TabsList className="grid w-full grid-cols-3 bg-gray-100 h-14">
                 <TabsTrigger
-                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-black data-[state=active]:text-white"
                   value="mission"
                 >
                   Our mission
                 </TabsTrigger>
                 <TabsTrigger
-                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-black data-[state=active]:text-white"
                   value="vision"
                 >
                   Our vision
                 </TabsTrigger>
                 <TabsTrigger
-                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-[#004363] data-[state=active]:text-white"
+                  className="py-3 text-[18px] max-sm:text-[16px] data-[state=active]:bg-black data-[state=active]:text-white"
                   value="goal"
                 >
                   Our goal
@@ -340,31 +367,31 @@ export default function page() {
               </TabsList>
               <TabsContent value="mission" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  To bring out the best.
+                  Our Mission
                 </h2>
-                <p>
+                <p className="leading-7">
                   {
-                    "On this journey as a leading firm, we focus on unlocking world-class design solutions with dedication, professionalism and excellence."
+                    "We are committed to delivering high-quality, creative, and efficient commercial construction services with integrity and professionalism. Our goal is simple: to make your vision a reality while creating spaces that inspire, perform, and stand the test of time."
                   }
                 </p>
               </TabsContent>
               <TabsContent value="vision" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  With the best quality and a better choice.
+                  Our Vision
                 </h2>
-                <p>
+                <p className="leading-7">
                   {
-                    "As a growing field of industry, we concentrate on providing high-quality services and well-updated creative expansion to the architecture field with integrity and honesty."
+                    "To be the most trusted and innovative commercial construction partner in the industry, recognized for excellence in design, craftsmanship, and client satisfaction. We envision a future where every project we complete sets new standards for quality, sustainability, and transformative spaces."
                   }
                 </p>
               </TabsContent>
               <TabsContent value="goal" className="mt-10">
                 <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
-                  To deliver as you desire.
+                  Our Goal
                 </h2>
-                <p>
+                <p className="leading-7">
                   {
-                    "To serve your project with a promising design that comes from attentive discussions and thoughtful solutions, by focusing on your interests and ideas."
+                    "To exceed client expectations on every project by combining innovative design, superior craftsmanship, and seamless execution. We aim to build lasting relationships through transparent communication, on-time delivery, and exceptional results that transform commercial spaces into thriving environments for business success."
                   }
                 </p>
               </TabsContent>
@@ -376,15 +403,14 @@ export default function page() {
 
       {/* Faq Start*/}
 
-      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-        <Faq />
-      </section>
-
       {/* Faq End*/}
 
       {/* Upcoming Start*/}
 
       <BottomBanner />
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <Faq />
+      </section>
 
       {/* Upcoming End*/}
     </>

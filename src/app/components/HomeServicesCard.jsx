@@ -9,7 +9,7 @@ export default function HomeServicesCard() {
           key={key}
           name={service.name}
           desc={service.desc}
-          image={service.image}
+          icon={service.icon}
           color={"text-white"}
           link={service.link}
         />

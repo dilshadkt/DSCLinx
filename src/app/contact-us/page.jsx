@@ -107,7 +107,7 @@ const Contact = () => {
                   </div>
                 </Link>
 
-                <Link target="_blank" href="mailto:dsclinx@gmail.com">
+                <Link target="_blank" href="mailto:Info@dsclinx.com">
                   <div className="mb-8 flex w-full max-w-[370px]">
                     <div className="mr-6 flex w-full max-w-[55px] h-[55px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[60px] sm:max-w-[60px]">
                       <svg
@@ -128,7 +128,7 @@ const Contact = () => {
                         Email Address
                       </h4>
                       <p className="text-base text-body-color dark:text-dark-6">
-                        dsclinx@gmail.com
+                        Info@dsclinx.com
                       </p>
                     </div>
                   </div>

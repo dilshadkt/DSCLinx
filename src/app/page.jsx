@@ -14,8 +14,18 @@ export default function home() {
   return (
     <>
       <HeroSwipper />
-      <div className="gap-x-[61px] gap-y-[61px] items-start flex max-lg:gap-x-[0px] max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px] max-lg:container">
-        <div className="w-full max-w-[684px] justify-between items-center py-[44px] pl-[90px] max-lg:pl-0 flex max-lg:max-w-full max-lg:text-white max-lg:gap-[20px] max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:mb-[40px] max-lg:py-0 max-lg:flex max-lg:relative max-md:gap-[15px] max-sm:gap-[10px]">
+      {/* static section  */}
+      <div
+        className="gap-x-[61px] relative py-10 lg:py-0 bg-black  gap-y-[61px] items-start flex max-lg:gap-x-[0px]
+       max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px]
+        max-lg:container"
+      >
+        <div
+          className="w-full max-w-[684px] justify-between items-center py-[64px]
+         pl-[90px] max-lg:pl-0 flex max-lg:max-w-full text-white max-lg:gap-[20px]
+          max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:mb-[40px]
+           max-lg:py-0 max-lg:flex max-lg:relative max-md:gap-[15px] max-sm:gap-[10px]"
+        >
           <Counter text="Years of experience" number={20} />
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
           <Counter text="Successful Projects" number={640} step={10} />
@@ -23,10 +33,16 @@ export default function home() {
           <Counter text="Happy Clients" number={256} step={5} />
         </div>
         <div className="w-full z-10">
-          <div className="p-[70px] max-lg:p-[45px] relative max-lg:static bottom-[120px] bg-[#004363] text-white">
+          <div
+            className="p-[70px] max-lg:p-[45px] absolute max-lg:static 
+          bottom-[100px] bg-[#ffffff]/20 text-slate-50 rounded-md backdrop-blur-md"
+          >
             <div>
               <div className="h-full overflow-hidden">
-                <div className="tracking-[.3px] capitalize mt-0 mb-[16px] text-[34px] font-semibold leading-[120%] max-w-[554px] max-md:text-[34px] max-sm:text-[20px]">
+                <div
+                  className="tracking-[.3px] capitalize mt-0 mb-[16px] text-[34px] font-semibold 
+                leading-[120%] max-w-[554px] max-md:text-[34px] max-sm:text-[20px]"
+                >
                   {
                     " ”In The Heart Of The Town, DSCLINX Stands Unparalleled In Excellence.” "
                   }
@@ -36,7 +52,7 @@ export default function home() {
             <div className="justify-between items-center flex overflow-hidden">
               <div className="w-[295px] h-[2px] bg-[rgba(255,_255,_255,_.5)] rounded-[5px] ml-[17px] max-md:w-[213px] max-sm:w-[100px]"></div>
               <div className="text-right">
-                <h4 className="mb-[3px] text-[18px] font-medium leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">
+                <h4 className="mb-[3px] text-[18px] font-semibold leading-[150%] max-md:text-[16px] max-sm:mb-[2px] max-sm:text-[14px]">
                   ALEY KHALIL
                 </h4>
                 <h6>CEO, OMASH</h6>
@@ -45,7 +61,7 @@ export default function home() {
           </div>
         </div>
       </div>
-      <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+      {/* <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="w-full flex max-lg:flex-col-reverse gap-10 max-sm:gap-5">
           <div className="w-full max-w-[775px] relative max-md:max-w-full max-md:overflow-hidden">
             <Image
@@ -107,7 +123,8 @@ export default function home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      {/* projects sections  */}
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="relative z-10">
           <div className="text-center">
@@ -132,13 +149,70 @@ export default function home() {
 
           <div className="mt-[20px] flex justify-center items-center">
             <Link href="/projects">
-              <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
+              <Button className="bg-black rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
                 <span>View all Projects</span>
               </Button>
             </Link>
           </div>
         </div>
       </section>
+      {/* clients sections  */}
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <h3 className="tracking-[-.42px] mb-4 leading-[120%] text-[42px] font-semibold max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px]">
+            Companies we worked with
+          </h3>
+          <p className="text-gray-600 text-lg max-md:text-base">
+            Trusted by leading brands across industries. We take pride in
+            delivering exceptional construction and renovation services to our
+            valued partners.
+          </p>
+        </div>
+
+        <OurClient />
+      </section>
+      {/* service we provide  */}
+      <section className="bg-black mt-16 relative overflow-hidden">
+        {/* Subtle gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/50 to-transparent pointer-events-none"></div>
+
+        <div className="container py-[80px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[50px] relative z-10">
+          <div className="text-center text-white">
+            <div className="h-full overflow-hidden mb-4">
+              <h2 className="tracking-[-.42px] leading-[120%] text-[42px] font-bold max-lg:max-w-[486px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px] max-sm:text-[27px]">
+                Services We Provide
+              </h2>
+            </div>
+            <div className="h-full overflow-hidden">
+              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] text-gray-300 max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
+                We're more than a construction company — we're your partner from
+                start to finish, focusing on quality, efficiency, and
+                collaboration to bring your vision to life.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
+            <HomeServicesCard />
+          </div>
+          <Link href="/services" className="flex justify-center mt-16">
+            <Button
+              variant="secondary"
+              className="bg-white text-black rounded-none text-lg px-10 py-6 md:flex cont hover:bg-transparent hover:border-2 border-white hover:text-white transition-all duration-300 font-semibold"
+            >
+              <span>View all Services</span>
+            </Button>
+          </Link>
+        </div>
+        <Image
+          src={"/footer.jpg"}
+          alt="bg illustration"
+          width={1200}
+          height={700}
+          className="absolute left-0 right-0 top-0 bottom-0 
+        opacity-30 w-full h-full object-cover"
+        />
+      </section>
+      {/* we build it  */}
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="text-center">
           <div className="h-full overflow-hidden">
@@ -156,10 +230,10 @@ export default function home() {
         </div>
         <div className="mt-[20px]">
           <div className="grid grid-cols-2 justify-between gap-5 mt-10 max-lg:grid-cols-1">
-            <div className="bg-[#E0EFF6]">
+            <div className="bg-gray-100">
               <div className="p-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
+                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
                     <Image
                       width={100}
                       height={100}
@@ -180,7 +254,7 @@ export default function home() {
               </div>
               <div className="pl-[30px] pr-[50px] py-[30px] border-solid border-2 border-b-[#969696]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
+                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
                     <Image
                       width={100}
                       height={100}
@@ -201,7 +275,7 @@ export default function home() {
               </div>
               <div className="pl-[30px] pr-[50px] py-[30px]">
                 <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-[#004363] w-[65px] h-[65px]">
+                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
                     <Image
                       width={100}
                       height={100}
@@ -231,6 +305,7 @@ export default function home() {
           </div>
         </div>
       </section>
+      {/* unlock our offeing  */}
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="container max-w-[792px]">
           <div className="text-center flex justify-center items-center flex-col gap-4 ">
@@ -245,7 +320,10 @@ export default function home() {
               </p>
             </div>
             <Link href="/contact-us">
-              <Button className="bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
+              <Button
+                className="bg-black rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2
+               border-gray-800 hover:text-gray-800"
+              >
                 <span>Contact us</span>
               </Button>
             </Link>
@@ -255,7 +333,7 @@ export default function home() {
           <div className="relative">
             <div className="gap-x-[66px] grid-rows-[auto] grid-cols-[1fr_minmax(360px,_auto)_1fr] auto-cols-[1fr] grid max-lg:gap-x-[0px] max-lg:grid-cols-[1fr_1fr_1fr] max-md:gap-x-[30px] max-md:gap-y-[30px] max-md:grid-cols-[1fr] max-sm:gap-x-[24px] max-sm:gap-y-[24px]">
               <div className="text-center">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                <div className="w-[90px] h-[90px] bg-black rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
                   <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     01
                   </h4>
@@ -270,7 +348,7 @@ export default function home() {
                 </p>
               </div>
               <div className="max-w-[360px] ml-auto mr-auto pt-[128px] text-center max-lg:max-w-[273px] max-lg:pt-[85px] max-md:w-full max-md:max-w-full max-md:p-[30px]">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                <div className="w-[90px] h-[90px] bg-black rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
                   <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     02
                   </h4>
@@ -285,7 +363,7 @@ export default function home() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-[90px] h-[90px] bg-[#004363] rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
+                <div className="w-[90px] h-[90px] bg-black rounded-[100%] justify-center items-center mb-[32px] ml-auto mr-auto flex max-lg:w-[60px]  max-lg:h-[60px] max-md:mb-[20px] max-sm:w-[55px] max-sm:h-[55px] max-sm:mb-[10px]">
                   <h4 className="text-[#fff] mt-0 mb-0 text-[36px] font-semibold leading-[120%] max-lg:text-[22px] max-sm:text-[22px]">
                     03
                   </h4>
@@ -311,39 +389,7 @@ export default function home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#004363]">
-        <div className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-          <div className="text-center text-white mt-10">
-            <div className="h-full overflow-hidden">
-              <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
-                Services We Provide
-              </h2>
-            </div>
-            <div className="h-full overflow-hidden">
-              <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16x]">
-                {"Dsclinx will create a high-quality space with perfection."}
-              </p>
-            </div>
-          </div>
-          <div className="mt-8 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1">
-            <HomeServicesCard />
-          </div>
-          <Link href="/services" className="flex justify-center mt-20">
-            <Button
-              variant="secondary"
-              className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white"
-            >
-              <span>View all Services</span>
-            </Button>
-          </Link>
-        </div>
-      </section>
-      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-        <h3 className="tracking-[-.42px] mb-[36px] leading-[120%] text-[42px] font-semibold max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:text-[36px] max-sm:text-[27px] max-sm:mb-[30px]">
-          Companies we worked with
-        </h3>
-        <OurClient />
-      </section>
+
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="text-center">
           <div className="h-full overflow-hidden">
@@ -363,10 +409,11 @@ export default function home() {
           <Testimonials />
         </div>
       </section>
+      <BottomBanner />
+
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <Faq />
       </section>
-      <BottomBanner />
     </>
   );
 }

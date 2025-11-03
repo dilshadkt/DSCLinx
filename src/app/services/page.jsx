@@ -4,6 +4,7 @@ import ServicesCard from "./ServicesCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import BottomBanner from "@/components/BottomBanner";
+import Faq from "@/components/Faq";
 export default function page() {
   return (
     <>
@@ -28,7 +29,7 @@ export default function page() {
               href="/contact-us"
               className=" max-lg:flex max-lg:justify-center"
             >
-              <Button className="mt-5 bg-[#004363] rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
+              <Button className="mt-5 bg-black rounded-none	text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#004363] hover:text-[#004363]">
                 <span>Contact us</span>
               </Button>
             </Link>
@@ -45,6 +46,10 @@ export default function page() {
       <BottomBanner />
 
       {/* Upcoming End*/}
+
+      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
+        <Faq />
+      </section>
     </>
   );
 }

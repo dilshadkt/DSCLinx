@@ -8,12 +8,12 @@ const SOCIALS = [
   {
     name: "Instagram",
     icon: <Instagram />,
-    link: "https://www.instagram.com/linxdsc/",
+    link: "https://www.instagram.com/dsclinx_canada/?hl=en",
   },
   {
     name: "Facebook",
     icon: <Facebook />,
-    link: "https://www.facebook.com/dsc.linx.7",
+    link: "https://www.facebook.com/people/DSC-LINX-Canada/61582771291991/",
   },
   {
     name: "Linkedin",
@@ -28,18 +28,21 @@ const SOCIALS = [
 ];
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
-      <footer className=" bg-[#171D29] text-white">
-        <div className="mx-auto w-full max-w-screen-xl pt-5">
+      <footer className=" bg-black text-white relative">
+        <div className="mx-auto relative z-20 w-full max-w-screen-xl pt-5">
           <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 sm:grid-cols-2">
             <div>
-              <div className="mb-5">
+              <div className="mb-5 w-40 ">
                 <Image
-                  src={"/logo-2.png"}
-                  width={128}
-                  height={33}
-                  className="w-23"
+                  src={"/footer_logo.png"}
+                  width={100}
+                  height={100}
+                  quality={100}
+                  className="w-full h-full scale-150 -translate-x-6 object-cover"
                   alt="Logo"
                 />
               </div>
@@ -102,15 +105,18 @@ export default function Home() {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link target="_blank" href="mailto:dsclinx@gmail.com">
-                    dsclinx@gmail.com
+                  <Link target="_blank" href="mailto:Info@dsclinx.com">
+                    Info@dsclinx.com
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="px-4 py-6 border-t-2 dark:bg-gray-700 flex justify-between items-center max-md:flex-col">
-            <span className="">Copyright ©2024 by DSCLINX</span>
+          <div
+            className="px-4 py-6 border-t-2 dark:bg-gray-700 flex
+          border-slate-700 justify-between items-center max-md:flex-col"
+          >
+            <span className="">Copyright ©{currentYear} by DSCLINX</span>
             <div className="">
               <Link target="_blank" href="https://www.moonleyinteractive.com/">
                 {" "}
@@ -119,6 +125,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Image
+          src={"/footer.jpg"}
+          width={1200}
+          height={700}
+          alt="footer"
+          className="absolute bottom-0 right-0 opacity-45 top-0 left-0 w-full h-full object-cover"
+        />
       </footer>
     </>
   );

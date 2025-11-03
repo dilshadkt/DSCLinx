@@ -68,7 +68,7 @@ export default function DesktopNavbar() {
                   className={cn(
                     "font-normal !text-base",
                     isActive(columns.link) &&
-                      "text-[#004363] font-semibold hover:text-[#004363] focus:text-[#004363]"
+                      "text-[#004363] font-semibold hover:text-[#004363] focus:text-[#004363] after:!bg-[#004363]"
                   )}
                 >
                   {columns.title}
@@ -94,9 +94,9 @@ export default function DesktopNavbar() {
                 <NavigationMenuLink
                   className={cn(
                     navigationMenuTriggerStyle(),
-                    "font-normal !text-base",
+                    "font-normal !text-base relative after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-[80%] after:bg-white",
                     pathname === columns.link &&
-                      "text-[#004363] font-semibold hover:text-[#004363] focus:text-[#004363"
+                      "text-[#004363] font-semibold hover:text-[#004363] focus:text-[#004363] after:!bg-[#004363]"
                   )}
                 >
                   {columns.title}

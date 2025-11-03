@@ -24,9 +24,12 @@ export default function ImageGallery({ images }) {
             loading="lazy"
             width={800}
             height={800}
-            alt="image"
+            alt={`Project image ${i + 1}`}
             src={item}
             className="w-full aspect-square object-cover"
+            decoding="async"
+            quality={85}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </a>
       ))}

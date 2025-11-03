@@ -32,9 +32,10 @@ export default function NavCard({ active }) {
             <div className="pt-3" key={index}>
               <Link
                 href={service.url}
-                className={`${
-                  active === service.url.split("/").pop() &&
-                  "text-[#004363] font-semibold"
+                className={`relative inline-block ${
+                  active === service.url.split("/").pop()
+                    ? "text-white font-semibold bg-black px-3 py-1 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:bg-white after:w-[80%]"
+                    : ""
                 }`}
               >
                 {service.name}
