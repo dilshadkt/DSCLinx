@@ -21,8 +21,8 @@ export default function home() {
         max-lg:container"
       >
         <div
-          className="w-full max-w-[684px] justify-between items-center py-[64px]
-         pl-[90px] max-lg:pl-0 flex max-lg:max-w-full text-white max-lg:gap-[20px]
+          className="w-full mx-auto max-w-5xl justify-between items-center py-[64px]
+           max-lg:pl-0 flex max-lg:max-w-full text-white max-lg:gap-[20px]
           max-lg:flex-row max-lg:justify-center max-lg:items-center max-lg:mb-[40px]
            max-lg:py-0 max-lg:flex max-lg:relative max-md:gap-[15px] max-sm:gap-[10px]"
         >
@@ -32,7 +32,7 @@ export default function home() {
           <div className="w-px h-[50px] bg-[#1d3c37] max-lg:-mt-[24px] max-lg:bg-[#ffffffcc] max-sm:h-[37px] max-sm:-mt-[54px]"></div>
           <Counter text="Happy Clients" number={256} step={5} />
         </div>
-        <div className="w-full z-10">
+        {/* <div className="w-full z-10">
           <div
             className="p-[70px] max-lg:p-[45px] absolute max-lg:static 
           bottom-[100px] bg-[#ffffff]/20 text-slate-50 rounded-md backdrop-blur-md"
@@ -59,7 +59,7 @@ export default function home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <section className="container py-[70px] pt-0 overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="w-full flex max-lg:flex-col-reverse gap-10 max-sm:gap-5">
@@ -185,7 +185,7 @@ export default function home() {
             </div>
             <div className="h-full overflow-hidden">
               <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] text-gray-300 max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
-ee                We&apos;re more than a construction company — we&apos;re your
+                ee We&apos;re more than a construction company — we&apos;re your
                 partner from start to finish, focusing on quality, efficiency,
                 and collaboration to bring your vision to life.
               </p>
@@ -297,7 +297,7 @@ ee                We&apos;re more than a construction company — we&apos;re you
               <Image
                 width={710}
                 height={672}
-                src="/team-approach.png"
+                src="/projects/ChampionDonerKebab/5.png"
                 alt="team-approach"
                 className="w-full h-full max-w-full object-cover"
               />

@@ -2,24 +2,24 @@ import ProjectCard from "@/components/ProjectCard";
 
 const PROJECTS = [
   {
-    name: "Pizza Hut – Richmond Hill",
-    image: "/projects/PizzaHut–Rich.png",
-    link: "/PizzaHutRichmondHill",
+    name: "Amor Shawarma",
+    image: "/projects/AmorShawarma.jpg",
+    link: "/AmorShawarma",
   },
   {
-    name: "Layalina – Cambridge",
-    image: "/projects/Layalina–Cambridge.png",
-    link: "/LayalinaCambridge",
+    name: "Beavertails Mississauga",
+    image: "/projects/BeavertailsMississauga.jpg",
+    link: "/BeavertailsMississauga",
   },
   {
-    name: "Bridal Shop – 111 Berkeley St.",
-    image: "/projects/BridalShopBerkeley.png",
-    link: "/BridalShopBerkeley",
+    name: "WareHouse Windsor",
+    image: "/projects/WareHouseWindsor.jpg",
+    link: "/WareHouseWindsor",
   },
   {
-    name: "Centerpoint Hurry Curry",
-    image: "/projects/CenterpointHurryCurry.png",
-    link: "/CenterpointHurryCurry",
+    name: "Farrah Foods Paris",
+    image: "/projects/FarrahFoodsParis.jpg",
+    link: "/FarrahFoodsParis",
   },
 ];
 

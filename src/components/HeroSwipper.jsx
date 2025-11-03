@@ -11,7 +11,7 @@ const CAROUSEL_IMAGE = [
     desc: "We bring your commercial space ideas to life. ",
   },
   {
-    img: "/banners/b2.jpg",
+    img: "/banners/b2.JPEG",
     title: ["Restaurant Design", "& Build."],
     desc: "We help turn your restaurant vision into a space people love.",
   },
@@ -22,12 +22,12 @@ const CAROUSEL_IMAGE = [
   },
   {
     img: "/banners/b4.jpg",
-    title: ["Retail & Office Spaces "],
+    title: ["Retail & Office", "Spaces "],
     desc: "We create workspaces that feel inspiring and welcoming.",
   },
   {
     img: "/banners/b5.jpg",
-    title: ["Project Management"],
+    title: ["Project", "Management"],
     desc: "From start to finish, we’re here to make it all happen for you.",
   },
   {
@@ -35,60 +35,60 @@ const CAROUSEL_IMAGE = [
     title: ["Art creates,", "Arch connects,", "Design Unites."],
     desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
   },
-  {
-    img: "/banners/b7.jpg",
-    title: [
-      "Celebrate the incredible architecture and transform your home into the best.",
-    ],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
-  },
-  {
-    img: "/banners/b8.jpg",
-    title: ["Crafting Inspiration, Building Connections, Uniting Spaces."],
-    desc: "Promoting unity and inspiration through creative space design and meaningful connections.",
-  },
-  {
-    img: "/banners/b9.jpg",
-    title: ["Transform Your Space with Remarkable Design Innovation."],
-    desc: "Experience the transformation of your living space with our remarkable design innovation",
-  },
-  {
-    img: "/banners/b10.jpg",
-    title: ["Designing Dreams, Building Realities."],
-    desc: "Transforming visions into tangible structures, we specialize in crafting dreams into concrete realities",
-  },
-  {
-    img: "/banners/b11.jpg",
-    title: ["Art creates,", "Arch connects,", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
-  },
-  {
-    img: "/banners/b12.jpg",
-    title: [
-      "Celebrate the incredible architecture and transform your home into the best.",
-    ],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
-  },
-  {
-    img: "/banners/b13.jpg",
-    title: ["Crafting Inspiration, Building Connections, Uniting Spaces."],
-    desc: "Promoting unity and inspiration through creative space design and meaningful connections.",
-  },
-  {
-    img: "/banners/b14.jpg",
-    title: ["Transform Your Space with Remarkable Design Innovation."],
-    desc: "Experience the transformation of your living space with our remarkable design innovation",
-  },
-  {
-    img: "/banners/b15.jpg",
-    title: ["Designing Dreams, Building Realities."],
-    desc: "Transforming visions into tangible structures, we specialize in crafting dreams into concrete realities",
-  },
-  {
-    img: "/banners/b16.jpg",
-    title: ["Art creates,", "Arch connects,", "Design Unites."],
-    desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
-  },
+  // {
+  //   img: "/banners/b7.jpg",
+  //   title: [
+  //     "Celebrate the incredible architecture and transform your home into the best.",
+  //   ],
+  //   desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  // },
+  // {
+  //   img: "/banners/b8.jpg",
+  //   title: ["Crafting Inspiration, Building Connections, Uniting Spaces."],
+  //   desc: "Promoting unity and inspiration through creative space design and meaningful connections.",
+  // },
+  // {
+  //   img: "/banners/b9.jpg",
+  //   title: ["Transform Your Space with Remarkable Design Innovation."],
+  //   desc: "Experience the transformation of your living space with our remarkable design innovation",
+  // },
+  // {
+  //   img: "/banners/b10.jpg",
+  //   title: ["Designing Dreams, Building Realities."],
+  //   desc: "Transforming visions into tangible structures, we specialize in crafting dreams into concrete realities",
+  // },
+  // {
+  //   img: "/banners/b11.jpg",
+  //   title: ["Art creates,", "Arch connects,", "Design Unites."],
+  //   desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  // },
+  // {
+  //   img: "/banners/b12.jpg",
+  //   title: [
+  //     "Celebrate the incredible architecture and transform your home into the best.",
+  //   ],
+  //   desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  // },
+  // {
+  //   img: "/banners/b13.jpg",
+  //   title: ["Crafting Inspiration, Building Connections, Uniting Spaces."],
+  //   desc: "Promoting unity and inspiration through creative space design and meaningful connections.",
+  // },
+  // {
+  //   img: "/banners/b14.jpg",
+  //   title: ["Transform Your Space with Remarkable Design Innovation."],
+  //   desc: "Experience the transformation of your living space with our remarkable design innovation",
+  // },
+  // {
+  //   img: "/banners/b15.jpg",
+  //   title: ["Designing Dreams, Building Realities."],
+  //   desc: "Transforming visions into tangible structures, we specialize in crafting dreams into concrete realities",
+  // },
+  // {
+  //   img: "/banners/b16.jpg",
+  //   title: ["Art creates,", "Arch connects,", "Design Unites."],
+  //   desc: "Enrich your space with tranquility, We deliver elegant solutions to your expanse. Exhibit the artistic experience",
+  // },
 ];
 
 export default function HeroSwipper() {

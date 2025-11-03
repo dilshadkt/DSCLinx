@@ -63,12 +63,23 @@ export default function Header() {
     <div className="border-b-2 border-solid relative bg-black z-50 border-[#c7c7c7]">
       <div className="relative container py-2 gap-8 flex items-center justify-between ">
         <div className="relative">
-          <Link href="/" onClick={() => setOpen(false)}>
+          <Link
+            href="/"
+            onClick={() => setOpen(false)}
+            className="flex items-center gap-x-2"
+          >
             <Image
               src={"/logo.jpg"}
               width={128}
               height={33}
-              className="w-14"
+              className=" w-12 md:w-14"
+              alt="Logo"
+            />
+            <Image
+              src={"/logo-2.png"}
+              width={128}
+              height={33}
+              className=" w-[68px]"
               alt="Logo"
             />
           </Link>
@@ -84,22 +95,31 @@ export default function Header() {
         {/* mobile */}
         <Menu
           onClick={() => setOpen(true)}
-          className="md:hidden cursor-pointer"
+          className="md:hidden text-white cursor-pointer"
           size={40}
         />
         {open && (
           <div className="fixed z-20 inset-0 bg-black animate-reveal">
             <div className="relative w-full h-full flex items-center justify-center">
-              <Image
-                src={"/logo-2.png"}
-                width={115}
-                height={97}
-                className="w-23 fixed top-2 left-8 z-[2]"
-                alt="Logo"
-              />
+              <div className="flex items-center gap-x-2 fixed top-5 left-8 z-[2]">
+                <Image
+                  src={"/logo.jpg"}
+                  width={128}
+                  height={33}
+                  className=" w-12 md:w-14"
+                  alt="Logo"
+                />
+                <Image
+                  src={"/logo-2.png"}
+                  width={115}
+                  height={97}
+                  className="w-23 "
+                  alt="Logo"
+                />
+              </div>
               <X
                 onClick={() => setOpen(false)}
-                className="md:hidden text-secondary cursor-pointer fixed top-2 right-4 z-[2]"
+                className="md:hidden text-secondary cursor-pointer fixed top-5 right-4 z-[2]"
                 size={40}
               />
               <div className="flex mt-16 flex-col items-center justify-center gap-8">
