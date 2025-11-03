@@ -16,7 +16,7 @@ export default function home() {
       <HeroSwipper />
       {/* static section  */}
       <div
-        className="gap-x-[61px] relative py-10 lg:py-0 bg-black  gap-y-[61px] items-start flex max-lg:gap-x-[0px]
+        className="gap-x-[61px] relative pt-10 lg:py-0 bg-black  gap-y-[61px] items-start flex max-lg:gap-x-[0px]
        max-lg:gap-y-[0px] max-lg:flex-col max-lg:-mt-[156px] max-md:-mt-[110px]
         max-lg:container"
       >

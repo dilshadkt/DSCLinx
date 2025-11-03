@@ -162,9 +162,10 @@ export default function HeroSwipper() {
           {CAROUSEL_IMAGE.map((item, key) => (
             <div className="swiper-slide" key={key}>
               <div
-                className="slide-inner slide-bg-image"
+                className="slide-inner relative slide-bg-image"
                 data-background={item.img}
               >
+                <div className="bg-black/30 absolute left-0 right-0 bottom-0 top-0 w-full h-full" />
                 <div className="container">
                   <div data-swiper-parallax={300} className="slide-title">
                     <h2>
