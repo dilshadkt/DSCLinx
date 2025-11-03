@@ -68,7 +68,7 @@ export default function Header() {
               src={"/logo.jpg"}
               width={128}
               height={33}
-              className="w-16"
+              className="w-14"
               alt="Logo"
             />
           </Link>
