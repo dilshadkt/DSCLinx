@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import BottomBanner from "@/components/BottomBanner";
 import HeroSwipper from "@/components/HeroSwipper";
 import Counter from "@/components/Counter";
+import ProfessionalTouchSection from "@/components/ProfessionalTouchSection";
 
 export default function home() {
   return (
@@ -213,98 +214,7 @@ export default function home() {
         />
       </section>
       {/* we build it  */}
-      <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
-        <div className="text-center">
-          <div className="h-full overflow-hidden">
-            <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-lg:max-w-[486px] max-lg:mb-[10px] max-lg:ml-auto max-lg:mr-auto max-lg:text-[48px] max-md:max-w-[352px] max-md:text-[36px]  max-sm:text-[27px]">
-              We Build with a Professional touch.
-            </h2>
-          </div>
-          <div className="h-full overflow-hidden">
-            <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
-              {
-                "On choosing Dsclinx, We help you to Glide your space into a bright area. Discover the elegance with us."
-              }
-            </p>
-          </div>
-        </div>
-        <div className="mt-[20px]">
-          <div className="grid grid-cols-2 justify-between gap-5 mt-10 max-lg:grid-cols-1">
-            <div className="bg-gray-100">
-              <div className="p-[30px] border-solid border-2 border-b-[#969696]">
-                <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="/icons/quality-excellence.png"
-                      alt="quality-excellence"
-                      className="w-11"
-                    />
-                  </div>
-                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
-                    Creating the Best Quality
-                  </h4>
-                </div>
-                <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  {
-                    "Dsclinx promises you the best quality. We Guide, Research and Design your space"
-                  }
-                </p>
-              </div>
-              <div className="pl-[30px] pr-[50px] py-[30px] border-solid border-2 border-b-[#969696]">
-                <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="/icons/expert-consultation.png"
-                      alt="expert-consultation"
-                      className="w-11"
-                    />
-                  </div>
-                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
-                    Expert Consultation Assurance
-                  </h4>
-                </div>
-                <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  {
-                    "We design, develop and deliver solutions in this high-value segment of the Design Industry"
-                  }
-                </p>
-              </div>
-              <div className="pl-[30px] pr-[50px] py-[30px]">
-                <div className="flex items-center gap-5 max-lg:flex-col max-lg:items-baseline">
-                  <div className="flex justify-center items-center bg-black rounded-lg w-[65px] h-[65px]">
-                    <Image
-                      width={100}
-                      height={100}
-                      src="/icons/certified-guarantee.png"
-                      alt="certified-guarantee"
-                      className="w-11"
-                    />
-                  </div>
-                  <h4 className="font-semibold tracking-tight text-3xl max-sm:text-2xl">
-                    Certified Guarantee
-                  </h4>
-                </div>
-                <p className="mt-[16px] text-[18px] font-normal leading-[150%]">
-                  {"We guarantee with trust, accuracy and integrity."}
-                </p>
-              </div>
-            </div>
-            <div className="w-full max-w-full max-md:overflow-hidden">
-              <Image
-                width={710}
-                height={672}
-                src="/projects/ChampionDonerKebab/5.png"
-                alt="team-approach"
-                className="w-full h-full max-w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProfessionalTouchSection />
       {/* unlock our offeing  */}
       <section className="container py-[70px] overflow-hidden max-lg:py-[100px] max-md:py-[80px] max-sm:py-[40px]">
         <div className="container max-w-[792px]">
