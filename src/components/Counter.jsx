@@ -9,17 +9,26 @@ export default function Counter({ number, text, step }) {
   useEffect(() => {
     let timer = null;
     let observer = null;
-    if (metric < number) {
-      observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            timer = setInterval(() => {
-              metric < number && setMetric((prev) => prev + (step || 1));
-            }, 10);
-          }
-        },
-        { threshold: 1.0 }
-      );
+
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          timer = setInterval(() => {
+            setMetric((prev) => {
+              const next = prev + (step || 1);
+              if (next >= number) {
+                if (timer) clearInterval(timer);
+                return number;
+              }
+              return next;
+            });
+          }, 10);
+        }
+      },
+      { threshold: 1.0 }
+    );
+
+    if (container.current) {
       observer.observe(container.current);
     }
 
@@ -31,7 +40,7 @@ export default function Counter({ number, text, step }) {
         observer.disconnect();
       }
     };
-  }, [metric]);
+  }, [number, step]);
 
   return (
     <div

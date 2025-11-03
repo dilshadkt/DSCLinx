@@ -185,9 +185,9 @@ export default function home() {
             </div>
             <div className="h-full overflow-hidden">
               <p className="max-w-[890px] ml-auto mr-auto text-[18px] leading-[150%] text-gray-300 max-lg:max-w-[552px] max-lg:text-[17px] max-md:max-w-[443px] max-md:text-[16px] max-sm:max-w-[290px] max-sm:text-[16px]">
-                We're more than a construction company — we're your partner from
-                start to finish, focusing on quality, efficiency, and
-                collaboration to bring your vision to life.
+                We&apos;re more than a construction company — we&apos;re your
+                partner from start to finish, focusing on quality, efficiency,
+                and collaboration to bring your vision to life.
               </p>
             </div>
           </div>
