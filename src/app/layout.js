@@ -17,6 +17,18 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-875773979"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-875773979');
+          `}
+        </Script>
       </head>
 
       <body className="font-montserrat">

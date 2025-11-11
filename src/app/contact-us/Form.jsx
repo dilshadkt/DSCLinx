@@ -27,7 +27,6 @@ export default function Form() {
     ).value;
 
     if (!hCaptcha) {
-      e.preventDefault();
       alert("Please fill out captcha field");
       return;
     }
@@ -44,6 +43,19 @@ export default function Form() {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      const transactionId =
+        typeof window !== "undefined" && window.crypto?.randomUUID
+          ? window.crypto.randomUUID()
+          : `${Date.now()}`;
+
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-875773979/3PNuCJvcj8EZEJuAzaED",
+          value: 1.0,
+          currency: "CAD",
+          transaction_id: transactionId,
+        });
+      }
     } else {
       console.log("Error", data);
       setResult(data.message);
