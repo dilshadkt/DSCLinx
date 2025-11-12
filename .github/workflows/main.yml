@@ -16,12 +16,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Authenticate with GCP
+        if: ${{ secrets.WIF_PROVIDER != '' && secrets.SA_EMAIL != '' }}
         uses: google-github-actions/auth@v2
         with:
           workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
           service_account: ${{ secrets.SA_EMAIL }}
 
       - name: Set up Cloud SDK
+        if: ${{ secrets.WIF_PROVIDER != '' && secrets.SA_EMAIL != '' }}
         uses: google-github-actions/setup-gcloud@v2
         with:
           version: ">= 363.0.0"
