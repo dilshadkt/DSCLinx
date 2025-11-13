@@ -36,17 +36,17 @@ const SOCIALS = [
   {
     name: "Instagram",
     icon: <Instagram />,
-    link: "https://www.instagram.com/linxdsc/",
+    link: "https://www.instagram.com/linxdsc",
   },
   {
     name: "Facebook",
     icon: <Facebook />,
-    link: "https://www.facebook.com/dsc.linx.7",
+    link: "https://www.facebook.com/people/DSC-LINX/100095184644355/",
   },
   {
     name: "Linkedin",
     icon: <Linkedin />,
-    link: "https://www.linkedin.com/in/dsclinx/?originalSubdomain=ca",
+    link: "https://www.linkedin.com/company/dsc-linx-canada/",
   },
   {
     name: "Whatsapp ",
