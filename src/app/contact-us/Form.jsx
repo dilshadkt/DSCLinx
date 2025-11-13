@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Loader2 } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -15,33 +16,51 @@ import { SERVICES } from "@/constants";
 export default function Form() {
   const [result, setResult] = useState("");
   const [project, setProject] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [toast, setToast] = useState(null);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 4000);
+    return () => clearTimeout(t);
+  }, [toast]);
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("");
+    setSubmitting(true);
     const formData = new FormData(event.target);
     const form = document.getElementById("form");
 
-    const hCaptcha = form.querySelector(
-      "textarea[name=h-captcha-response]"
-    ).value;
+    const hCaptchaElement = form.querySelector(
+      'textarea[name="h-captcha-response"]'
+    );
+    const hCaptcha = hCaptchaElement?.value;
 
     if (!hCaptcha) {
-      alert("Please fill out captcha field");
+      setToast({ type: "error", message: "Please complete the captcha." });
+      setSubmitting(false);
       return;
     }
 
     formData.append("access_key", "e6b999bc-a83d-4df7-9c61-73edbd1dc706");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
+    let data;
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      data = await response.json();
+    } catch (err) {
+      console.log("Network Error", err);
+      setToast({ type: "error", message: "Network error. Please try again." });
+      setSubmitting(false);
+      return;
+    }
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setToast({ type: "success", message: "Form submitted successfully." });
       event.target.reset();
       const transactionId =
         typeof window !== "undefined" && window.crypto?.randomUUID
@@ -56,9 +75,14 @@ export default function Form() {
           transaction_id: transactionId,
         });
       }
+      setSubmitting(false);
     } else {
       console.log("Error", data);
-      setResult(data.message);
+      setToast({
+        type: "error",
+        message: data.message || "Submission failed.",
+      });
+      setSubmitting(false);
     }
   };
 
@@ -98,10 +122,10 @@ export default function Form() {
             </div>
 
             {/* <ContactInputBox
-                            type="text"
-                            name="Project Type"
-                            placeholder="Project Type"
-                        /> */}
+              type="text"
+              name="Project Type"
+              placeholder="Project Type"
+            /> */}
           </div>
 
           <ContactTextArea
@@ -121,13 +145,21 @@ export default function Form() {
           <Button
             type="submit"
             variant="secondary"
-            className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white"
+            disabled={submitting}
+            className="bg-[#fff] rounded-none text-lg px-8 py-6 md:flex cont hover:bg-transparent hover:border-2 border-[#fff] hover:text-white disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            <span>Submit</span>
+            {submitting ? (
+              <span className="flex items-center gap-2 text-black">
+                <Loader2 className="h-5 w-5 animate-spin" />
+                Submitting...
+              </span>
+            ) : (
+              <span>Submit</span>
+            )}
           </Button>
         </form>
         <div></div>
-        <span className="py-4 text-white">{result}</span>
+        {toast ? <Toast type={toast.type} message={toast.message} /> : null}
       </div>
     </div>
   );
@@ -161,3 +193,13 @@ const ContactInputBox = ({ type, placeholder, name }) => {
     </div>
   );
 };
+
+function Toast({ type, message }) {
+  const base =
+    "fixed bottom-6 right-6 z-50 rounded-md px-4 py-3 shadow-lg border text-sm";
+  const styles =
+    type === "success"
+      ? "bg-green-600/90 border-green-500 text-white"
+      : "bg-red-600/90 border-red-500 text-white";
+  return <div className={`${base} ${styles}`}>{message}</div>;
+}
