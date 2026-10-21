@@ -20,8 +20,8 @@ export default function ProjectsSection() {
         </p>
       </div>
 
-      {/* Mobile: swipe carousel. Desktop: grid. */}
-      <div className="mt-10 flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-8 px-8 md:mx-0 md:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:overflow-visible">
+      {/* Mobile: one card per row. Tablet: 2 columns. Desktop: 4 columns. */}
+      <div className="mt-10 max-md:mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
         {PROJECTS.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
@@ -35,7 +35,7 @@ function ProjectCard({ project }) {
   const location = project.city ? `${project.city}, ON` : "ON";
 
   return (
-    <article className="snap-start shrink-0 basis-[80%] sm:basis-[55%] md:basis-auto bg-white border border-gray-200 overflow-hidden">
+    <article className="bg-white border border-gray-200 overflow-hidden">
       <LightGallery speed={400} plugins={[lgZoom]} download={false}>
         <a href={first} className="group block cursor-pointer">
           <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -43,7 +43,7 @@ function ProjectCard({ project }) {
               src={project.cover}
               alt={`${project.name} restaurant renovation`}
               fill
-              sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 25vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           </div>
