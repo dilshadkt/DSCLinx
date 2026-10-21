@@ -1,10 +1,11 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function NotFoun() {
   return (
+    <>
+    <Header />
     <main>
       <section className="relative z-10 bg-[#004363] py-[120px]">
         <div className="container mx-auto">
@@ -41,5 +42,7 @@ export default function NotFoun() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }
