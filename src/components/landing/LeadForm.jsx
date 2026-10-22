@@ -60,24 +60,15 @@ export default function LeadForm({ id, heading, supporting, location }) {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
 
-    // Spam checks: hidden honeypot + minimum fill time (plus hCaptcha below).
+    // Spam checks: hidden honeypot + minimum fill time (no visible captcha; Web3Forms spam filter also applies).
     const tookMs = Date.now() - mountedAt.current;
     if (formData.get("botcheck") || tookMs < MIN_FILL_MS) {
       setToast({ type: "error", message: "Please try again in a moment." });
       return;
     }
 
-    // Web3Forms requires an hCaptcha token for this access key.
-    const hCaptcha = form.querySelector(
-      'textarea[name="h-captcha-response"]'
-    )?.value;
-    if (!hCaptcha) {
-      setToast({ type: "error", message: "Please tick the \"I am human\" box." });
-      return;
-    }
-
     setSubmitting(true);
-    formData.append("access_key", "e6b999bc-a83d-4df7-9c61-73edbd1dc706");
+    formData.append("access_key", "346e5e2d-4b6a-4a24-ba78-88727c6118e1");
 
     let data;
     try {
@@ -118,13 +109,6 @@ export default function LeadForm({ id, heading, supporting, location }) {
         type: "error",
         message: data.message || "Submission failed.",
       });
-      // The captcha token is single-use; get a fresh one for the retry.
-      try {
-        const widgetId = form
-          .querySelector("iframe[data-hcaptcha-widget-id]")
-          ?.getAttribute("data-hcaptcha-widget-id");
-        if (window.hcaptcha && widgetId) window.hcaptcha.reset(widgetId);
-      } catch {}
     }
     setSubmitting(false);
   };
@@ -221,7 +205,6 @@ export default function LeadForm({ id, heading, supporting, location }) {
             autoComplete="off"
           />
 
-          <div className="h-captcha mt-5" data-captcha="true"></div>
 
           <Button
             type="submit"
