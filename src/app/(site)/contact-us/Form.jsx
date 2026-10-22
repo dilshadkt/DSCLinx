@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import {
   Select,
@@ -18,6 +18,7 @@ export default function Form() {
   const [project, setProject] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
+  const mountedAt = useRef(Date.now());
 
   useEffect(() => {
     if (!toast) return;
@@ -30,20 +31,15 @@ export default function Form() {
     setResult("");
     setSubmitting(true);
     const formData = new FormData(event.target);
-    const form = document.getElementById("form");
 
-    const hCaptchaElement = form.querySelector(
-      'textarea[name="h-captcha-response"]'
-    );
-    const hCaptcha = hCaptchaElement?.value;
-
-    if (!hCaptcha) {
-      setToast({ type: "error", message: "Please complete the captcha." });
+    // Spam checks (no visible captcha): hidden honeypot + minimum fill time.
+    if (formData.get("botcheck") || Date.now() - mountedAt.current < 3000) {
+      setToast({ type: "error", message: "Please try again in a moment." });
       setSubmitting(false);
       return;
     }
 
-    formData.append("access_key", "e6b999bc-a83d-4df7-9c61-73edbd1dc706");
+    formData.append("access_key", "346e5e2d-4b6a-4a24-ba78-88727c6118e1");
 
     let data;
     try {
@@ -134,7 +130,6 @@ export default function Form() {
             name="details"
             defaultValue=""
           />
-          <div className="h-captcha" data-captcha="true"></div>
           <input type="checkbox" name="botcheck" className="hidden"></input>
           <input
             type="text"
