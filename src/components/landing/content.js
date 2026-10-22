@@ -33,14 +33,15 @@ export const FORM = {
   responseTime: "", // [CONFIRM] e.g. "We'll call you within 1 business day."
 };
 
-// [CONFIRM] cities, one-line scope and photo permission for each project.
-// Cities left empty render as "ON" until the client confirms them.
+// Order set by the client. [CONFIRM] one-line scope and photo permission for each.
 export const PROJECTS = [
   {
-    name: "Amor Shawarma",
-    city: "",
-    cover: "/projects/AmorShawarma.jpg",
-    gallery: [1, 2, 3, 4, 5, 6, 7].map((n) => `/projects/AmorShawarma/${n}.JPG`),
+    name: "Antalya Kebab",
+    city: "Kitchener",
+    cover: "/projects/AntalyakebabKitchener.jpg",
+    gallery: [1, 2, 4, 5, 6, 7, 9].map(
+      (n) => `/projects/AntalyakebabKitchener/${n}.jpg`
+    ),
   },
   {
     name: "BeaverTails",
@@ -51,22 +52,24 @@ export const PROJECTS = [
     ),
   },
   {
-    name: "Hurry Curry",
-    city: "",
-    cover: "/projects/CenterpointHurryCurry.png",
-    gallery: [
-      "/projects/CenterpointHurryCurry/1.png",
-      "/projects/CenterpointHurryCurry/5.jpeg",
-      "/projects/CenterpointHurryCurry/6.jpeg",
-      "/projects/CenterpointHurryCurry/7.jpeg",
-      "/projects/CenterpointHurryCurry/12.jpeg",
-    ],
+    name: "Desi Mart",
+    city: "Toronto",
+    cover: "/projects/DesiMart.jpg",
+    gallery: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14].map(
+      (n) => `/projects/DesiMart/${n}.jpg`
+    ),
   },
   {
-    name: "Punjabi By Nature",
-    city: "",
-    cover: "/projects/PunjabiByNature.jpg",
-    gallery: [1, 2, 3, 4, 5].map((n) => `/projects/PunjabiByNature/${n}.jpg`),
+    name: "Amor Shawarma",
+    city: "Belleville",
+    cover: "/projects/AmorShawarma.jpg",
+    gallery: [1, 2, 3, 4, 5, 6, 7].map((n) => `/projects/AmorShawarma/${n}.JPG`),
+  },
+  {
+    name: "Farrah Foods",
+    city: "Paris",
+    cover: "/projects/FarrahFoodsParis.jpg",
+    gallery: [1, 2, 3, 4, 5, 6].map((n) => `/projects/FarrahFoodsParis/${n}.jpg`),
   },
 ];
 

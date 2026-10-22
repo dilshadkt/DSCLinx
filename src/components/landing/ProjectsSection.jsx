@@ -20,8 +20,8 @@ export default function ProjectsSection() {
         </p>
       </div>
 
-      {/* Mobile: one card per row. Tablet: 2 columns. Desktop: 4 columns. */}
-      <div className="mt-10 max-md:mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+      {/* Mobile: one card per row. Tablet: 2. Laptop: 3. Wide desktop: 5. */}
+      <div className="mt-10 max-md:mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {PROJECTS.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
