@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Loader2, CheckCircle2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -12,19 +13,23 @@ import {
 } from "@/components/ui/select";
 import { CTA, FORM } from "./content";
 
-const FIELD =
-  "w-full bg-transparent border border-white/40 focus:border-white px-[14px] py-3 text-base text-white placeholder:text-white/60 outline-none";
+const MIN_FILL_MS = 3000; // humans can't fill 4 fields faster than this
+
 const SELECT_TRIGGER =
   "bg-transparent !ring-offset-0 !ring-0 rounded-none h-auto border border-white/40 focus:border-white px-[14px] py-3 text-base text-white data-[placeholder]:text-white/60";
 
+const FIELD =
+  "w-full bg-transparent border border-white/40 focus:border-white px-[14px] py-3 text-base text-white placeholder:text-white/60 outline-none";
+
 export default function LeadForm({ id, heading, supporting, location }) {
+  const router = useRouter();
   const formRef = useRef(null);
+  const mountedAt = useRef(Date.now());
   const [submitting, setSubmitting] = useState(false);
   const [toast, setToast] = useState(null);
   const [errors, setErrors] = useState({});
   const [projectType, setProjectType] = useState("");
   const [startTime, setStartTime] = useState("");
-  const [doneName, setDoneName] = useState(null);
 
   useEffect(() => {
     if (!toast) return;
@@ -55,11 +60,19 @@ export default function LeadForm({ id, heading, supporting, location }) {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length) return;
 
+    // Spam checks: hidden honeypot + minimum fill time (plus hCaptcha below).
+    const tookMs = Date.now() - mountedAt.current;
+    if (formData.get("botcheck") || tookMs < MIN_FILL_MS) {
+      setToast({ type: "error", message: "Please try again in a moment." });
+      return;
+    }
+
+    // Web3Forms requires an hCaptcha token for this access key.
     const hCaptcha = form.querySelector(
       'textarea[name="h-captcha-response"]'
     )?.value;
     if (!hCaptcha) {
-      setToast({ type: "error", message: "Please complete the captcha." });
+      setToast({ type: "error", message: "Please tick the \"I am human\" box." });
       return;
     }
 
@@ -94,8 +107,12 @@ export default function LeadForm({ id, heading, supporting, location }) {
         });
       }
 
-      setDoneName(firstName);
-      setToast({ type: "success", message: "Form submitted successfully." });
+      // Client-side navigation, so the conversion request above is not cancelled.
+      // Keep `submitting` true so the button stays disabled until the page changes.
+      router.push(
+        `/restaurant-renovation/thank-you?name=${encodeURIComponent(firstName)}`
+      );
+      return;
     } else {
       setToast({
         type: "error",
@@ -118,19 +135,9 @@ export default function LeadForm({ id, heading, supporting, location }) {
       data-lead-form
       className="relative bg-black text-white p-8 shadow-lg max-sm:p-6 scroll-mt-24"
     >
-      {doneName ? (
-        <div className="flex flex-col items-center text-center gap-4 py-10">
-          <CheckCircle2 className="h-14 w-14" />
-          <h3 className="text-2xl font-semibold">
-            Thanks, {doneName}. We&apos;ve received your enquiry.
-          </h3>
-          {FORM.responseTime ? (
-            <p className="text-white/80">{FORM.responseTime}</p>
-          ) : null}
-        </div>
-      ) : (
+      {
         <form ref={formRef} onSubmit={onSubmit} noValidate>
-          <h2 className="text-3xl font-semibold max-sm:text-[24px]">
+          <h2 className="text-3xl font-semibold max-sm:text-[22px]">
             {heading}
           </h2>
           {supporting ? (
@@ -163,7 +170,10 @@ export default function LeadForm({ id, heading, supporting, location }) {
 
             <Field error={errors.projectType}>
               <Select value={projectType} onValueChange={setProjectType}>
-                <SelectTrigger className={SELECT_TRIGGER} aria-label="Type of project">
+                <SelectTrigger
+                  className={SELECT_TRIGGER}
+                  aria-label="Type of project"
+                >
                   <SelectValue placeholder="Type of project" />
                 </SelectTrigger>
                 <SelectContent>
@@ -194,7 +204,6 @@ export default function LeadForm({ id, heading, supporting, location }) {
               </Select>
             </Field>
           </div>
-
           <input type="hidden" name="Project Type" value={projectType} />
           <input type="hidden" name="Start Date" value={startTime} />
           <input
@@ -204,7 +213,13 @@ export default function LeadForm({ id, heading, supporting, location }) {
           />
           <input type="hidden" name="from_name" value="DSC Linx Landing Page" />
           <input type="hidden" name="Form Location" value={location} />
-          <input type="checkbox" name="botcheck" className="hidden" />
+          <input
+            type="checkbox"
+            name="botcheck"
+            className="hidden"
+            tabIndex={-1}
+            autoComplete="off"
+          />
 
           <div className="h-captcha mt-5" data-captcha="true"></div>
 
@@ -224,7 +239,7 @@ export default function LeadForm({ id, heading, supporting, location }) {
             )}
           </Button>
         </form>
-      )}
+      }
       {toast ? <Toast type={toast.type} message={toast.message} /> : null}
     </div>
   );
@@ -257,3 +272,4 @@ function Toast({ type, message }) {
     </div>
   );
 }
+

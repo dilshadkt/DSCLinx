@@ -5,7 +5,7 @@ export default function ProcessSection() {
   return (
     <section className="bg-[#f3f4f6]">
       <div className="container py-[70px] max-md:py-[50px] max-sm:py-[40px]">
-        <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-semibold max-md:text-[36px] max-sm:text-[27px]">
+        <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-semibold max-md:text-[30px] max-sm:text-[24px]">
           {PROCESS.heading} {PROCESS.headingAccent}
         </h2>
 
@@ -34,7 +34,7 @@ export default function ProcessSection() {
                 <p className="text-[14px] font-semibold uppercase tracking-wider text-gray-500">
                   Step {i + 1}
                 </p>
-                <h3 className="mt-1 text-[22px] font-semibold leading-[130%] max-sm:text-[20px]">
+                <h3 className="mt-1 text-[22px] font-semibold leading-[130%] max-sm:text-[17px]">
                   {step}
                 </h3>
               </div>

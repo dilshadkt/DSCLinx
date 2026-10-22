@@ -33,7 +33,7 @@ export default function StickyCta() {
     >
       <button
         type="button"
-        onClick={() => scrollToForm("sticky")}
+        onClick={() => scrollToForm("sticky", "quote-form")}
         tabIndex={formVisible ? -1 : 0}
         className="cont w-full h-16 bg-black text-white border-t-2 border-white text-lg font-semibold max-sm:text-base hover:bg-white hover:text-black transition-colors"
       >

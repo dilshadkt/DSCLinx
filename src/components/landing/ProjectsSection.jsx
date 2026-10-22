@@ -11,10 +11,10 @@ export default function ProjectsSection() {
   return (
     <section className="container py-[70px] max-md:py-[50px] max-sm:py-[40px]">
       <div className="text-center">
-        <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-md:text-[36px] max-sm:text-[27px]">
+        <h2 className="tracking-[-.42px] mb-[16px] leading-[120%] text-[42px] font-semibold max-md:text-[30px] max-sm:text-[24px]">
           Our Projects
         </h2>
-        <p className="max-w-[640px] mx-auto text-[18px] leading-[150%] max-md:text-[16px]">
+        <p className="max-w-[640px] mx-auto text-[18px] leading-[150%] max-md:text-[15px]">
           Real restaurant projects delivered by our team. Tap a project to see
           more photos.
         </p>
@@ -55,7 +55,7 @@ function ProjectCard({ project }) {
         ))}
       </LightGallery>
       <div className="p-5">
-        <h3 className="text-[20px] font-semibold leading-[130%]">
+        <h3 className="text-[20px] max-sm:text-[17px] font-semibold leading-[130%]">
           {project.name}
         </h3>
         <p className="text-gray-600 mt-1">{location}</p>

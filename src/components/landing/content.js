@@ -71,7 +71,7 @@ export const PROJECTS = [
 ];
 
 export const SERVICES = {
-  heading: "Restaurant Renovation Services",
+  heading: "Our Services",
   image: "/projects/BeavertailsMississauga/1.jpg",
   imageAlt: "Kitchen hood and ductwork installed in a restaurant renovation",
   items: [
@@ -80,8 +80,12 @@ export const SERVICES = {
       text: "From concept to completion, we plan, design and build your restaurant space.",
     },
     {
-      title: "Renovations & Fit-Outs",
-      text: "Update an existing restaurant or fit out a new or leased space.",
+      title: "Restaurant Renovations",
+      text: "Update your existing restaurant, from interior finishes to layout changes.",
+    },
+    {
+      title: "Commercial Renovation & Build",
+      text: "Renovation and build services for commercial spaces, managed by one team.",
     },
     {
       title: "General Contracting",
@@ -94,6 +98,10 @@ export const SERVICES = {
     {
       title: "Kitchen Hood Installation",
       text: "Wall-mounted, island and canopy hoods installed to meet code and fire-safety requirements.",
+    },
+    {
+      title: "HVAC",
+      text: "Heating, ventilation and air conditioning for restaurant kitchens and dining areas.",
     },
   ],
 };

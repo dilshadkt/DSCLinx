@@ -12,7 +12,7 @@ export default function ServicesSection() {
         className="absolute inset-0 w-full h-full object-cover opacity-30"
       />
       <div className="container relative z-10 py-[80px] max-md:py-[50px] text-white">
-        <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-bold max-md:text-[36px] max-sm:text-[27px]">
+        <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-bold max-md:text-[30px] max-sm:text-[24px]">
           {SERVICES.heading}
         </h2>
 
@@ -27,16 +27,16 @@ export default function ServicesSection() {
             />
           </div>
 
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-3">
             {SERVICES.items.map((item) => (
               <li
                 key={item.title}
-                className="bg-white/10 backdrop-blur-sm border border-white/20 p-5"
+                className="bg-white/10 backdrop-blur-sm border border-white/20 px-5 py-4"
               >
-                <h3 className="text-[20px] font-semibold leading-[130%]">
+                <h3 className="text-[20px] max-sm:text-[17px] font-semibold leading-[130%]">
                   {item.title}
                 </h3>
-                <p className="mt-1 text-gray-300 leading-[150%]">{item.text}</p>
+                <p className="mt-1 text-gray-300 leading-[150%] max-sm:text-[14px]">{item.text}</p>
               </li>
             ))}
           </ul>

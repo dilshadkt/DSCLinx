@@ -5,7 +5,7 @@ import { WHY } from "./content";
 export default function WhySection() {
   return (
     <section className="container py-[70px] max-md:py-[50px] max-sm:py-[40px]">
-      <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-semibold max-md:text-[36px] max-sm:text-[27px]">
+      <h2 className="text-center tracking-[-.42px] leading-[120%] text-[42px] font-semibold max-md:text-[30px] max-sm:text-[24px]">
         {WHY.heading}
       </h2>
 
@@ -26,7 +26,7 @@ export default function WhySection() {
               <span className="mt-[2px] flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black text-white">
                 <Check className="h-4 w-4" />
               </span>
-              <span className="text-[18px] leading-[140%] max-sm:text-[16px]">
+              <span className="text-[18px] leading-[140%] max-sm:text-[15px]">
                 {point}
               </span>
             </li>
